@@ -5,34 +5,7 @@
     "github": {
       "silent": true
     },
-    "builds": [
-      {
-        "src": "visuals/public/**/*",
-        "use": "@vercel/static"
-      }
-    ],
-    "rewrites": [
-      {
-        "source": "/",
-        "destination": "/visuals/public/index.html"
-      },
-      {
-        "source": "/data/(.*)",
-        "destination": "/visuals/public/data/$1"
-      },
-      {
-        "source": "/app.js",
-        "destination": "/visuals/public/app.js"
-      },
-      {
-        "source": "/app.min.js",
-        "destination": "/visuals/public/app.min.js"
-      },
-      {
-        "source": "/(.*)",
-        "destination": "/visuals/public/$1"
-      }
-    ],
+
     "headers": [
       {
         "source": "/data/(.*\\.gz)",
@@ -143,10 +116,6 @@
     ],
     "cleanUrls": true,
     "trailingSlash": false,
-    "framework": null,
-    "installCommand": null,
-    "buildCommand": null,
-    "devCommand": null,
-    "outputDirectory": "visuals/public"
+    "framework": null
   }
   
