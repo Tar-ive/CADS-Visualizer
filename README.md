@@ -1,8 +1,8 @@
 # CADS Research Visualization
 
-An interactive web-based visualization tool for exploring research publications from the Center for Applied Data Science (CADS) at Texas State University. This project provides an intuitive interface to discover research patterns, collaborations, and thematic clusters across the CADS research landscape.
+An interactive web-based visualization tool for exploring research publications from the Center of Analytics and Data Science (CADS) at Texas State University. This project provides an intuitive interface to discover research patterns, collaborations, and thematic clusters across the CADS research landscape.
 
-![CADS Research Visualization](https://img.shields.io/badge/Status-Active-green) ![License](https://img.shields.io/badge/License-MIT-blue) ![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-yellow) ![Deck.gl](https://img.shields.io/badge/Deck.gl-8.9+-orange)
+![CADS Research Visualization](https://img.shields.io/badge/Status-Active-green)  ![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-yellow) ![Deck.gl](https://img.shields.io/badge/Deck.gl-8.9+-orange)
 
 ## 🎯 Overview
 
@@ -261,7 +261,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 For questions, issues, or feature requests:
 
 - **Issues**: [GitHub Issues](https://github.com/your-org/CADS-Visualizer/issues)
-- **Email**: [contact@cads.txstate.edu]
+- **Email**: [pqo14@txstate.edu]
 - **Documentation**: [Project Wiki](https://github.com/your-org/CADS-Visualizer/wiki)
 
 ## 🔄 Changelog
