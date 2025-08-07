@@ -21,12 +21,12 @@
         "destination": "/visuals/public/data/$1"
       },
       {
-        "source": "/app\\.(js|min\\.js)",
-        "destination": "/visuals/public/$1"
+        "source": "/app.js",
+        "destination": "/visuals/public/app.js"
       },
       {
-        "source": "/(.*\\.(css|js|html|ico|png|jpg|jpeg|gif|svg|woff|woff2|ttf|eot))",
-        "destination": "/visuals/public/$1"
+        "source": "/app.min.js",
+        "destination": "/visuals/public/app.min.js"
       },
       {
         "source": "/(.*)",
@@ -89,7 +89,7 @@
         ]
       },
       {
-        "source": "/(.*\\.(js|css))",
+        "source": "/(.*)\\.js",
         "headers": [
           {
             "key": "Cache-Control",
@@ -98,6 +98,19 @@
           {
             "key": "Content-Type",
             "value": "text/javascript; charset=utf-8"
+          }
+        ]
+      },
+      {
+        "source": "/(.*)\\.css",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "public, max-age=86400"
+          },
+          {
+            "key": "Content-Type",
+            "value": "text/css; charset=utf-8"
           }
         ]
       },
