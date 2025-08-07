@@ -84,7 +84,7 @@ function initializeOnboarding() {
                 app.elements.onboardingInfo.classList.add('hidden');
             }
             // If not dismissed, it will show by default
-            console.log('Onboarding initialized, dismissed:', dismissed === 'true');
+
         } else {
             console.warn('Onboarding element not found');
         }
@@ -129,14 +129,12 @@ function setupUIEventListeners() {
     // Zoom controls
     if (app.elements.zoomIn) {
         app.elements.zoomIn.addEventListener('click', () => {
-            console.log('Zoom in clicked');
             zoomMap(1);
         });
     }
 
     if (app.elements.zoomOut) {
         app.elements.zoomOut.addEventListener('click', () => {
-            console.log('Zoom out clicked');
             zoomMap(-1);
         });
     }
@@ -144,7 +142,6 @@ function setupUIEventListeners() {
     // Onboarding info close
     if (app.elements.onboardingClose && app.elements.onboardingInfo) {
         app.elements.onboardingClose.addEventListener('click', () => {
-            console.log('Onboarding close clicked');
             try {
                 app.elements.onboardingInfo.classList.add('hidden');
                 // Store preference to not show again
@@ -624,7 +621,7 @@ function zoomMap(direction) {
                 cancelable: true
             });
             mapContainer.dispatchEvent(wheelEvent);
-            console.log(`Zoom ${direction > 0 ? 'in' : 'out'} triggered via wheel event`);
+    
         }
     } catch (error) {
         console.error('Error in zoomMap:', error);
