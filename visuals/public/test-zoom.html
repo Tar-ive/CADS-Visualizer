@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoom Controls Test</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            background: #1a1a1a;
+            color: white;
+        }
+        
+        /* Zoom Controls */
+        #zoom-controls {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            z-index: 100;
+        }
+        
+        .zoom-button {
+            width: 40px;
+            height: 40px;
+            background: rgba(42, 42, 42, 0.95);
+            border: 1px solid #555;
+            border-radius: 6px;
+            color: #fff;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s ease;
+            backdrop-filter: blur(10px);
+        }
+        
+        .zoom-button:hover {
+            background: rgba(60, 60, 60, 0.95);
+            border-color: #007acc;
+        }
+        
+        .zoom-button:active {
+            transform: scale(0.95);
+        }
+        
+        /* Onboarding Info Box */
+        #onboarding-info {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: rgba(42, 42, 42, 0.95);
+            border: 1px solid #555;
+            border-radius: 8px;
+            padding: 16px;
+            max-width: 300px;
+            backdrop-filter: blur(10px);
+            z-index: 100;
+            transition: all 0.3s ease;
+        }
+        
+        #onboarding-info.hidden {
+            opacity: 0;
+            transform: translateY(20px);
+            pointer-events: none;
+        }
+        
+        .onboarding-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+        
+        .onboarding-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: #fff;
+        }
+        
+        .onboarding-close {
+            background: none;
+            border: none;
+            color: #ccc;
+            cursor: pointer;
+            font-size: 18px;
+            padding: 0;
+            width: 20px;
+            height: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            transition: background-color 0.2s;
+        }
+        
+        .onboarding-close:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+        
+        .onboarding-content {
+            font-size: 13px;
+            color: #ccc;
+            line-height: 1.4;
+        }
+        
+        #log {
+            margin-top: 20px;
+            padding: 10px;
+            background: #333;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Zoom Controls and Onboarding Test</h1>
+    <p>Test the zoom buttons and onboarding box functionality.</p>
+    
+    <div id="log">
+        <div>Console log will appear here...</div>
+    </div>
+    
+    <!-- Zoom Controls -->
+    <div id="zoom-controls">
+        <button class="zoom-button" id="zoom-in" title="Zoom In">+</button>
+        <button class="zoom-button" id="zoom-out" title="Zoom Out">−</button>
+    </div>
+    
+    <!-- Onboarding Info Box -->
+    <div id="onboarding-info">
+        <div class="onboarding-header">
+            <div class="onboarding-title">How to Use</div>
+            <button class="onboarding-close" id="onboarding-close" title="Close">×</button>
+        </div>
+        <div class="onboarding-content">
+            <strong>Explore CADS Research:</strong>
+            <ul>
+                <li><strong>Filter by Researcher:</strong> Type names to find specific faculty</li>
+                <li><strong>Select Themes:</strong> Check/uncheck research areas of interest</li>
+                <li><strong>Add Keywords:</strong> Search papers by content keywords</li>
+                <li><strong>Adjust Year:</strong> Filter by publication year</li>
+                <li><strong>Navigate:</strong> Click and drag to pan, scroll to zoom</li>
+                <li><strong>Details:</strong> Hover over points for paper information</li>
+            </ul>
+        </div>
+    </div>
+    
+    <script>
+        const log = document.getElementById('log');
+        
+        function addLog(message) {
+            const div = document.createElement('div');
+            div.textContent = new Date().toLocaleTimeString() + ': ' + message;
+            log.appendChild(div);
+            log.scrollTop = log.scrollHeight;
+        }
+        
+        // Test element references
+        const zoomIn = document.getElementById('zoom-in');
+        const zoomOut = document.getElementById('zoom-out');
+        const onboardingInfo = document.getElementById('onboarding-info');
+        const onboardingClose = document.getElementById('onboarding-close');
+        
+        addLog('Elements found:');
+        addLog('- Zoom in: ' + (zoomIn ? 'YES' : 'NO'));
+        addLog('- Zoom out: ' + (zoomOut ? 'YES' : 'NO'));
+        addLog('- Onboarding info: ' + (onboardingInfo ? 'YES' : 'NO'));
+        addLog('- Onboarding close: ' + (onboardingClose ? 'YES' : 'NO'));
+        
+        // Add event listeners
+        if (zoomIn) {
+            zoomIn.addEventListener('click', () => {
+                addLog('Zoom in clicked!');
+            });
+        }
+        
+        if (zoomOut) {
+            zoomOut.addEventListener('click', () => {
+                addLog('Zoom out clicked!');
+            });
+        }
+        
+        if (onboardingClose && onboardingInfo) {
+            onboardingClose.addEventListener('click', () => {
+                addLog('Onboarding close clicked!');
+                onboardingInfo.classList.add('hidden');
+                localStorage.setItem('test-onboarding-dismissed', 'true');
+            });
+        }
+        
+        // Check localStorage
+        const dismissed = localStorage.getItem('test-onboarding-dismissed');
+        if (dismissed === 'true' && onboardingInfo) {
+            onboardingInfo.classList.add('hidden');
+            addLog('Onboarding was previously dismissed');
+        }
+        
+        addLog('Test page loaded successfully!');
+    </script>
+</body>
+</html>

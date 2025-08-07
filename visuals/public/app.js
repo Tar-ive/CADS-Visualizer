@@ -12,6 +12,15 @@ const app = {
     isLoading: true,
     currentZoom: 8,
     labelSizeCache: new Map(), // Cache for calculated label sizes
+    
+    // Filter state tracking
+    filterState: {
+        researcher: '',
+        themes: new Set(),
+        keywords: [],
+        keywordsLogic: 'AND',
+        year: 2010
+    },
 
     // UI elements
     elements: {
@@ -22,11 +31,14 @@ const app = {
         mapContainer: document.getElementById('map-container'),
         uiPanel: document.getElementById('ui-panel'),
         panelToggle: document.getElementById('panel-toggle'),
-        searchInput: document.getElementById('search-input'),
-        researcherFilter: document.getElementById('researcher-filter'),
+        researcherInput: document.getElementById('researcher-input'),
+        themeChecklist: document.getElementById('theme-checklist'),
+        keywordsInput: document.getElementById('keywords-input'),
+        addKeywordBtn: document.getElementById('add-keyword-btn'),
+        keywordsLogic: document.getElementById('keywords-logic'),
+        keywordsTags: document.getElementById('keywords-tags'),
         yearFilter: document.getElementById('year-filter'),
         yearDisplay: document.getElementById('year-display'),
-        clusterFilter: document.getElementById('cluster-filter'),
         tooltip: document.getElementById('tooltip'),
         tooltipTitle: document.getElementById('tooltip-title'),
         tooltipDetails: document.getElementById('tooltip-details'),
@@ -34,7 +46,11 @@ const app = {
         visiblePapers: document.getElementById('visible-papers'),
         totalPapers: document.getElementById('total-papers'),
         totalResearchers: document.getElementById('total-researchers'),
-        totalClusters: document.getElementById('total-clusters')
+        totalClusters: document.getElementById('total-clusters'),
+        zoomIn: document.getElementById('zoom-in'),
+        zoomOut: document.getElementById('zoom-out'),
+        onboardingInfo: document.getElementById('onboarding-info'),
+        onboardingClose: document.getElementById('onboarding-close')
     }
 };
 
@@ -48,11 +64,33 @@ function init() {
     // Set up UI event listeners
     setupUIEventListeners();
 
+    // Initialize onboarding info visibility
+    initializeOnboarding();
+
     // Update loading progress
     updateLoadingProgress('Setting up interface...');
 
     // Load the visualization data and initialize
     loadVisualization();
+}
+
+// Initialize onboarding info visibility
+function initializeOnboarding() {
+    try {
+        if (app.elements.onboardingInfo) {
+            // Check if user has previously dismissed the onboarding
+            const dismissed = localStorage.getItem('cads-onboarding-dismissed');
+            if (dismissed === 'true') {
+                app.elements.onboardingInfo.classList.add('hidden');
+            }
+            // If not dismissed, it will show by default
+            console.log('Onboarding initialized, dismissed:', dismissed === 'true');
+        } else {
+            console.warn('Onboarding element not found');
+        }
+    } catch (error) {
+        console.error('Error initializing onboarding:', error);
+    }
 }
 
 // Set up UI event listeners
@@ -66,28 +104,84 @@ function setupUIEventListeners() {
         applyFilters();
     });
 
-    // Search input
-    app.elements.searchInput.addEventListener('input', debounce((e) => {
-        performSearch(e.target.value);
+    // Researcher input (real-time filtering)
+    app.elements.researcherInput.addEventListener('input', debounce((e) => {
+        applyFilters();
     }, 300));
 
-    // Filter dropdowns
-    app.elements.researcherFilter.addEventListener('change', (e) => {
+    // Keywords input and add button
+    app.elements.keywordsInput.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') {
+            e.preventDefault();
+            addKeywordTag();
+        }
+    });
+
+    app.elements.addKeywordBtn.addEventListener('click', addKeywordTag);
+
+    // Keywords logic toggle
+    app.elements.keywordsLogic.addEventListener('change', (e) => {
+        const toggleText = e.target.parentElement.querySelector('.toggle-text');
+        toggleText.textContent = e.target.checked ? 'Match ALL keywords' : 'Match ANY keyword';
         applyFilters();
     });
 
-    app.elements.clusterFilter.addEventListener('change', (e) => {
-        applyFilters();
-    });
+    // Zoom controls
+    if (app.elements.zoomIn) {
+        app.elements.zoomIn.addEventListener('click', () => {
+            console.log('Zoom in clicked');
+            zoomMap(1);
+        });
+    }
+
+    if (app.elements.zoomOut) {
+        app.elements.zoomOut.addEventListener('click', () => {
+            console.log('Zoom out clicked');
+            zoomMap(-1);
+        });
+    }
+
+    // Onboarding info close
+    if (app.elements.onboardingClose && app.elements.onboardingInfo) {
+        app.elements.onboardingClose.addEventListener('click', () => {
+            console.log('Onboarding close clicked');
+            try {
+                app.elements.onboardingInfo.classList.add('hidden');
+                // Store preference to not show again
+                localStorage.setItem('cads-onboarding-dismissed', 'true');
+            } catch (error) {
+                console.error('Error closing onboarding:', error);
+            }
+        });
+    }
 
     // Keyboard shortcuts
     document.addEventListener('keydown', (e) => {
         if (e.key === 'Escape') {
             hideTooltip();
+            // Also hide onboarding if visible
+            if (app.elements.onboardingInfo && !app.elements.onboardingInfo.classList.contains('hidden')) {
+                app.elements.onboardingInfo.classList.add('hidden');
+            }
         }
         if (e.key === '/' && !e.target.matches('input')) {
             e.preventDefault();
-            app.elements.searchInput.focus();
+            if (app.elements.researcherInput) {
+                app.elements.researcherInput.focus();
+            }
+        }
+        // Zoom shortcuts
+        if (e.key === '+' || e.key === '=') {
+            e.preventDefault();
+            if (app.elements.zoomIn) {
+                app.elements.zoomIn.click();
+            }
+        }
+        if (e.key === '-') {
+            e.preventDefault();
+            if (app.elements.zoomOut) {
+                app.elements.zoomOut.click();
+            }
         }
     });
 }
@@ -268,24 +362,46 @@ async function loadVisualization() {
     }
 }
 
-// Populate filter dropdowns with data
-function populateFilters(data) {
-    // Populate researcher filter
-    const researcherSelect = app.elements.researcherFilter;
-    data.r.forEach(researcher => {
-        const option = document.createElement('option');
-        option.value = researcher.i;
-        option.textContent = researcher.n;
-        researcherSelect.appendChild(option);
-    });
+// Generate consistent color for a cluster ID
+function generateClusterColor(clusterId) {
+    // Use a simple hash function to generate consistent colors
+    const colors = [
+        '#FF6B6B', '#4ECDC4', '#45B7D1', '#96CEB4', '#FFEAA7',
+        '#DDA0DD', '#98D8C8', '#F7DC6F', '#BB8FCE', '#85C1E9',
+        '#F8C471', '#82E0AA', '#F1948A', '#85C1E9', '#D7BDE2',
+        '#A3E4D7', '#F9E79F', '#D5A6BD', '#AED6F1', '#A9DFBF',
+        '#F5B7B1', '#D2B4DE', '#A9CCE3', '#A3E4D7', '#F7DC6F',
+        '#D7BDE2', '#AED6F1', '#A9DFBF', '#F5B7B1', '#D2B4DE',
+        '#A9CCE3', '#A3E4D7', '#F7DC6F'
+    ];
+    
+    return colors[clusterId % colors.length];
+}
 
-    // Populate cluster filter
-    const clusterSelect = app.elements.clusterFilter;
+// Populate filter UI with data
+function populateFilters(data) {
+    // Populate theme checklist
+    const themeChecklist = app.elements.themeChecklist;
+    themeChecklist.innerHTML = ''; // Clear existing items
+    
     data.c.forEach(cluster => {
-        const option = document.createElement('option');
-        option.value = cluster.i;
-        option.textContent = cluster.n;
-        clusterSelect.appendChild(option);
+        const themeItem = document.createElement('div');
+        themeItem.className = 'theme-item';
+        
+        // Generate consistent color for this cluster
+        const themeColor = generateClusterColor(cluster.i);
+        
+        themeItem.innerHTML = `
+            <input type="checkbox" class="theme-checkbox" id="theme-${cluster.i}" value="${cluster.i}" checked>
+            <div class="theme-color-swatch" style="background-color: ${themeColor}"></div>
+            <label class="theme-name" for="theme-${cluster.i}">${cluster.n}</label>
+        `;
+        
+        // Add event listener for theme checkbox
+        const checkbox = themeItem.querySelector('.theme-checkbox');
+        checkbox.addEventListener('change', applyFilters);
+        
+        themeChecklist.appendChild(themeItem);
     });
 }
 
@@ -491,27 +607,89 @@ function handleViewStateChange({ viewState }) {
     }
 }
 
+// Zoom map function for zoom controls
+function zoomMap(direction) {
+    if (!app.deckgl) {
+        console.warn('Deck.gl not initialized');
+        return;
+    }
+
+    try {
+        // Simulate mouse wheel event to trigger zoom
+        const mapContainer = document.getElementById('map-container');
+        if (mapContainer) {
+            const wheelEvent = new WheelEvent('wheel', {
+                deltaY: direction > 0 ? -100 : 100, // Negative for zoom in, positive for zoom out
+                bubbles: true,
+                cancelable: true
+            });
+            mapContainer.dispatchEvent(wheelEvent);
+            console.log(`Zoom ${direction > 0 ? 'in' : 'out'} triggered via wheel event`);
+        }
+    } catch (error) {
+        console.error('Error in zoomMap:', error);
+    }
+}
+
 // Get currently filtered data
 function getCurrentFilteredData() {
     if (!app.data) return [];
 
-    const researcherFilter = app.elements.researcherFilter.value;
-    const clusterFilter = app.elements.clusterFilter.value;
-    const yearFilter = parseInt(app.elements.yearFilter.value);
-
     let filteredData = app.data.p;
 
-    if (researcherFilter) {
-        filteredData = filteredData.filter(p => p.r === researcherFilter);
+    // Update filter state and apply researcher name filtering
+    const researcherQuery = app.elements.researcherInput.value.trim().toLowerCase();
+    app.filterState.researcher = researcherQuery;
+    
+    if (researcherQuery) {
+        filteredData = filteredData.filter(p => {
+            const researcher = app.data.r.find(r => r.i === p.r);
+            return researcher && researcher.n.toLowerCase().includes(researcherQuery);
+        });
     }
 
-    if (clusterFilter) {
-        filteredData = filteredData.filter(p => p.c === parseInt(clusterFilter));
+    // Update filter state and apply research theme filtering
+    const checkedThemes = Array.from(app.elements.themeChecklist.querySelectorAll('.theme-checkbox:checked'))
+        .map(checkbox => parseInt(checkbox.value));
+    app.filterState.themes = new Set(checkedThemes);
+    
+    if (checkedThemes.length > 0 && checkedThemes.length < app.data.c.length) {
+        filteredData = filteredData.filter(p => checkedThemes.includes(p.c));
     }
 
+    // Update filter state and apply keywords filtering
+    const keywordTags = Array.from(app.elements.keywordsTags.querySelectorAll('.keyword-tag'));
+    const keywords = keywordTags.map(tag => tag.dataset.keyword.toLowerCase());
+    const useAndLogic = app.elements.keywordsLogic.checked;
+    
+    app.filterState.keywords = keywords;
+    app.filterState.keywordsLogic = useAndLogic ? 'AND' : 'OR';
+    
+    if (keywords.length > 0) {
+        filteredData = filteredData.filter(p => {
+            // Search in paper title (assuming p.t is title)
+            const title = (p.t || '').toLowerCase();
+            
+            if (useAndLogic) {
+                // ALL keywords must match
+                return keywords.every(keyword => title.includes(keyword));
+            } else {
+                // ANY keyword can match
+                return keywords.some(keyword => title.includes(keyword));
+            }
+        });
+    }
+
+    // Update filter state and apply publication year filtering
+    const yearFilter = parseInt(app.elements.yearFilter.value);
+    app.filterState.year = yearFilter;
+    
     if (yearFilter) {
         filteredData = filteredData.filter(p => p.y >= yearFilter);
     }
+
+    // Store filtered data for reference
+    app.filteredData = filteredData;
 
     return filteredData;
 }
@@ -744,6 +922,63 @@ function handleClick(info) {
     }
 }
 
+// Add keyword tag
+function addKeywordTag() {
+    const input = app.elements.keywordsInput;
+    const keyword = input.value.trim();
+    
+    if (!keyword) return;
+    
+    // Check if keyword already exists
+    const existingTags = Array.from(app.elements.keywordsTags.querySelectorAll('.keyword-tag'));
+    const existingKeywords = existingTags.map(tag => tag.dataset.keyword.toLowerCase());
+    
+    if (existingKeywords.includes(keyword.toLowerCase())) {
+        input.value = '';
+        return;
+    }
+    
+    // Create keyword tag
+    const tag = document.createElement('div');
+    tag.className = 'keyword-tag';
+    tag.dataset.keyword = keyword;
+    tag.innerHTML = `
+        <span>${keyword}</span>
+        <button class="keyword-tag-remove" type="button" title="Remove keyword">×</button>
+    `;
+    
+    // Add remove functionality
+    tag.querySelector('.keyword-tag-remove').addEventListener('click', () => {
+        tag.remove();
+        applyFilters();
+    });
+    
+    app.elements.keywordsTags.appendChild(tag);
+    input.value = '';
+    
+    // Apply filters with new keyword
+    applyFilters();
+}
+
+// Check if any filters are currently active
+function hasActiveFilters() {
+    return app.filterState.researcher !== '' ||
+           app.filterState.themes.size < app.data.c.length ||
+           app.filterState.keywords.length > 0 ||
+           app.filterState.year > 2010; // Assuming 2010 is the minimum year
+}
+
+// Get filter summary for debugging/logging
+function getFilterSummary() {
+    return {
+        researcher: app.filterState.researcher || 'All',
+        themes: app.filterState.themes.size === app.data.c.length ? 'All' : `${app.filterState.themes.size} selected`,
+        keywords: app.filterState.keywords.length === 0 ? 'None' : `${app.filterState.keywords.length} (${app.filterState.keywordsLogic})`,
+        year: `>= ${app.filterState.year}`,
+        hasFilters: hasActiveFilters()
+    };
+}
+
 // Apply filters to the visualization
 function applyFilters() {
     if (!app.deckgl || !app.data) return;
@@ -757,6 +992,12 @@ function applyFilters() {
 
     // Update visible papers count
     app.elements.visiblePapers.textContent = filteredData.length.toLocaleString();
+
+    // Log filter state for debugging (can be removed in production)
+    if (hasActiveFilters()) {
+        console.log('🔍 Active filters:', getFilterSummary());
+        console.log(`📊 Filtered results: ${filteredData.length}/${app.data.p.length} papers`);
+    }
 }
 
 // Perform search (placeholder - would need search index implementation)

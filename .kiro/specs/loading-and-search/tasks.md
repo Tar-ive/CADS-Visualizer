@@ -35,28 +35,28 @@
   - Test with various screen sizes to ensure consistent full-map visibility
   - _Requirements: 1.1, 1.2, 1.3_
 
-- [-] 4. Replace search box with advanced filtering panel
-- [-] 4.1 Redesign left panel structure for multiple filter sections
+- [x] 4. Replace search box with advanced filtering panel
+- [x] 4.1 Redesign left panel structure for multiple filter sections
   - Restructure the UI panel HTML to include distinct sections for "Researcher", "Research Theme", and "Keywords"
   - Add clear section headings and organize filters with proper visual hierarchy
   - Ensure the panel layout is responsive and maintains usability across screen sizes
   - _Requirements: 2.1_
 
-- [ ] 4.2 Implement researcher name filtering with real-time updates
+- [x] 4.2 Implement researcher name filtering with real-time updates
   - Convert existing researcher dropdown to a text input field labeled "Researcher" or "Faculty"
   - Implement real-time filtering as user types researcher names (case-insensitive matching)
   - Update visualization instantly to highlight publications from matching researchers
   - Ensure partial name matching works (e.g., "tahir" matches "Tahir Ekin")
   - _Requirements: 2.2_
 
-- [ ] 4.3 Create research theme checklist filter with color coding
+- [x] 4.3 Create research theme checklist filter with color coding
   - Replace or supplement cluster dropdown with a visual checklist of all available themes
   - Add color swatches next to each theme name that correspond to theme colors on the map
   - Implement check/uncheck functionality to show or hide themes on the visualization
   - Ensure theme filter works cumulatively with other filters
   - _Requirements: 2.3_
 
-- [ ] 4.4 Add new keywords filtering system with tag-based interface
+- [x] 4.4 Add new keywords filtering system with tag-based interface
   - Create a new "Keywords" section in the filtering panel
   - Implement text input field where users can type keywords and add them as filter tags
   - Add functionality to create multiple keyword tags for complex filtering
@@ -64,7 +64,7 @@
   - Update visualization to show only publications matching the keyword criteria
   - _Requirements: 2.4_
 
-- [ ] 4.5 Implement cumulative filtering logic
+- [x] 4.5 Implement cumulative filtering logic
   - Modify `getCurrentFilteredData()` function to handle multiple simultaneous filters
   - Ensure researcher, theme, and keyword filters work together cumulatively
   - Implement real-time visualization updates as any filter is applied or removed
