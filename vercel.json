@@ -11,55 +11,26 @@
         "use": "@vercel/static"
       }
     ],
-    "routes": [
+    "rewrites": [
       {
-        "src": "/data/(.*\\.gz)",
-        "dest": "/visuals/public/data/$1",
-        "headers": {
-          "Content-Encoding": "gzip",
-          "Content-Type": "application/json",
-          "Cache-Control": "public, max-age=31536000, immutable",
-          "Access-Control-Allow-Origin": "*",
-          "Access-Control-Allow-Methods": "GET, OPTIONS",
-          "Access-Control-Allow-Headers": "Content-Type, Authorization"
-        }
+        "source": "/",
+        "destination": "/visuals/public/index.html"
       },
       {
-        "src": "/data/(.*)",
-        "dest": "/visuals/public/data/$1",
-        "headers": {
-          "Content-Type": "application/json",
-          "Cache-Control": "public, max-age=86400",
-          "Access-Control-Allow-Origin": "*",
-          "Access-Control-Allow-Methods": "GET, OPTIONS",
-          "Access-Control-Allow-Headers": "Content-Type, Authorization"
-        }
+        "source": "/data/(.*)",
+        "destination": "/visuals/public/data/$1"
       },
       {
-        "src": "/app\\.(js|min\\.js)",
-        "dest": "/visuals/public/$1",
-        "headers": {
-          "Content-Type": "application/javascript",
-          "Cache-Control": "public, max-age=86400"
-        }
+        "source": "/app.js",
+        "destination": "/visuals/public/app.js"
       },
       {
-        "src": "/(.*\\.(css|js|html|ico|png|jpg|jpeg|gif|svg|woff|woff2|ttf|eot))",
-        "dest": "/visuals/public/$1",
-        "headers": {
-          "Cache-Control": "public, max-age=86400"
-        }
+        "source": "/app.min.js",
+        "destination": "/visuals/public/app.min.js"
       },
       {
-        "src": "/",
-        "dest": "/visuals/public/index.html",
-        "headers": {
-          "Cache-Control": "public, max-age=3600"
-        }
-      },
-      {
-        "src": "/(.*)",
-        "dest": "/visuals/public/$1"
+        "source": "/(.*)",
+        "destination": "/visuals/public/$1"
       }
     ],
     "headers": [
@@ -81,6 +52,14 @@
           {
             "key": "Access-Control-Allow-Origin",
             "value": "*"
+          },
+          {
+            "key": "Access-Control-Allow-Methods",
+            "value": "GET, OPTIONS"
+          },
+          {
+            "key": "Access-Control-Allow-Headers",
+            "value": "Content-Type, Authorization"
           }
         ]
       },
@@ -98,15 +77,40 @@
           {
             "key": "Access-Control-Allow-Origin",
             "value": "*"
+          },
+          {
+            "key": "Access-Control-Allow-Methods",
+            "value": "GET, OPTIONS"
+          },
+          {
+            "key": "Access-Control-Allow-Headers",
+            "value": "Content-Type, Authorization"
           }
         ]
       },
       {
-        "source": "/(.*\\.(js|css))",
+        "source": "/(.*\\.js)",
         "headers": [
           {
             "key": "Cache-Control",
             "value": "public, max-age=86400"
+          },
+          {
+            "key": "Content-Type",
+            "value": "text/javascript; charset=utf-8"
+          }
+        ]
+      },
+      {
+        "source": "/(.*\\.css)",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "public, max-age=86400"
+          },
+          {
+            "key": "Content-Type",
+            "value": "text/css; charset=utf-8"
           }
         ]
       },
@@ -135,12 +139,6 @@
             "value": "text/html; charset=utf-8"
           }
         ]
-      }
-    ],
-    "rewrites": [
-      {
-        "source": "/",
-        "destination": "/visuals/public/index.html"
       }
     ],
     "cleanUrls": true,
