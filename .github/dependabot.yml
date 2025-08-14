@@ -9,7 +9,7 @@ updates:
       time: "09:00"
     open-pull-requests-limit: 5
     reviewers:
-      - "maintainer-username"  # Replace with actual maintainer
+      - "Tar-ive"
     commit-message:
       prefix: "deps"
       include: "scope"
@@ -23,7 +23,7 @@ updates:
       time: "09:00"
     open-pull-requests-limit: 3
     reviewers:
-      - "maintainer-username"  # Replace with actual maintainer
+      - "Tar-ive"
     commit-message:
       prefix: "ci"
       include: "scope"
