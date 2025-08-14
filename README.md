@@ -1,225 +1,371 @@
-# CADS Research Visualization
+# CADS Research Visualization System
 
-An interactive web-based visualization tool for exploring research publications from the Center of Analytics and Data Science (CADS) at Texas State University. This project provides an intuitive interface to discover research patterns, collaborations, and thematic clusters across the CADS research landscape.
+A comprehensive research data processing and visualization system for the Computer Science Department at Texas State University. This project processes academic research data from OpenAlex, generates semantic embeddings, performs clustering analysis, and creates interactive visualizations to explore research patterns and collaborations.
 
-![CADS Research Visualization](https://img.shields.io/badge/Status-Active-green)  ![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-yellow) ![Deck.gl](https://img.shields.io/badge/Deck.gl-8.9+-orange)
+## 🎯 System Overview
 
-## 🎯 Overview
+The CADS Research Visualization System is a complete end-to-end solution that transforms raw research data into interactive, explorable visualizations. It combines advanced machine learning techniques with modern web technologies to provide insights into research patterns, collaborations, and thematic clusters.
 
-The CADS Research Visualization transforms complex research data into an interactive, explorable map that reveals:
-- **Research Themes**: Automatically clustered topics using machine learning
-- **Publication Patterns**: Temporal and thematic distribution of research output
-- **Researcher Networks**: Faculty expertise and collaboration patterns
-- **Content Discovery**: Keyword-based search and filtering capabilities
+### Key Capabilities
 
-## ✨ Features
+- **🔄 Automated Data Processing**: Extract and process research data from OpenAlex API
+- **🧠 Semantic Analysis**: Generate embeddings and perform clustering using UMAP/HDBSCAN
+- **🎨 Interactive Visualization**: Web-based dashboard with advanced filtering and search
+- **🔍 Semantic Search**: Find similar research works using vector similarity
+- **👥 Researcher Profiles**: Detailed views of faculty research and collaborations
+- **📊 Real-time Analytics**: Live statistics and data quality monitoring
 
-### 🔍 Advanced Filtering System
-- **Researcher Search**: Real-time filtering by faculty names with partial matching
-- **Theme Selection**: Visual checklist with color-coded research themes
-- **Keyword Filtering**: Tag-based search with AND/OR logic options
-- **Temporal Filtering**: Publication year range selection (2010-2024)
+## 🏗️ System Architecture
 
-### 🗺️ Interactive Visualization
-- **Zoomable Map**: Smooth zoom controls with mouse wheel and button controls
-- **Cluster Labels**: Dynamic theme labels that appear based on zoom level
-- **Hover Details**: Rich tooltips showing publication information
-- **Responsive Design**: Optimized for desktop and mobile viewing
+```
+CADS Research Visualization System
+┌─────────────────┐    ┌──────────────────┐    ┌─────────────────┐
+│   Data Sources  │    │   Core Pipeline  │    │   Visualization │
+├─────────────────┤    ├──────────────────┤    ├─────────────────┤
+│ • OpenAlex API  │───▶│ • Data Loader    │───▶│ • Web Dashboard │
+│ • Supabase DB   │    │ • Embeddings     │    │ • Search System │
+│ • CADS Faculty  │    │ • UMAP/HDBSCAN   │    │ • Interactive   │
+│ • Research Data │    │ • Theme Gen      │    │   Visualizations│
+└─────────────────┘    └──────────────────┘    └─────────────────┘
+```
 
-### 🎛️ User Interface
-- **Compact Side Panel**: Scrollable filter controls with organized sections
-- **Onboarding Guide**: Interactive tutorial for new users
-- **Keyboard Shortcuts**: Quick navigation and control options
-- **Dark Theme**: Professional, eye-friendly interface
+## 📁 Repository Organization
 
-### 📊 Data Processing Pipeline
-- **UMAP Dimensionality Reduction**: Projects high-dimensional embeddings to 2D space
-- **HDBSCAN Clustering**: Automatically identifies research themes
-- **Real-time Statistics**: Live updates of visible papers and filter states
+```
+CADS-Research-Visualization/
+├── 📊 cads/                          # Core data processing pipeline
+│   ├── README.md                    # Pipeline documentation
+│   ├── data_loader.py               # Data loading and embeddings
+│   ├── process_data.py              # Main pipeline orchestration
+│   ├── requirements.txt             # Python dependencies
+│   ├── .env.example                 # Environment template
+│   ├── data/                        # Generated data files
+│   ├── models/                      # Trained ML models
+│   └── tests/                       # Comprehensive test suite
+│
+├── 🎨 visuals/                       # Interactive visualization dashboard
+│   ├── public/                      # Web interface files
+│   │   ├── index.html              # Main dashboard interface
+│   │   ├── app.js                  # Visualization logic
+│   │   └── data/                   # Visualization data files
+│   ├── data/                        # Raw visualization data
+│   ├── models/                      # Visualization ML models
+│   └── tests/                       # Visualization tests
+│
+├── 🗄️ database/                      # Database schema and migrations
+│   ├── README.md                    # Database documentation
+│   ├── schema/                      # Table definitions
+│   │   ├── create_cads_tables.sql  # Complete CADS schema
+│   │   └── create_cads_tables_simple.sql
+│   └── migrations/                  # Database migrations
+│
+├── 🔧 scripts/                       # Organized utility scripts
+│   ├── README.md                    # Scripts documentation
+│   ├── migration/                   # Database setup scripts
+│   │   ├── execute_cads_migration.py   # ✅ Main migration script
+│   │   └── legacy/                     # Archived migration attempts
+│   ├── processing/                  # Data processing scripts
+│   │   ├── process_cads_with_openalex_ids.py  # ✅ Data collection
+│   │   └── migrate_cads_data_to_cads_tables.py # ✅ Data migration
+│   └── utilities/                   # Verification and maintenance
+│       ├── check_cads_data_location.py
+│       └── [other utility scripts]
+│
+├── 📚 docs/                          # Comprehensive documentation
+│   ├── README.md                    # Documentation index
+│   ├── setup/                       # Installation and configuration
+│   ├── pipeline/                    # Technical documentation
+│   └── migration/                   # Historical documentation
+│
+├── 📦 data/                          # Centralized data storage
+│   ├── README.md                    # Data documentation
+│   ├── raw/                         # Original data files
+│   ├── processed/                   # Analyzed data
+│   │   ├── cluster_themes.json     # AI-generated cluster themes
+│   │   ├── clustering_results.json # HDBSCAN clustering results
+│   │   └── visualization-data.json # Complete visualization dataset
+│   └── search/                      # Search indexes
+│       └── search-index.json       # Pre-built search index
+│
+├── README.md                        # This main documentation
+├── CADS_REPOSITORY_ANALYSIS.md      # Repository organization analysis
+├── .env                            # Environment variables
+└── .gitignore                      # Git ignore rules
+```
 
-## 🚀 Quick Start
+## 🚀 Quick Start Guide
 
 ### Prerequisites
-- Modern web browser (Chrome, Firefox, Safari, Edge)
-- Python 3.7+ (for local development server)
-- Internet connection (for Deck.gl CDN)
 
-### Installation
+- **Python 3.8+** with pip
+- **PostgreSQL** with vector extension
+- **Supabase account** for database hosting
+- **OpenAlex API access** (free with email registration)
+- **Modern web browser** for visualization
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/your-org/CADS-Visualizer.git
-   cd CADS-Visualizer
-   ```
-
-2. **Start a local server**
-   ```bash
-   cd visuals/public
-   python3 -m http.server 8000
-   ```
-
-3. **Open in browser**
-   ```
-   http://localhost:8000
-   ```
-
-### Alternative Setup
-For production deployment, serve the files from `visuals/public/` using any web server (Apache, Nginx, etc.).
-
-## 📁 Project Structure
-
-```
-CADS-Visualizer/
-├── visuals/
-│   ├── data/                    # Raw data files
-│   │   ├── cluster_themes.json  # Research theme definitions
-│   │   ├── clustering_results.json # Cluster centers and metadata
-│   │   └── umap_coordinates.json   # 2D coordinate mappings
-│   ├── models/                  # Machine learning models
-│   │   ├── hdbscan_model.pkl   # Clustering model
-│   │   └── umap_model.pkl      # Dimensionality reduction model
-│   ├── public/                 # Web application files
-│   │   ├── data/              # Processed data for visualization
-│   │   ├── app.js             # Main application logic
-│   │   ├── index.html         # Application interface
-│   │   └── app.min.js         # Minified production version
-│   ├── tests/                 # Test suite
-│   └── vercel.json           # Deployment configuration
-├── .kiro/                     # Development specifications
-└── README.md                  # This file
-```
-
-## 🎮 Usage Guide
-
-### Basic Navigation
-- **Pan**: Click and drag to move around the visualization
-- **Zoom**: Use mouse wheel or zoom buttons (+/-) in top-right corner
-- **Filter**: Use the left panel to refine what research is displayed
-- **Details**: Hover over points to see publication information
-
-### Filtering Options
-
-#### 1. Researcher Filter
-- Type faculty names in the search box
-- Supports partial matching (e.g., "tahir" finds "Tahir Ekin")
-- Real-time filtering as you type
-
-#### 2. Research Theme Filter
-- Check/uncheck themes in the scrollable list
-- Color swatches match theme colors on the map
-- All themes selected by default
-
-#### 3. Keywords Filter
-- Add multiple keyword tags using the input field
-- Toggle between "Match ALL" and "Match ANY" logic
-- Remove tags by clicking the × button
-
-#### 4. Publication Year Filter
-- Drag the slider to set minimum publication year
-- Default shows all papers from 2010 onwards
-- Real-time updates as you adjust
-
-### Keyboard Shortcuts
-- **ESC**: Close tooltips and onboarding
-- **+/-**: Zoom in/out
-- **/**: Focus researcher search field
-
-## 🛠️ Technical Details
-
-### Architecture
-- **Frontend**: Vanilla JavaScript (ES6+)
-- **Visualization**: Deck.gl WebGL framework
-- **Data Format**: Compressed JSON with optimized structure
-- **Styling**: CSS3 with custom properties and responsive design
-
-### Data Processing
-The visualization uses a sophisticated data pipeline:
-
-1. **Text Embedding**: Research abstracts converted to high-dimensional vectors
-2. **Dimensionality Reduction**: UMAP projects embeddings to 2D coordinates
-3. **Clustering**: HDBSCAN identifies thematic groups
-4. **Theme Generation**: LLM-generated descriptive names for clusters
-5. **Optimization**: Data compressed and optimized for web delivery
-
-### Performance Features
-- **Lazy Loading**: Data loaded progressively
-- **Viewport Culling**: Only visible elements rendered
-- **Debounced Filtering**: Smooth real-time updates
-- **Cached Calculations**: Optimized label sizing and positioning
-
-## 🧪 Testing
-
-The project includes comprehensive tests covering:
+### 1. Repository Setup
 
 ```bash
-# Run all tests
-cd visuals/tests
-python3 -m pytest
+# Clone the repository
+git clone [repository-url]
+cd cads-research-visualization
 
-# Specific test categories
-python3 test_data_processing.py      # Data pipeline tests
-python3 test_clustering_integration.py # ML model tests
-python3 test_html_structure.py      # Frontend tests
-python3 test_performance.py         # Performance benchmarks
+# Verify repository structure
+ls -la
 ```
 
-## 📊 Data Sources
+### 2. Database Setup
 
-The visualization processes research data from:
-- **Publications**: Academic papers and conference proceedings
-- **Authors**: Faculty and researcher information
-- **Abstracts**: Full-text content for semantic analysis
-- **Metadata**: Publication dates, venues, and classifications
-
-Data is automatically updated and reprocessed to maintain current research representation.
-
-## 🎨 Customization
-
-### Themes and Colors
-Modify theme colors in `visuals/public/app.js`:
-```javascript
-function generateClusterColor(clusterId) {
-    const colors = [
-        '#FF6B6B', '#4ECDC4', '#45B7D1', // Add your colors
-        // ... more colors
-    ];
-    return colors[clusterId % colors.length];
-}
-```
-
-### Filter Behavior
-Adjust filtering logic in the `getCurrentFilteredData()` function:
-```javascript
-// Example: Change keyword matching behavior
-if (useAndLogic) {
-    return keywords.every(keyword => title.includes(keyword));
-} else {
-    return keywords.some(keyword => title.includes(keyword));
-}
-```
-
-## 🚀 Deployment
-
-### Vercel (Recommended)
 ```bash
-# Install Vercel CLI
-npm i -g vercel
+# Create CADS database tables
+python3 scripts/migration/execute_cads_migration.py
 
-# Deploy
-vercel --prod
+# Verify table creation
+python3 scripts/utilities/check_cads_data_location.py
 ```
 
-### Manual Deployment
-1. Copy `visuals/public/` contents to your web server
-2. Ensure proper MIME types for `.json` and `.gz` files
-3. Configure HTTPS for optimal performance
+### 3. Environment Configuration
 
-### Environment Variables
-No environment variables required for basic deployment.
+```bash
+# Copy environment template
+cp cads/.env.example cads/.env
+
+# Edit with your credentials
+nano cads/.env
+```
+
+Required environment variables:
+```bash
+# Database Connection
+DATABASE_URL=postgresql://user:pass@host:port/db
+
+# API Configuration
+OPENALEX_EMAIL=your_email@domain.com
+GROQ_API_KEY=your_groq_api_key  # Optional for theme generation
+
+# ML Configuration (optional)
+EMBEDDING_MODEL=all-MiniLM-L6-v2
+UMAP_N_NEIGHBORS=15
+HDBSCAN_MIN_CLUSTER_SIZE=5
+```
+
+### 4. Dependencies Installation
+
+```bash
+# Install Python dependencies
+cd cads
+pip install -r requirements.txt
+```
+
+### 5. Data Processing
+
+```bash
+# Process CADS research data
+python3 scripts/processing/process_cads_with_openalex_ids.py
+
+# Migrate data to CADS tables
+python3 scripts/processing/migrate_cads_data_to_cads_tables.py
+
+# Run the complete pipeline
+python3 cads/process_data.py
+```
+
+### 6. Launch Visualization
+
+```bash
+# Start local web server
+cd visuals/public
+python3 -m http.server 8000
+
+# Open in browser
+open http://localhost:8000
+```
+
+## 📊 System Components
+
+### 🔧 CADS Pipeline (`cads/`)
+
+**Purpose**: Core data processing and machine learning pipeline
+
+**Key Features**:
+- **Data Loading**: Connects to Supabase and loads research data
+- **Embedding Generation**: Creates 384-dimensional semantic vectors
+- **UMAP Reduction**: Projects embeddings to 2D coordinates
+- **HDBSCAN Clustering**: Groups similar research works
+- **Theme Generation**: AI-powered cluster descriptions
+- **Data Validation**: Comprehensive quality checks
+
+**Main Files**:
+- `data_loader.py` - Database connection and data processing
+- `process_data.py` - Pipeline orchestration and clustering
+- `tests/` - Complete test suite with 10+ test files
+
+### 🎨 Visualization Dashboard (`visuals/`)
+
+**Purpose**: Interactive web-based research exploration interface
+
+**Key Features**:
+- **Interactive Map**: Zoomable, pannable research visualization
+- **Advanced Filtering**: Multi-criteria filtering system
+- **Semantic Search**: Find similar research works
+- **Researcher Profiles**: Faculty research overviews
+- **Real-time Statistics**: Live data updates
+- **Responsive Design**: Desktop and mobile optimized
+
+**Technologies**:
+- **Deck.gl**: WebGL-powered visualization framework
+- **Vanilla JavaScript**: No framework dependencies
+- **CSS3**: Modern styling with custom properties
+
+### 🗄️ Database Layer (`database/`)
+
+**Purpose**: PostgreSQL schema with vector extensions
+
+**Key Tables**:
+- `cads_researchers` - Faculty information and profiles
+- `cads_works` - Research papers with embeddings
+- `cads_topics` - Research topic classifications
+
+**Features**:
+- **Vector Storage**: pgvector extension for embeddings
+- **Full-text Search**: Optimized text search indexes
+- **Relationship Management**: Foreign key constraints
+- **Performance Optimization**: Strategic indexing
+
+### 🔧 Scripts Collection (`scripts/`)
+
+**Purpose**: Organized utility scripts for system management
+
+**Categories**:
+- **Migration**: Database setup and schema creation
+- **Processing**: Data collection and transformation
+- **Utilities**: Verification and maintenance tools
+
+**Key Scripts**:
+- `migration/execute_cads_migration.py` - Database setup
+- `processing/process_cads_with_openalex_ids.py` - Data collection
+- `utilities/check_cads_data_location.py` - Data verification
+
+## 📈 Expected Results
+
+### Data Volume
+- **~32 CADS Researchers**: Faculty from CS Department
+- **~2,454 Research Works**: Academic papers with full metadata
+- **~6,834 Research Topics**: Hierarchical topic classifications
+- **384-dimensional embeddings**: Semantic representations for all works
+
+### Processing Performance
+- **Data Loading**: ~30 seconds for complete dataset
+- **Embedding Generation**: ~2 minutes for missing embeddings
+- **UMAP Reduction**: ~45 seconds for 2,454 works
+- **HDBSCAN Clustering**: ~15 seconds for 2D coordinates
+- **Complete Pipeline**: ~5-10 minutes total processing time
+
+### Clustering Results
+- **15-25 Research Clusters**: Automatically identified themes
+- **AI-Generated Themes**: Descriptive cluster names and summaries
+- **2D Coordinates**: Optimized for visualization layout
+- **Quality Metrics**: >95% of works successfully clustered
+
+## 🧪 Testing and Validation
+
+### Comprehensive Test Suite
+
+```bash
+# Test repository structure
+python3 cads/tests/test_basic_structure.py
+
+# Test database connectivity
+python3 cads/tests/test_connection.py
+
+# Test complete pipeline (requires ML dependencies)
+python3 cads/tests/test_full_pipeline.py
+
+# Verify data integrity
+python3 scripts/utilities/check_cads_data_location.py
+```
+
+### Test Categories
+- **Structure Tests**: Repository organization and file presence
+- **Connection Tests**: Database connectivity and basic queries
+- **Pipeline Tests**: End-to-end data processing
+- **Integration Tests**: Component interaction validation
+- **Performance Tests**: Timing and resource usage benchmarks
+
+## 🚨 Troubleshooting
+
+### Common Issues and Solutions
+
+#### 1. Database Connection Errors
+```bash
+# Test connection
+python3 cads/tests/test_connection.py
+
+# Check environment variables
+cat cads/.env
+
+# Verify database URL format
+echo $DATABASE_URL
+```
+
+#### 2. Missing Dependencies
+```bash
+# Install all requirements
+pip install -r cads/requirements.txt
+
+# Check Python version
+python3 --version  # Should be 3.8+
+```
+
+#### 3. Data Location Issues
+```bash
+# Verify data location
+python3 scripts/utilities/check_cads_data_location.py
+
+# Run migration if needed
+python3 scripts/processing/migrate_cads_data_to_cads_tables.py
+```
+
+#### 4. Pipeline Failures
+```bash
+# Check basic structure
+python3 cads/tests/test_basic_structure.py
+
+# Run with debug logging
+export LOG_LEVEL=DEBUG
+python3 cads/process_data.py
+```
+
+### Getting Help
+
+1. **Check Documentation**: Review relevant README files
+2. **Run Tests**: Use test suite to identify issues
+3. **Check Logs**: Enable debug logging for detailed output
+4. **Verify Environment**: Ensure all prerequisites are met
+
+## 📚 Documentation
+
+### Quick Reference
+- **[CADS Pipeline](cads/README.md)** - Core processing system documentation
+- **[Database Schema](database/README.md)** - Table structure and relationships
+- **[Scripts Guide](scripts/README.md)** - Utility scripts and workflows
+- **[Data Organization](data/README.md)** - Data structure and formats
+
+### Comprehensive Guides
+- **[Setup Documentation](docs/setup/)** - Installation and configuration guides
+- **[Pipeline Documentation](docs/pipeline/)** - Technical architecture details
+- **[Migration Reports](docs/migration/)** - Historical context and migration records
+
+### Technical References
+- **[Repository Analysis](CADS_REPOSITORY_ANALYSIS.md)** - Detailed organization analysis
+- **API Documentation**: Function docstrings in source code
+- **Test Documentation**: Test file headers and comments
 
 ## 🤝 Contributing
 
-We welcome contributions! Please follow these steps:
+We welcome contributions to improve the CADS Research Visualization System!
+
+### Development Workflow
 
 1. **Fork the repository**
 2. **Create a feature branch**
@@ -228,58 +374,47 @@ We welcome contributions! Please follow these steps:
    ```
 3. **Make your changes**
 4. **Add tests** for new functionality
-5. **Submit a pull request**
+5. **Update documentation**
+6. **Submit a pull request**
 
-### Development Guidelines
-- Follow existing code style and patterns
-- Add comments for complex logic
-- Test across different browsers
-- Optimize for performance
-- Maintain accessibility standards
+### Contribution Guidelines
 
-## 📝 License
+- **Code Quality**: Follow existing patterns and style
+- **Testing**: Add tests for new features
+- **Documentation**: Update relevant README files
+- **Performance**: Consider impact on processing time
+- **Compatibility**: Ensure cross-platform compatibility
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+## 📄 License
 
-## 👥 Team
-
-**Built by Saksham Adhikari for CADS**
-
-- **Lead Developer**: Saksham Adhikari
-- **Research Director**: [CADS Faculty]
-- **Institution**: Texas State University
+This project is part of the Texas State University research infrastructure. See individual component licenses for specific terms.
 
 ## 🙏 Acknowledgments
 
 - **CADS Faculty**: For providing research data and domain expertise
-- **Deck.gl Team**: For the powerful WebGL visualization framework
-- **UMAP/HDBSCAN**: For excellent dimensionality reduction and clustering algorithms
 - **Texas State University**: For supporting this research visualization initiative
+- **OpenAlex**: For providing open access to scholarly data
+- **Supabase**: For reliable database hosting and vector extensions
+- **Open Source Community**: For the excellent ML and visualization libraries
 
-## 📞 Support
+## 📞 Support and Contact
 
-For questions, issues, or feature requests:
+### Getting Support
 
-- **Issues**: [GitHub Issues](https://github.com/your-org/CADS-Visualizer/issues)
-- **Email**: [pqo14@txstate.edu]
-- **Documentation**: [Project Wiki](https://github.com/your-org/CADS-Visualizer/wiki)
+- **Documentation**: Check relevant README files first
+- **Issues**: Use GitHub Issues for bug reports and feature requests
+- **Testing**: Run the test suite to diagnose problems
+- **Community**: Join discussions in GitHub Discussions
 
-## 🔄 Changelog
+### Contact Information
 
-### Version 2.0.0 (Current)
-- ✅ Advanced filtering system with multiple filter types
-- ✅ Zoom controls and improved navigation
-- ✅ Onboarding system for new users
-- ✅ Compact, scrollable side panel
-- ✅ Real-time filter state management
-- ✅ Enhanced performance and responsiveness
-
-### Version 1.0.0
-- 🎯 Initial release with basic visualization
-- 📊 UMAP/HDBSCAN clustering pipeline
-- 🗺️ Interactive research map
-- 🔍 Basic search and filter capabilities
+- **Lead Developer**: Saksham Adhikari
+- **Institution**: Texas State University
+- **Email**: [contact information]
+- **Project Repository**: [GitHub repository URL]
 
 ---
 
-**Made with ❤️ for the research community at Texas State University**
+**🎉 Complete research data processing and visualization system ready for exploration!**
+
+*Built with ❤️ for the research community at Texas State University*

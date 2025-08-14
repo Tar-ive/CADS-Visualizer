@@ -1,0 +1,16 @@
+{
+  "enabled": true,
+  "name": "Markdown File Organizer",
+  "description": "Automatically organizes markdown files by keeping README.md at the project root while moving all other .md files to the docs/ directory for better project structure",
+  "version": "1",
+  "when": {
+    "type": "fileEdited",
+    "patterns": [
+      "**/*.md"
+    ]
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "A markdown file has been created or modified. Please analyze the file and apply the following rules:\n\n1. If the file is named \"README.md\" and is not already at the project root, move it to the root directory (./)\n2. If the file is any other .md file (not README.md), move it to the docs/ directory\n3. Ensure the docs/ directory exists before moving files there\n4. Preserve the original filename when moving\n5. If there are naming conflicts, handle them appropriately by either merging content or creating unique names\n\nPlease execute the appropriate file movement based on these rules."
+  }
+}
