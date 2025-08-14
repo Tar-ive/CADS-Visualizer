@@ -242,7 +242,12 @@ class TestErrorHandling:
             
             # Mock empty dataset by patching the load method
             with patch.object(DataProcessor, 'load_cads_data_with_researchers') as mock_load:
-                mock_load.return_value = pd.DataFrame(columns=['id', 'title', 'researcher_id', 'full_name', 'department'])
+                # Create empty DataFrame with all expected columns
+                empty_columns = [
+                    'id', 'title', 'researcher_id', 'full_name', 'department',
+                    'citations', 'abstract', 'embedding'
+                ]
+                mock_load.return_value = pd.DataFrame(columns=empty_columns)
                 
                 processor = DataProcessor()
                 result = processor.process_complete_dataset()

@@ -52,18 +52,22 @@ class TestProjectStructure:
         assert len(missing_files) == 0, f"Missing CADS files: {missing_files}"
     
     def test_cads_subdirectories(self):
-        """Test CADS subdirectories exist"""
+        """Test CADS subdirectories exist (after cleanup, data/models moved to root)"""
         cads_dir = Path("cads")
         
         if not cads_dir.exists():
             pytest.skip("CADS directory not found")
         
-        required_dirs = ["data", "models"]
+        # After cleanup, data and models are now centralized
+        # Check that centralized directories exist instead
+        centralized_dirs = [
+            Path("data/processed"),
+            Path("data/models")
+        ]
         
-        for directory in required_dirs:
-            dir_path = cads_dir / directory
+        for dir_path in centralized_dirs:
             assert dir_path.exists() and dir_path.is_dir(), \
-                f"Missing CADS directory: {directory}"
+                f"Missing centralized directory: {dir_path}"
     
     def test_visuals_directory_structure(self):
         """Test visuals directory structure"""

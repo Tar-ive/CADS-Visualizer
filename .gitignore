@@ -2,3 +2,17 @@
 .env
 .env.local
 .env.*.local
+
+# Prevent data duplication
+__pycache__/
+*.pyc
+.DS_Store
+
+# Centralized data - don't duplicate
+cads/data/
+cads/models/
+visuals/data/
+visuals/models/
+
+# Keep production data
+!visuals/public/data/

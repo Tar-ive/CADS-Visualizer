@@ -1,0 +1,7364 @@
+[
+  {
+    "cluster": 6
+  },
+  {
+    "cluster": 86
+  },
+  {
+    "cluster": 21
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 147
+  },
+  {
+    "cluster": 123
+  },
+  {
+    "cluster": 44
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 121
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 64
+  },
+  {
+    "cluster": 77
+  },
+  {
+    "cluster": 149
+  },
+  {
+    "cluster": 77
+  },
+  {
+    "cluster": 149
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 119
+  },
+  {
+    "cluster": 122
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 13
+  },
+  {
+    "cluster": 100
+  },
+  {
+    "cluster": 64
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 118
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 46
+  },
+  {
+    "cluster": 106
+  },
+  {
+    "cluster": 69
+  },
+  {
+    "cluster": 91
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 28
+  },
+  {
+    "cluster": 106
+  },
+  {
+    "cluster": 113
+  },
+  {
+    "cluster": 97
+  },
+  {
+    "cluster": 145
+  },
+  {
+    "cluster": 64
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 69
+  },
+  {
+    "cluster": 52
+  },
+  {
+    "cluster": 17
+  },
+  {
+    "cluster": 149
+  },
+  {
+    "cluster": 59
+  },
+  {
+    "cluster": 95
+  },
+  {
+    "cluster": 113
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 93
+  },
+  {
+    "cluster": 93
+  },
+  {
+    "cluster": 120
+  },
+  {
+    "cluster": 113
+  },
+  {
+    "cluster": 98
+  },
+  {
+    "cluster": 32
+  },
+  {
+    "cluster": 79
+  },
+  {
+    "cluster": 18
+  },
+  {
+    "cluster": 123
+  },
+  {
+    "cluster": 17
+  },
+  {
+    "cluster": 17
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 70
+  },
+  {
+    "cluster": 6
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 149
+  },
+  {
+    "cluster": 59
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 77
+  },
+  {
+    "cluster": 141
+  },
+  {
+    "cluster": 152
+  },
+  {
+    "cluster": 141
+  },
+  {
+    "cluster": 141
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 147
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 147
+  },
+  {
+    "cluster": 140
+  },
+  {
+    "cluster": 87
+  },
+  {
+    "cluster": 149
+  },
+  {
+    "cluster": 59
+  },
+  {
+    "cluster": 73
+  },
+  {
+    "cluster": 147
+  },
+  {
+    "cluster": 140
+  },
+  {
+    "cluster": 140
+  },
+  {
+    "cluster": 141
+  },
+  {
+    "cluster": 147
+  },
+  {
+    "cluster": 149
+  },
+  {
+    "cluster": 122
+  },
+  {
+    "cluster": 112
+  },
+  {
+    "cluster": 111
+  },
+  {
+    "cluster": 149
+  },
+  {
+    "cluster": 122
+  },
+  {
+    "cluster": 147
+  },
+  {
+    "cluster": 140
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 31
+  },
+  {
+    "cluster": 83
+  },
+  {
+    "cluster": 119
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 119
+  },
+  {
+    "cluster": 122
+  },
+  {
+    "cluster": 93
+  },
+  {
+    "cluster": 22
+  },
+  {
+    "cluster": 24
+  },
+  {
+    "cluster": 93
+  },
+  {
+    "cluster": 22
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 95
+  },
+  {
+    "cluster": 93
+  },
+  {
+    "cluster": 93
+  },
+  {
+    "cluster": 93
+  },
+  {
+    "cluster": 145
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 58
+  },
+  {
+    "cluster": 135
+  },
+  {
+    "cluster": 79
+  },
+  {
+    "cluster": 106
+  },
+  {
+    "cluster": 104
+  },
+  {
+    "cluster": 79
+  },
+  {
+    "cluster": 77
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 22
+  },
+  {
+    "cluster": 17
+  },
+  {
+    "cluster": 149
+  },
+  {
+    "cluster": 17
+  },
+  {
+    "cluster": 77
+  },
+  {
+    "cluster": 21
+  },
+  {
+    "cluster": 43
+  },
+  {
+    "cluster": 149
+  },
+  {
+    "cluster": 148
+  },
+  {
+    "cluster": 17
+  },
+  {
+    "cluster": 28
+  },
+  {
+    "cluster": 44
+  },
+  {
+    "cluster": 126
+  },
+  {
+    "cluster": 149
+  },
+  {
+    "cluster": 151
+  },
+  {
+    "cluster": 68
+  },
+  {
+    "cluster": 65
+  },
+  {
+    "cluster": 69
+  },
+  {
+    "cluster": 17
+  },
+  {
+    "cluster": 149
+  },
+  {
+    "cluster": 102
+  },
+  {
+    "cluster": 16
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 149
+  },
+  {
+    "cluster": 149
+  },
+  {
+    "cluster": 43
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 119
+  },
+  {
+    "cluster": 141
+  },
+  {
+    "cluster": 86
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 17
+  },
+  {
+    "cluster": 6
+  },
+  {
+    "cluster": 22
+  },
+  {
+    "cluster": 147
+  },
+  {
+    "cluster": 22
+  },
+  {
+    "cluster": 112
+  },
+  {
+    "cluster": 121
+  },
+  {
+    "cluster": 120
+  },
+  {
+    "cluster": 26
+  },
+  {
+    "cluster": 51
+  },
+  {
+    "cluster": 9
+  },
+  {
+    "cluster": 17
+  },
+  {
+    "cluster": 16
+  },
+  {
+    "cluster": 87
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 98
+  },
+  {
+    "cluster": 24
+  },
+  {
+    "cluster": 18
+  },
+  {
+    "cluster": 93
+  },
+  {
+    "cluster": 93
+  },
+  {
+    "cluster": 113
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 111
+  },
+  {
+    "cluster": 139
+  },
+  {
+    "cluster": 91
+  },
+  {
+    "cluster": 16
+  },
+  {
+    "cluster": 112
+  },
+  {
+    "cluster": 6
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 16
+  },
+  {
+    "cluster": 87
+  },
+  {
+    "cluster": 126
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 18
+  },
+  {
+    "cluster": 64
+  },
+  {
+    "cluster": 129
+  },
+  {
+    "cluster": 85
+  },
+  {
+    "cluster": 46
+  },
+  {
+    "cluster": 46
+  },
+  {
+    "cluster": 93
+  },
+  {
+    "cluster": 136
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 121
+  },
+  {
+    "cluster": 28
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 41
+  },
+  {
+    "cluster": 58
+  },
+  {
+    "cluster": 89
+  },
+  {
+    "cluster": 35
+  },
+  {
+    "cluster": 149
+  },
+  {
+    "cluster": 141
+  },
+  {
+    "cluster": 147
+  },
+  {
+    "cluster": 149
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 60
+  },
+  {
+    "cluster": 60
+  },
+  {
+    "cluster": 87
+  },
+  {
+    "cluster": 77
+  },
+  {
+    "cluster": 150
+  },
+  {
+    "cluster": 141
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 109
+  },
+  {
+    "cluster": 83
+  },
+  {
+    "cluster": 93
+  },
+  {
+    "cluster": 56
+  },
+  {
+    "cluster": 129
+  },
+  {
+    "cluster": 144
+  },
+  {
+    "cluster": 120
+  },
+  {
+    "cluster": 74
+  },
+  {
+    "cluster": 118
+  },
+  {
+    "cluster": 118
+  },
+  {
+    "cluster": 79
+  },
+  {
+    "cluster": 24
+  },
+  {
+    "cluster": 79
+  },
+  {
+    "cluster": 90
+  },
+  {
+    "cluster": 134
+  },
+  {
+    "cluster": 98
+  },
+  {
+    "cluster": 104
+  },
+  {
+    "cluster": 104
+  },
+  {
+    "cluster": 120
+  },
+  {
+    "cluster": 121
+  },
+  {
+    "cluster": 103
+  },
+  {
+    "cluster": 111
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 13
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 22
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 2
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 91
+  },
+  {
+    "cluster": 64
+  },
+  {
+    "cluster": 64
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 105
+  },
+  {
+    "cluster": 106
+  },
+  {
+    "cluster": 93
+  },
+  {
+    "cluster": 64
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 64
+  },
+  {
+    "cluster": 85
+  },
+  {
+    "cluster": 8
+  },
+  {
+    "cluster": 2
+  },
+  {
+    "cluster": 22
+  },
+  {
+    "cluster": 24
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 30
+  },
+  {
+    "cluster": 106
+  },
+  {
+    "cluster": 8
+  },
+  {
+    "cluster": 135
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 22
+  },
+  {
+    "cluster": 65
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 87
+  },
+  {
+    "cluster": 112
+  },
+  {
+    "cluster": 144
+  },
+  {
+    "cluster": 46
+  },
+  {
+    "cluster": 97
+  },
+  {
+    "cluster": 93
+  },
+  {
+    "cluster": 69
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 67
+  },
+  {
+    "cluster": 139
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 104
+  },
+  {
+    "cluster": 105
+  },
+  {
+    "cluster": 2
+  },
+  {
+    "cluster": 37
+  },
+  {
+    "cluster": 21
+  },
+  {
+    "cluster": 41
+  },
+  {
+    "cluster": 6
+  },
+  {
+    "cluster": 151
+  },
+  {
+    "cluster": 122
+  },
+  {
+    "cluster": 87
+  },
+  {
+    "cluster": 73
+  },
+  {
+    "cluster": 87
+  },
+  {
+    "cluster": 77
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 149
+  },
+  {
+    "cluster": 149
+  },
+  {
+    "cluster": 77
+  },
+  {
+    "cluster": 48
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 73
+  },
+  {
+    "cluster": 77
+  },
+  {
+    "cluster": 77
+  },
+  {
+    "cluster": 147
+  },
+  {
+    "cluster": 141
+  },
+  {
+    "cluster": 122
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 149
+  },
+  {
+    "cluster": 149
+  },
+  {
+    "cluster": 147
+  },
+  {
+    "cluster": 54
+  },
+  {
+    "cluster": 6
+  },
+  {
+    "cluster": 111
+  },
+  {
+    "cluster": 17
+  },
+  {
+    "cluster": 17
+  },
+  {
+    "cluster": 77
+  },
+  {
+    "cluster": 3
+  },
+  {
+    "cluster": 123
+  },
+  {
+    "cluster": 69
+  },
+  {
+    "cluster": 77
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 17
+  },
+  {
+    "cluster": 60
+  },
+  {
+    "cluster": 101
+  },
+  {
+    "cluster": 149
+  },
+  {
+    "cluster": 70
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 64
+  },
+  {
+    "cluster": 39
+  },
+  {
+    "cluster": 41
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 93
+  },
+  {
+    "cluster": 123
+  },
+  {
+    "cluster": 93
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 63
+  },
+  {
+    "cluster": 17
+  },
+  {
+    "cluster": 3
+  },
+  {
+    "cluster": 122
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 149
+  },
+  {
+    "cluster": 26
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 126
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 149
+  },
+  {
+    "cluster": 147
+  },
+  {
+    "cluster": 126
+  },
+  {
+    "cluster": 63
+  },
+  {
+    "cluster": 69
+  },
+  {
+    "cluster": 93
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 150
+  },
+  {
+    "cluster": 6
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 126
+  },
+  {
+    "cluster": 89
+  },
+  {
+    "cluster": 87
+  },
+  {
+    "cluster": 77
+  },
+  {
+    "cluster": 100
+  },
+  {
+    "cluster": 147
+  },
+  {
+    "cluster": 109
+  },
+  {
+    "cluster": 141
+  },
+  {
+    "cluster": 96
+  },
+  {
+    "cluster": 77
+  },
+  {
+    "cluster": 117
+  },
+  {
+    "cluster": 42
+  },
+  {
+    "cluster": 22
+  },
+  {
+    "cluster": 127
+  },
+  {
+    "cluster": 33
+  },
+  {
+    "cluster": 17
+  },
+  {
+    "cluster": 147
+  },
+  {
+    "cluster": 35
+  },
+  {
+    "cluster": 16
+  },
+  {
+    "cluster": 63
+  },
+  {
+    "cluster": 108
+  },
+  {
+    "cluster": 139
+  },
+  {
+    "cluster": 126
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 77
+  },
+  {
+    "cluster": 8
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 139
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 113
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 95
+  },
+  {
+    "cluster": 60
+  },
+  {
+    "cluster": 122
+  },
+  {
+    "cluster": 147
+  },
+  {
+    "cluster": 81
+  },
+  {
+    "cluster": 112
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 73
+  },
+  {
+    "cluster": 122
+  },
+  {
+    "cluster": 126
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 129
+  },
+  {
+    "cluster": 15
+  },
+  {
+    "cluster": 15
+  },
+  {
+    "cluster": 81
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 152
+  },
+  {
+    "cluster": 122
+  },
+  {
+    "cluster": 93
+  },
+  {
+    "cluster": 9
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 151
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 147
+  },
+  {
+    "cluster": 87
+  },
+  {
+    "cluster": 58
+  },
+  {
+    "cluster": 58
+  },
+  {
+    "cluster": 112
+  },
+  {
+    "cluster": 134
+  },
+  {
+    "cluster": 90
+  },
+  {
+    "cluster": 24
+  },
+  {
+    "cluster": 103
+  },
+  {
+    "cluster": 16
+  },
+  {
+    "cluster": 65
+  },
+  {
+    "cluster": 113
+  },
+  {
+    "cluster": 93
+  },
+  {
+    "cluster": 22
+  },
+  {
+    "cluster": 131
+  },
+  {
+    "cluster": 51
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 151
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 42
+  },
+  {
+    "cluster": 79
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 90
+  },
+  {
+    "cluster": 15
+  },
+  {
+    "cluster": 119
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 24
+  },
+  {
+    "cluster": 135
+  },
+  {
+    "cluster": 27
+  },
+  {
+    "cluster": 81
+  },
+  {
+    "cluster": 149
+  },
+  {
+    "cluster": 98
+  },
+  {
+    "cluster": 25
+  },
+  {
+    "cluster": 16
+  },
+  {
+    "cluster": 8
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 5
+  },
+  {
+    "cluster": 33
+  },
+  {
+    "cluster": 37
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 25
+  },
+  {
+    "cluster": 25
+  },
+  {
+    "cluster": 135
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 30
+  },
+  {
+    "cluster": 34
+  },
+  {
+    "cluster": 34
+  },
+  {
+    "cluster": 34
+  },
+  {
+    "cluster": 125
+  },
+  {
+    "cluster": 87
+  },
+  {
+    "cluster": 100
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 111
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 25
+  },
+  {
+    "cluster": 25
+  },
+  {
+    "cluster": 79
+  },
+  {
+    "cluster": 30
+  },
+  {
+    "cluster": 30
+  },
+  {
+    "cluster": 30
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 104
+  },
+  {
+    "cluster": 61
+  },
+  {
+    "cluster": 8
+  },
+  {
+    "cluster": 93
+  },
+  {
+    "cluster": 58
+  },
+  {
+    "cluster": 104
+  },
+  {
+    "cluster": 67
+  },
+  {
+    "cluster": 104
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 139
+  },
+  {
+    "cluster": 49
+  },
+  {
+    "cluster": 111
+  },
+  {
+    "cluster": 66
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 97
+  },
+  {
+    "cluster": 79
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 151
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 152
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 152
+  },
+  {
+    "cluster": 149
+  },
+  {
+    "cluster": 117
+  },
+  {
+    "cluster": 22
+  },
+  {
+    "cluster": 86
+  },
+  {
+    "cluster": 109
+  },
+  {
+    "cluster": 9
+  },
+  {
+    "cluster": 69
+  },
+  {
+    "cluster": 138
+  },
+  {
+    "cluster": 89
+  },
+  {
+    "cluster": 113
+  },
+  {
+    "cluster": 34
+  },
+  {
+    "cluster": 36
+  },
+  {
+    "cluster": 97
+  },
+  {
+    "cluster": 9
+  },
+  {
+    "cluster": 135
+  },
+  {
+    "cluster": 22
+  },
+  {
+    "cluster": 25
+  },
+  {
+    "cluster": 25
+  },
+  {
+    "cluster": 25
+  },
+  {
+    "cluster": 25
+  },
+  {
+    "cluster": 25
+  },
+  {
+    "cluster": 25
+  },
+  {
+    "cluster": 25
+  },
+  {
+    "cluster": 25
+  },
+  {
+    "cluster": 25
+  },
+  {
+    "cluster": 25
+  },
+  {
+    "cluster": 25
+  },
+  {
+    "cluster": 25
+  },
+  {
+    "cluster": 25
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 68
+  },
+  {
+    "cluster": 70
+  },
+  {
+    "cluster": 27
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 6
+  },
+  {
+    "cluster": 97
+  },
+  {
+    "cluster": 6
+  },
+  {
+    "cluster": 26
+  },
+  {
+    "cluster": 27
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 65
+  },
+  {
+    "cluster": 100
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 60
+  },
+  {
+    "cluster": 27
+  },
+  {
+    "cluster": 73
+  },
+  {
+    "cluster": 3
+  },
+  {
+    "cluster": 6
+  },
+  {
+    "cluster": 63
+  },
+  {
+    "cluster": 121
+  },
+  {
+    "cluster": 70
+  },
+  {
+    "cluster": 47
+  },
+  {
+    "cluster": 42
+  },
+  {
+    "cluster": 27
+  },
+  {
+    "cluster": 17
+  },
+  {
+    "cluster": 63
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 3
+  },
+  {
+    "cluster": 44
+  },
+  {
+    "cluster": 42
+  },
+  {
+    "cluster": 22
+  },
+  {
+    "cluster": 6
+  },
+  {
+    "cluster": 101
+  },
+  {
+    "cluster": 46
+  },
+  {
+    "cluster": 151
+  },
+  {
+    "cluster": 51
+  },
+  {
+    "cluster": 109
+  },
+  {
+    "cluster": 98
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 147
+  },
+  {
+    "cluster": 147
+  },
+  {
+    "cluster": 97
+  },
+  {
+    "cluster": 107
+  },
+  {
+    "cluster": 6
+  },
+  {
+    "cluster": 39
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 6
+  },
+  {
+    "cluster": 147
+  },
+  {
+    "cluster": 147
+  },
+  {
+    "cluster": 123
+  },
+  {
+    "cluster": 123
+  },
+  {
+    "cluster": 113
+  },
+  {
+    "cluster": 33
+  },
+  {
+    "cluster": 149
+  },
+  {
+    "cluster": 112
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 63
+  },
+  {
+    "cluster": 113
+  },
+  {
+    "cluster": 123
+  },
+  {
+    "cluster": 107
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 16
+  },
+  {
+    "cluster": 77
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 123
+  },
+  {
+    "cluster": 109
+  },
+  {
+    "cluster": 16
+  },
+  {
+    "cluster": 38
+  },
+  {
+    "cluster": 22
+  },
+  {
+    "cluster": 55
+  },
+  {
+    "cluster": 74
+  },
+  {
+    "cluster": 38
+  },
+  {
+    "cluster": 147
+  },
+  {
+    "cluster": 114
+  },
+  {
+    "cluster": 109
+  },
+  {
+    "cluster": 147
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 111
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 27
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 1
+  },
+  {
+    "cluster": 123
+  },
+  {
+    "cluster": 122
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 94
+  },
+  {
+    "cluster": 77
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 152
+  },
+  {
+    "cluster": 113
+  },
+  {
+    "cluster": 43
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 141
+  },
+  {
+    "cluster": 114
+  },
+  {
+    "cluster": 31
+  },
+  {
+    "cluster": 135
+  },
+  {
+    "cluster": 117
+  },
+  {
+    "cluster": 22
+  },
+  {
+    "cluster": 8
+  },
+  {
+    "cluster": 13
+  },
+  {
+    "cluster": 89
+  },
+  {
+    "cluster": 147
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 145
+  },
+  {
+    "cluster": 109
+  },
+  {
+    "cluster": 18
+  },
+  {
+    "cluster": 139
+  },
+  {
+    "cluster": 147
+  },
+  {
+    "cluster": 59
+  },
+  {
+    "cluster": 113
+  },
+  {
+    "cluster": 139
+  },
+  {
+    "cluster": 125
+  },
+  {
+    "cluster": 79
+  },
+  {
+    "cluster": 31
+  },
+  {
+    "cluster": 58
+  },
+  {
+    "cluster": 115
+  },
+  {
+    "cluster": 22
+  },
+  {
+    "cluster": 86
+  },
+  {
+    "cluster": 93
+  },
+  {
+    "cluster": 100
+  },
+  {
+    "cluster": 68
+  },
+  {
+    "cluster": 21
+  },
+  {
+    "cluster": 48
+  },
+  {
+    "cluster": 147
+  },
+  {
+    "cluster": 151
+  },
+  {
+    "cluster": 115
+  },
+  {
+    "cluster": 16
+  },
+  {
+    "cluster": 23
+  },
+  {
+    "cluster": 97
+  },
+  {
+    "cluster": 46
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 82
+  },
+  {
+    "cluster": 135
+  },
+  {
+    "cluster": 15
+  },
+  {
+    "cluster": 101
+  },
+  {
+    "cluster": 2
+  },
+  {
+    "cluster": 30
+  },
+  {
+    "cluster": 141
+  },
+  {
+    "cluster": 97
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 125
+  },
+  {
+    "cluster": 115
+  },
+  {
+    "cluster": 85
+  },
+  {
+    "cluster": 60
+  },
+  {
+    "cluster": 115
+  },
+  {
+    "cluster": 118
+  },
+  {
+    "cluster": 73
+  },
+  {
+    "cluster": 79
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 26
+  },
+  {
+    "cluster": 57
+  },
+  {
+    "cluster": 119
+  },
+  {
+    "cluster": 47
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 46
+  },
+  {
+    "cluster": 15
+  },
+  {
+    "cluster": 57
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 92
+  },
+  {
+    "cluster": 98
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 57
+  },
+  {
+    "cluster": 34
+  },
+  {
+    "cluster": 30
+  },
+  {
+    "cluster": 30
+  },
+  {
+    "cluster": 37
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 109
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 104
+  },
+  {
+    "cluster": 115
+  },
+  {
+    "cluster": 93
+  },
+  {
+    "cluster": 23
+  },
+  {
+    "cluster": 102
+  },
+  {
+    "cluster": 115
+  },
+  {
+    "cluster": 30
+  },
+  {
+    "cluster": 37
+  },
+  {
+    "cluster": 37
+  },
+  {
+    "cluster": 100
+  },
+  {
+    "cluster": 16
+  },
+  {
+    "cluster": 106
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 16
+  },
+  {
+    "cluster": 104
+  },
+  {
+    "cluster": 144
+  },
+  {
+    "cluster": 69
+  },
+  {
+    "cluster": 145
+  },
+  {
+    "cluster": 107
+  },
+  {
+    "cluster": 97
+  },
+  {
+    "cluster": 107
+  },
+  {
+    "cluster": 131
+  },
+  {
+    "cluster": 16
+  },
+  {
+    "cluster": 15
+  },
+  {
+    "cluster": 65
+  },
+  {
+    "cluster": 113
+  },
+  {
+    "cluster": 47
+  },
+  {
+    "cluster": 34
+  },
+  {
+    "cluster": 107
+  },
+  {
+    "cluster": 135
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 149
+  },
+  {
+    "cluster": 59
+  },
+  {
+    "cluster": 149
+  },
+  {
+    "cluster": 36
+  },
+  {
+    "cluster": 34
+  },
+  {
+    "cluster": 42
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 101
+  },
+  {
+    "cluster": 101
+  },
+  {
+    "cluster": 63
+  },
+  {
+    "cluster": 70
+  },
+  {
+    "cluster": 42
+  },
+  {
+    "cluster": 63
+  },
+  {
+    "cluster": 68
+  },
+  {
+    "cluster": 44
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 147
+  },
+  {
+    "cluster": 122
+  },
+  {
+    "cluster": 8
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 120
+  },
+  {
+    "cluster": 141
+  },
+  {
+    "cluster": 63
+  },
+  {
+    "cluster": 1
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 79
+  },
+  {
+    "cluster": 21
+  },
+  {
+    "cluster": 3
+  },
+  {
+    "cluster": 16
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 120
+  },
+  {
+    "cluster": 122
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 78
+  },
+  {
+    "cluster": 101
+  },
+  {
+    "cluster": 91
+  },
+  {
+    "cluster": 147
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 77
+  },
+  {
+    "cluster": 149
+  },
+  {
+    "cluster": 8
+  },
+  {
+    "cluster": 6
+  },
+  {
+    "cluster": 38
+  },
+  {
+    "cluster": 54
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 107
+  },
+  {
+    "cluster": 151
+  },
+  {
+    "cluster": 125
+  },
+  {
+    "cluster": 129
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 122
+  },
+  {
+    "cluster": 79
+  },
+  {
+    "cluster": 63
+  },
+  {
+    "cluster": 140
+  },
+  {
+    "cluster": 78
+  },
+  {
+    "cluster": 85
+  },
+  {
+    "cluster": 129
+  },
+  {
+    "cluster": 79
+  },
+  {
+    "cluster": 147
+  },
+  {
+    "cluster": 35
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 147
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 141
+  },
+  {
+    "cluster": 136
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 79
+  },
+  {
+    "cluster": 51
+  },
+  {
+    "cluster": 35
+  },
+  {
+    "cluster": 13
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 87
+  },
+  {
+    "cluster": 77
+  },
+  {
+    "cluster": 138
+  },
+  {
+    "cluster": 91
+  },
+  {
+    "cluster": 13
+  },
+  {
+    "cluster": 39
+  },
+  {
+    "cluster": 57
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 77
+  },
+  {
+    "cluster": 48
+  },
+  {
+    "cluster": 147
+  },
+  {
+    "cluster": 113
+  },
+  {
+    "cluster": 111
+  },
+  {
+    "cluster": 31
+  },
+  {
+    "cluster": 28
+  },
+  {
+    "cluster": 148
+  },
+  {
+    "cluster": 33
+  },
+  {
+    "cluster": 46
+  },
+  {
+    "cluster": 54
+  },
+  {
+    "cluster": 148
+  },
+  {
+    "cluster": 24
+  },
+  {
+    "cluster": 81
+  },
+  {
+    "cluster": 57
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 35
+  },
+  {
+    "cluster": 90
+  },
+  {
+    "cluster": 113
+  },
+  {
+    "cluster": 95
+  },
+  {
+    "cluster": 87
+  },
+  {
+    "cluster": 73
+  },
+  {
+    "cluster": 145
+  },
+  {
+    "cluster": 60
+  },
+  {
+    "cluster": 147
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 2
+  },
+  {
+    "cluster": 144
+  },
+  {
+    "cluster": 72
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 90
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 107
+  },
+  {
+    "cluster": 100
+  },
+  {
+    "cluster": 39
+  },
+  {
+    "cluster": 46
+  },
+  {
+    "cluster": 145
+  },
+  {
+    "cluster": 18
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 134
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 117
+  },
+  {
+    "cluster": 139
+  },
+  {
+    "cluster": 48
+  },
+  {
+    "cluster": 64
+  },
+  {
+    "cluster": 39
+  },
+  {
+    "cluster": 53
+  },
+  {
+    "cluster": 57
+  },
+  {
+    "cluster": 122
+  },
+  {
+    "cluster": 46
+  },
+  {
+    "cluster": 104
+  },
+  {
+    "cluster": 113
+  },
+  {
+    "cluster": 127
+  },
+  {
+    "cluster": 63
+  },
+  {
+    "cluster": 118
+  },
+  {
+    "cluster": 149
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 101
+  },
+  {
+    "cluster": 111
+  },
+  {
+    "cluster": 9
+  },
+  {
+    "cluster": 49
+  },
+  {
+    "cluster": 63
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 147
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 37
+  },
+  {
+    "cluster": 37
+  },
+  {
+    "cluster": 3
+  },
+  {
+    "cluster": 95
+  },
+  {
+    "cluster": 35
+  },
+  {
+    "cluster": 104
+  },
+  {
+    "cluster": 46
+  },
+  {
+    "cluster": 55
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 113
+  },
+  {
+    "cluster": 131
+  },
+  {
+    "cluster": 74
+  },
+  {
+    "cluster": 54
+  },
+  {
+    "cluster": 35
+  },
+  {
+    "cluster": 107
+  },
+  {
+    "cluster": 66
+  },
+  {
+    "cluster": 66
+  },
+  {
+    "cluster": 81
+  },
+  {
+    "cluster": 8
+  },
+  {
+    "cluster": 81
+  },
+  {
+    "cluster": 102
+  },
+  {
+    "cluster": 6
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 102
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 120
+  },
+  {
+    "cluster": 21
+  },
+  {
+    "cluster": 68
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 6
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 141
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 147
+  },
+  {
+    "cluster": 113
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 21
+  },
+  {
+    "cluster": 21
+  },
+  {
+    "cluster": 33
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 1
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 43
+  },
+  {
+    "cluster": 127
+  },
+  {
+    "cluster": 122
+  },
+  {
+    "cluster": 129
+  },
+  {
+    "cluster": 16
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 107
+  },
+  {
+    "cluster": 1
+  },
+  {
+    "cluster": 63
+  },
+  {
+    "cluster": 77
+  },
+  {
+    "cluster": 41
+  },
+  {
+    "cluster": 78
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 62
+  },
+  {
+    "cluster": 113
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 33
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 80
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 151
+  },
+  {
+    "cluster": 147
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 136
+  },
+  {
+    "cluster": 94
+  },
+  {
+    "cluster": 149
+  },
+  {
+    "cluster": 63
+  },
+  {
+    "cluster": 95
+  },
+  {
+    "cluster": 48
+  },
+  {
+    "cluster": 147
+  },
+  {
+    "cluster": 10
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 45
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 135
+  },
+  {
+    "cluster": 147
+  },
+  {
+    "cluster": 19
+  },
+  {
+    "cluster": 15
+  },
+  {
+    "cluster": 90
+  },
+  {
+    "cluster": 88
+  },
+  {
+    "cluster": 117
+  },
+  {
+    "cluster": 93
+  },
+  {
+    "cluster": 35
+  },
+  {
+    "cluster": 1
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 81
+  },
+  {
+    "cluster": 87
+  },
+  {
+    "cluster": 114
+  },
+  {
+    "cluster": 60
+  },
+  {
+    "cluster": 77
+  },
+  {
+    "cluster": 114
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 93
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 103
+  },
+  {
+    "cluster": 113
+  },
+  {
+    "cluster": 113
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 45
+  },
+  {
+    "cluster": 147
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 147
+  },
+  {
+    "cluster": 51
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 94
+  },
+  {
+    "cluster": 113
+  },
+  {
+    "cluster": 74
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 137
+  },
+  {
+    "cluster": 152
+  },
+  {
+    "cluster": 77
+  },
+  {
+    "cluster": 139
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 109
+  },
+  {
+    "cluster": 54
+  },
+  {
+    "cluster": 18
+  },
+  {
+    "cluster": 55
+  },
+  {
+    "cluster": 93
+  },
+  {
+    "cluster": 150
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 151
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 114
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 127
+  },
+  {
+    "cluster": 22
+  },
+  {
+    "cluster": 82
+  },
+  {
+    "cluster": 22
+  },
+  {
+    "cluster": 2
+  },
+  {
+    "cluster": 121
+  },
+  {
+    "cluster": 107
+  },
+  {
+    "cluster": 145
+  },
+  {
+    "cluster": 79
+  },
+  {
+    "cluster": 16
+  },
+  {
+    "cluster": 31
+  },
+  {
+    "cluster": 79
+  },
+  {
+    "cluster": 134
+  },
+  {
+    "cluster": 89
+  },
+  {
+    "cluster": 123
+  },
+  {
+    "cluster": 77
+  },
+  {
+    "cluster": 8
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 135
+  },
+  {
+    "cluster": 48
+  },
+  {
+    "cluster": 16
+  },
+  {
+    "cluster": 2
+  },
+  {
+    "cluster": 113
+  },
+  {
+    "cluster": 119
+  },
+  {
+    "cluster": 142
+  },
+  {
+    "cluster": 39
+  },
+  {
+    "cluster": 104
+  },
+  {
+    "cluster": 81
+  },
+  {
+    "cluster": 63
+  },
+  {
+    "cluster": 141
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 117
+  },
+  {
+    "cluster": 55
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 62
+  },
+  {
+    "cluster": 34
+  },
+  {
+    "cluster": 83
+  },
+  {
+    "cluster": 114
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 149
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 45
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 37
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 79
+  },
+  {
+    "cluster": 107
+  },
+  {
+    "cluster": 138
+  },
+  {
+    "cluster": 53
+  },
+  {
+    "cluster": 139
+  },
+  {
+    "cluster": 32
+  },
+  {
+    "cluster": 79
+  },
+  {
+    "cluster": 32
+  },
+  {
+    "cluster": 32
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 55
+  },
+  {
+    "cluster": 104
+  },
+  {
+    "cluster": 42
+  },
+  {
+    "cluster": 55
+  },
+  {
+    "cluster": 16
+  },
+  {
+    "cluster": 45
+  },
+  {
+    "cluster": 43
+  },
+  {
+    "cluster": 81
+  },
+  {
+    "cluster": 43
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 101
+  },
+  {
+    "cluster": 102
+  },
+  {
+    "cluster": 83
+  },
+  {
+    "cluster": 21
+  },
+  {
+    "cluster": 38
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 15
+  },
+  {
+    "cluster": 1
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 127
+  },
+  {
+    "cluster": 121
+  },
+  {
+    "cluster": 67
+  },
+  {
+    "cluster": 54
+  },
+  {
+    "cluster": 109
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 89
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 113
+  },
+  {
+    "cluster": 60
+  },
+  {
+    "cluster": 52
+  },
+  {
+    "cluster": 31
+  },
+  {
+    "cluster": 147
+  },
+  {
+    "cluster": 113
+  },
+  {
+    "cluster": 6
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 147
+  },
+  {
+    "cluster": 109
+  },
+  {
+    "cluster": 32
+  },
+  {
+    "cluster": 80
+  },
+  {
+    "cluster": 65
+  },
+  {
+    "cluster": 113
+  },
+  {
+    "cluster": 125
+  },
+  {
+    "cluster": 58
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 94
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 51
+  },
+  {
+    "cluster": 149
+  },
+  {
+    "cluster": 85
+  },
+  {
+    "cluster": 47
+  },
+  {
+    "cluster": 109
+  },
+  {
+    "cluster": 147
+  },
+  {
+    "cluster": 143
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 58
+  },
+  {
+    "cluster": 113
+  },
+  {
+    "cluster": 150
+  },
+  {
+    "cluster": 20
+  },
+  {
+    "cluster": 113
+  },
+  {
+    "cluster": 147
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 113
+  },
+  {
+    "cluster": 95
+  },
+  {
+    "cluster": 23
+  },
+  {
+    "cluster": 136
+  },
+  {
+    "cluster": 113
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 39
+  },
+  {
+    "cluster": 113
+  },
+  {
+    "cluster": 43
+  },
+  {
+    "cluster": 113
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 16
+  },
+  {
+    "cluster": 148
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 113
+  },
+  {
+    "cluster": 148
+  },
+  {
+    "cluster": 10
+  },
+  {
+    "cluster": 130
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 148
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 83
+  },
+  {
+    "cluster": 55
+  },
+  {
+    "cluster": 77
+  },
+  {
+    "cluster": 93
+  },
+  {
+    "cluster": 114
+  },
+  {
+    "cluster": 57
+  },
+  {
+    "cluster": 127
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 62
+  },
+  {
+    "cluster": 125
+  },
+  {
+    "cluster": 152
+  },
+  {
+    "cluster": 31
+  },
+  {
+    "cluster": 119
+  },
+  {
+    "cluster": 137
+  },
+  {
+    "cluster": 131
+  },
+  {
+    "cluster": 94
+  },
+  {
+    "cluster": 72
+  },
+  {
+    "cluster": 39
+  },
+  {
+    "cluster": 52
+  },
+  {
+    "cluster": 65
+  },
+  {
+    "cluster": 148
+  },
+  {
+    "cluster": 112
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 39
+  },
+  {
+    "cluster": 145
+  },
+  {
+    "cluster": 89
+  },
+  {
+    "cluster": 31
+  },
+  {
+    "cluster": 96
+  },
+  {
+    "cluster": 135
+  },
+  {
+    "cluster": 89
+  },
+  {
+    "cluster": 81
+  },
+  {
+    "cluster": 81
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 117
+  },
+  {
+    "cluster": 135
+  },
+  {
+    "cluster": 104
+  },
+  {
+    "cluster": 103
+  },
+  {
+    "cluster": 39
+  },
+  {
+    "cluster": 39
+  },
+  {
+    "cluster": 138
+  },
+  {
+    "cluster": 32
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 111
+  },
+  {
+    "cluster": 111
+  },
+  {
+    "cluster": 39
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 9
+  },
+  {
+    "cluster": 120
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 72
+  },
+  {
+    "cluster": 82
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 129
+  },
+  {
+    "cluster": 1
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 47
+  },
+  {
+    "cluster": 22
+  },
+  {
+    "cluster": 55
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 55
+  },
+  {
+    "cluster": 81
+  },
+  {
+    "cluster": 25
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 74
+  },
+  {
+    "cluster": 63
+  },
+  {
+    "cluster": 63
+  },
+  {
+    "cluster": 6
+  },
+  {
+    "cluster": 88
+  },
+  {
+    "cluster": 43
+  },
+  {
+    "cluster": 33
+  },
+  {
+    "cluster": 63
+  },
+  {
+    "cluster": 113
+  },
+  {
+    "cluster": 21
+  },
+  {
+    "cluster": 113
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 113
+  },
+  {
+    "cluster": 113
+  },
+  {
+    "cluster": 113
+  },
+  {
+    "cluster": 147
+  },
+  {
+    "cluster": 38
+  },
+  {
+    "cluster": 89
+  },
+  {
+    "cluster": 48
+  },
+  {
+    "cluster": 119
+  },
+  {
+    "cluster": 113
+  },
+  {
+    "cluster": 113
+  },
+  {
+    "cluster": 113
+  },
+  {
+    "cluster": 77
+  },
+  {
+    "cluster": 33
+  },
+  {
+    "cluster": 39
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 21
+  },
+  {
+    "cluster": 147
+  },
+  {
+    "cluster": 39
+  },
+  {
+    "cluster": 33
+  },
+  {
+    "cluster": 31
+  },
+  {
+    "cluster": 103
+  },
+  {
+    "cluster": 47
+  },
+  {
+    "cluster": 54
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 22
+  },
+  {
+    "cluster": 128
+  },
+  {
+    "cluster": 93
+  },
+  {
+    "cluster": 21
+  },
+  {
+    "cluster": 10
+  },
+  {
+    "cluster": 16
+  },
+  {
+    "cluster": 83
+  },
+  {
+    "cluster": 54
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 128
+  },
+  {
+    "cluster": 23
+  },
+  {
+    "cluster": 89
+  },
+  {
+    "cluster": 88
+  },
+  {
+    "cluster": 109
+  },
+  {
+    "cluster": 66
+  },
+  {
+    "cluster": 111
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 152
+  },
+  {
+    "cluster": 46
+  },
+  {
+    "cluster": 111
+  },
+  {
+    "cluster": 95
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 63
+  },
+  {
+    "cluster": 119
+  },
+  {
+    "cluster": 114
+  },
+  {
+    "cluster": 142
+  },
+  {
+    "cluster": 66
+  },
+  {
+    "cluster": 106
+  },
+  {
+    "cluster": 88
+  },
+  {
+    "cluster": 126
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 117
+  },
+  {
+    "cluster": 142
+  },
+  {
+    "cluster": 46
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 39
+  },
+  {
+    "cluster": 99
+  },
+  {
+    "cluster": 111
+  },
+  {
+    "cluster": 99
+  },
+  {
+    "cluster": 112
+  },
+  {
+    "cluster": 57
+  },
+  {
+    "cluster": 48
+  },
+  {
+    "cluster": 48
+  },
+  {
+    "cluster": 49
+  },
+  {
+    "cluster": 142
+  },
+  {
+    "cluster": 122
+  },
+  {
+    "cluster": 148
+  },
+  {
+    "cluster": 2
+  },
+  {
+    "cluster": 41
+  },
+  {
+    "cluster": 139
+  },
+  {
+    "cluster": 125
+  },
+  {
+    "cluster": 34
+  },
+  {
+    "cluster": 37
+  },
+  {
+    "cluster": 40
+  },
+  {
+    "cluster": 150
+  },
+  {
+    "cluster": 113
+  },
+  {
+    "cluster": 91
+  },
+  {
+    "cluster": 104
+  },
+  {
+    "cluster": 132
+  },
+  {
+    "cluster": 128
+  },
+  {
+    "cluster": 132
+  },
+  {
+    "cluster": 133
+  },
+  {
+    "cluster": 83
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 119
+  },
+  {
+    "cluster": 119
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 119
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 61
+  },
+  {
+    "cluster": 61
+  },
+  {
+    "cluster": 45
+  },
+  {
+    "cluster": 32
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 88
+  },
+  {
+    "cluster": 88
+  },
+  {
+    "cluster": 88
+  },
+  {
+    "cluster": 117
+  },
+  {
+    "cluster": 61
+  },
+  {
+    "cluster": 53
+  },
+  {
+    "cluster": 32
+  },
+  {
+    "cluster": 146
+  },
+  {
+    "cluster": 32
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 37
+  },
+  {
+    "cluster": 63
+  },
+  {
+    "cluster": 63
+  },
+  {
+    "cluster": 1
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 63
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 147
+  },
+  {
+    "cluster": 101
+  },
+  {
+    "cluster": 1
+  },
+  {
+    "cluster": 64
+  },
+  {
+    "cluster": 21
+  },
+  {
+    "cluster": 88
+  },
+  {
+    "cluster": 63
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 38
+  },
+  {
+    "cluster": 60
+  },
+  {
+    "cluster": 23
+  },
+  {
+    "cluster": 109
+  },
+  {
+    "cluster": 143
+  },
+  {
+    "cluster": 119
+  },
+  {
+    "cluster": 10
+  },
+  {
+    "cluster": 113
+  },
+  {
+    "cluster": 150
+  },
+  {
+    "cluster": 15
+  },
+  {
+    "cluster": 94
+  },
+  {
+    "cluster": 22
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 58
+  },
+  {
+    "cluster": 126
+  },
+  {
+    "cluster": 144
+  },
+  {
+    "cluster": 88
+  },
+  {
+    "cluster": 23
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 82
+  },
+  {
+    "cluster": 38
+  },
+  {
+    "cluster": 55
+  },
+  {
+    "cluster": 18
+  },
+  {
+    "cluster": 40
+  },
+  {
+    "cluster": 66
+  },
+  {
+    "cluster": 39
+  },
+  {
+    "cluster": 136
+  },
+  {
+    "cluster": 24
+  },
+  {
+    "cluster": 117
+  },
+  {
+    "cluster": 67
+  },
+  {
+    "cluster": 32
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 109
+  },
+  {
+    "cluster": 124
+  },
+  {
+    "cluster": 144
+  },
+  {
+    "cluster": 125
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 130
+  },
+  {
+    "cluster": 93
+  },
+  {
+    "cluster": 58
+  },
+  {
+    "cluster": 134
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 111
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 111
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 121
+  },
+  {
+    "cluster": 144
+  },
+  {
+    "cluster": 114
+  },
+  {
+    "cluster": 141
+  },
+  {
+    "cluster": 20
+  },
+  {
+    "cluster": 40
+  },
+  {
+    "cluster": 40
+  },
+  {
+    "cluster": 144
+  },
+  {
+    "cluster": 20
+  },
+  {
+    "cluster": 20
+  },
+  {
+    "cluster": 119
+  },
+  {
+    "cluster": 145
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 133
+  },
+  {
+    "cluster": 145
+  },
+  {
+    "cluster": 52
+  },
+  {
+    "cluster": 134
+  },
+  {
+    "cluster": 127
+  },
+  {
+    "cluster": 48
+  },
+  {
+    "cluster": 58
+  },
+  {
+    "cluster": 35
+  },
+  {
+    "cluster": 58
+  },
+  {
+    "cluster": 32
+  },
+  {
+    "cluster": 109
+  },
+  {
+    "cluster": 0
+  },
+  {
+    "cluster": 0
+  },
+  {
+    "cluster": 0
+  },
+  {
+    "cluster": 22
+  },
+  {
+    "cluster": 32
+  },
+  {
+    "cluster": 32
+  },
+  {
+    "cluster": 55
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 104
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 20
+  },
+  {
+    "cluster": 40
+  },
+  {
+    "cluster": 21
+  },
+  {
+    "cluster": 1
+  },
+  {
+    "cluster": 21
+  },
+  {
+    "cluster": 21
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 36
+  },
+  {
+    "cluster": 0
+  },
+  {
+    "cluster": 0
+  },
+  {
+    "cluster": 44
+  },
+  {
+    "cluster": 0
+  },
+  {
+    "cluster": 32
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 63
+  },
+  {
+    "cluster": 33
+  },
+  {
+    "cluster": 7
+  },
+  {
+    "cluster": 63
+  },
+  {
+    "cluster": 7
+  },
+  {
+    "cluster": 131
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 55
+  },
+  {
+    "cluster": 21
+  },
+  {
+    "cluster": 38
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 99
+  },
+  {
+    "cluster": 111
+  },
+  {
+    "cluster": 20
+  },
+  {
+    "cluster": 2
+  },
+  {
+    "cluster": 12
+  },
+  {
+    "cluster": 109
+  },
+  {
+    "cluster": 113
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 5
+  },
+  {
+    "cluster": 10
+  },
+  {
+    "cluster": 60
+  },
+  {
+    "cluster": 38
+  },
+  {
+    "cluster": 21
+  },
+  {
+    "cluster": 38
+  },
+  {
+    "cluster": 111
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 7
+  },
+  {
+    "cluster": 68
+  },
+  {
+    "cluster": 95
+  },
+  {
+    "cluster": 21
+  },
+  {
+    "cluster": 7
+  },
+  {
+    "cluster": 7
+  },
+  {
+    "cluster": 21
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 109
+  },
+  {
+    "cluster": 144
+  },
+  {
+    "cluster": 58
+  },
+  {
+    "cluster": 119
+  },
+  {
+    "cluster": 23
+  },
+  {
+    "cluster": 23
+  },
+  {
+    "cluster": 23
+  },
+  {
+    "cluster": 109
+  },
+  {
+    "cluster": 111
+  },
+  {
+    "cluster": 22
+  },
+  {
+    "cluster": 119
+  },
+  {
+    "cluster": 55
+  },
+  {
+    "cluster": 16
+  },
+  {
+    "cluster": 89
+  },
+  {
+    "cluster": 67
+  },
+  {
+    "cluster": 115
+  },
+  {
+    "cluster": 110
+  },
+  {
+    "cluster": 22
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 31
+  },
+  {
+    "cluster": 114
+  },
+  {
+    "cluster": 114
+  },
+  {
+    "cluster": 133
+  },
+  {
+    "cluster": 7
+  },
+  {
+    "cluster": 10
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 111
+  },
+  {
+    "cluster": 21
+  },
+  {
+    "cluster": 6
+  },
+  {
+    "cluster": 109
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 82
+  },
+  {
+    "cluster": 123
+  },
+  {
+    "cluster": 35
+  },
+  {
+    "cluster": 5
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 119
+  },
+  {
+    "cluster": 119
+  },
+  {
+    "cluster": 119
+  },
+  {
+    "cluster": 6
+  },
+  {
+    "cluster": 18
+  },
+  {
+    "cluster": 52
+  },
+  {
+    "cluster": 143
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 111
+  },
+  {
+    "cluster": 79
+  },
+  {
+    "cluster": 149
+  },
+  {
+    "cluster": 66
+  },
+  {
+    "cluster": 36
+  },
+  {
+    "cluster": 92
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 18
+  },
+  {
+    "cluster": 127
+  },
+  {
+    "cluster": 118
+  },
+  {
+    "cluster": 32
+  },
+  {
+    "cluster": 62
+  },
+  {
+    "cluster": 0
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 18
+  },
+  {
+    "cluster": 66
+  },
+  {
+    "cluster": 18
+  },
+  {
+    "cluster": 0
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 137
+  },
+  {
+    "cluster": 49
+  },
+  {
+    "cluster": 33
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 143
+  },
+  {
+    "cluster": 6
+  },
+  {
+    "cluster": 111
+  },
+  {
+    "cluster": 63
+  },
+  {
+    "cluster": 38
+  },
+  {
+    "cluster": 7
+  },
+  {
+    "cluster": 143
+  },
+  {
+    "cluster": 147
+  },
+  {
+    "cluster": 38
+  },
+  {
+    "cluster": 12
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 40
+  },
+  {
+    "cluster": 147
+  },
+  {
+    "cluster": 38
+  },
+  {
+    "cluster": 10
+  },
+  {
+    "cluster": 38
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 21
+  },
+  {
+    "cluster": 150
+  },
+  {
+    "cluster": 58
+  },
+  {
+    "cluster": 5
+  },
+  {
+    "cluster": 21
+  },
+  {
+    "cluster": 10
+  },
+  {
+    "cluster": 6
+  },
+  {
+    "cluster": 144
+  },
+  {
+    "cluster": 113
+  },
+  {
+    "cluster": 125
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 44
+  },
+  {
+    "cluster": 18
+  },
+  {
+    "cluster": 22
+  },
+  {
+    "cluster": 24
+  },
+  {
+    "cluster": 58
+  },
+  {
+    "cluster": 94
+  },
+  {
+    "cluster": 18
+  },
+  {
+    "cluster": 48
+  },
+  {
+    "cluster": 91
+  },
+  {
+    "cluster": 14
+  },
+  {
+    "cluster": 88
+  },
+  {
+    "cluster": 57
+  },
+  {
+    "cluster": 20
+  },
+  {
+    "cluster": 116
+  },
+  {
+    "cluster": 105
+  },
+  {
+    "cluster": 114
+  },
+  {
+    "cluster": 55
+  },
+  {
+    "cluster": 105
+  },
+  {
+    "cluster": 23
+  },
+  {
+    "cluster": 146
+  },
+  {
+    "cluster": 116
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 119
+  },
+  {
+    "cluster": 55
+  },
+  {
+    "cluster": 119
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 135
+  },
+  {
+    "cluster": 18
+  },
+  {
+    "cluster": 95
+  },
+  {
+    "cluster": 127
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 114
+  },
+  {
+    "cluster": 135
+  },
+  {
+    "cluster": 128
+  },
+  {
+    "cluster": 151
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 7
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 125
+  },
+  {
+    "cluster": 94
+  },
+  {
+    "cluster": 143
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 49
+  },
+  {
+    "cluster": 109
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 109
+  },
+  {
+    "cluster": 147
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 4
+  },
+  {
+    "cluster": 12
+  },
+  {
+    "cluster": 67
+  },
+  {
+    "cluster": 12
+  },
+  {
+    "cluster": 89
+  },
+  {
+    "cluster": 0
+  },
+  {
+    "cluster": 49
+  },
+  {
+    "cluster": 104
+  },
+  {
+    "cluster": 49
+  },
+  {
+    "cluster": 145
+  },
+  {
+    "cluster": 47
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 118
+  },
+  {
+    "cluster": 116
+  },
+  {
+    "cluster": 56
+  },
+  {
+    "cluster": 79
+  },
+  {
+    "cluster": 116
+  },
+  {
+    "cluster": 105
+  },
+  {
+    "cluster": 52
+  },
+  {
+    "cluster": 89
+  },
+  {
+    "cluster": 18
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 19
+  },
+  {
+    "cluster": 18
+  },
+  {
+    "cluster": 7
+  },
+  {
+    "cluster": 19
+  },
+  {
+    "cluster": 38
+  },
+  {
+    "cluster": 5
+  },
+  {
+    "cluster": 19
+  },
+  {
+    "cluster": 10
+  },
+  {
+    "cluster": 20
+  },
+  {
+    "cluster": 21
+  },
+  {
+    "cluster": 38
+  },
+  {
+    "cluster": 139
+  },
+  {
+    "cluster": 119
+  },
+  {
+    "cluster": 119
+  },
+  {
+    "cluster": 7
+  },
+  {
+    "cluster": 145
+  },
+  {
+    "cluster": 124
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 52
+  },
+  {
+    "cluster": 145
+  },
+  {
+    "cluster": 93
+  },
+  {
+    "cluster": 40
+  },
+  {
+    "cluster": 5
+  },
+  {
+    "cluster": 5
+  },
+  {
+    "cluster": 31
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 23
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 144
+  },
+  {
+    "cluster": 14
+  },
+  {
+    "cluster": 31
+  },
+  {
+    "cluster": 72
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 4
+  },
+  {
+    "cluster": 109
+  },
+  {
+    "cluster": 80
+  },
+  {
+    "cluster": 23
+  },
+  {
+    "cluster": 67
+  },
+  {
+    "cluster": 141
+  },
+  {
+    "cluster": 18
+  },
+  {
+    "cluster": 55
+  },
+  {
+    "cluster": 113
+  },
+  {
+    "cluster": 62
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 142
+  },
+  {
+    "cluster": 110
+  },
+  {
+    "cluster": 58
+  },
+  {
+    "cluster": 113
+  },
+  {
+    "cluster": 66
+  },
+  {
+    "cluster": 113
+  },
+  {
+    "cluster": 144
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 105
+  },
+  {
+    "cluster": 55
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 147
+  },
+  {
+    "cluster": 18
+  },
+  {
+    "cluster": 18
+  },
+  {
+    "cluster": 79
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 143
+  },
+  {
+    "cluster": 142
+  },
+  {
+    "cluster": 150
+  },
+  {
+    "cluster": 110
+  },
+  {
+    "cluster": 96
+  },
+  {
+    "cluster": 5
+  },
+  {
+    "cluster": 23
+  },
+  {
+    "cluster": 18
+  },
+  {
+    "cluster": 5
+  },
+  {
+    "cluster": 66
+  },
+  {
+    "cluster": 117
+  },
+  {
+    "cluster": 143
+  },
+  {
+    "cluster": 49
+  },
+  {
+    "cluster": 40
+  },
+  {
+    "cluster": 18
+  },
+  {
+    "cluster": 111
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 10
+  },
+  {
+    "cluster": 40
+  },
+  {
+    "cluster": 12
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 12
+  },
+  {
+    "cluster": 38
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 87
+  },
+  {
+    "cluster": 18
+  },
+  {
+    "cluster": 10
+  },
+  {
+    "cluster": 80
+  },
+  {
+    "cluster": 76
+  },
+  {
+    "cluster": 72
+  },
+  {
+    "cluster": 72
+  },
+  {
+    "cluster": 66
+  },
+  {
+    "cluster": 38
+  },
+  {
+    "cluster": 19
+  },
+  {
+    "cluster": 40
+  },
+  {
+    "cluster": 18
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 124
+  },
+  {
+    "cluster": 12
+  },
+  {
+    "cluster": 7
+  },
+  {
+    "cluster": 29
+  },
+  {
+    "cluster": 21
+  },
+  {
+    "cluster": 21
+  },
+  {
+    "cluster": 21
+  },
+  {
+    "cluster": 38
+  },
+  {
+    "cluster": 19
+  },
+  {
+    "cluster": 40
+  },
+  {
+    "cluster": 38
+  },
+  {
+    "cluster": 5
+  },
+  {
+    "cluster": 5
+  },
+  {
+    "cluster": 41
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 104
+  },
+  {
+    "cluster": 111
+  },
+  {
+    "cluster": 38
+  },
+  {
+    "cluster": 61
+  },
+  {
+    "cluster": 103
+  },
+  {
+    "cluster": 110
+  },
+  {
+    "cluster": 119
+  },
+  {
+    "cluster": 110
+  },
+  {
+    "cluster": 67
+  },
+  {
+    "cluster": 82
+  },
+  {
+    "cluster": 14
+  },
+  {
+    "cluster": 113
+  },
+  {
+    "cluster": 82
+  },
+  {
+    "cluster": 47
+  },
+  {
+    "cluster": 3
+  },
+  {
+    "cluster": 99
+  },
+  {
+    "cluster": 49
+  },
+  {
+    "cluster": 132
+  },
+  {
+    "cluster": 136
+  },
+  {
+    "cluster": 39
+  },
+  {
+    "cluster": 119
+  },
+  {
+    "cluster": 71
+  },
+  {
+    "cluster": 99
+  },
+  {
+    "cluster": 95
+  },
+  {
+    "cluster": 117
+  },
+  {
+    "cluster": 145
+  },
+  {
+    "cluster": 79
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 143
+  },
+  {
+    "cluster": 58
+  },
+  {
+    "cluster": 66
+  },
+  {
+    "cluster": 125
+  },
+  {
+    "cluster": 117
+  },
+  {
+    "cluster": 66
+  },
+  {
+    "cluster": 125
+  },
+  {
+    "cluster": 143
+  },
+  {
+    "cluster": 88
+  },
+  {
+    "cluster": 143
+  },
+  {
+    "cluster": 2
+  },
+  {
+    "cluster": 66
+  },
+  {
+    "cluster": 5
+  },
+  {
+    "cluster": 142
+  },
+  {
+    "cluster": 40
+  },
+  {
+    "cluster": 125
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 5
+  },
+  {
+    "cluster": 14
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 142
+  },
+  {
+    "cluster": 109
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 44
+  },
+  {
+    "cluster": 14
+  },
+  {
+    "cluster": 92
+  },
+  {
+    "cluster": 118
+  },
+  {
+    "cluster": 5
+  },
+  {
+    "cluster": 18
+  },
+  {
+    "cluster": 119
+  },
+  {
+    "cluster": 99
+  },
+  {
+    "cluster": 36
+  },
+  {
+    "cluster": 143
+  },
+  {
+    "cluster": 67
+  },
+  {
+    "cluster": 58
+  },
+  {
+    "cluster": 95
+  },
+  {
+    "cluster": 118
+  },
+  {
+    "cluster": 145
+  },
+  {
+    "cluster": 21
+  },
+  {
+    "cluster": 58
+  },
+  {
+    "cluster": 25
+  },
+  {
+    "cluster": 76
+  },
+  {
+    "cluster": 21
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 119
+  },
+  {
+    "cluster": 32
+  },
+  {
+    "cluster": 29
+  },
+  {
+    "cluster": 150
+  },
+  {
+    "cluster": 12
+  },
+  {
+    "cluster": 12
+  },
+  {
+    "cluster": 150
+  },
+  {
+    "cluster": 82
+  },
+  {
+    "cluster": 11
+  },
+  {
+    "cluster": 12
+  },
+  {
+    "cluster": 151
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 114
+  },
+  {
+    "cluster": 143
+  },
+  {
+    "cluster": 95
+  },
+  {
+    "cluster": 21
+  },
+  {
+    "cluster": 40
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 112
+  },
+  {
+    "cluster": 89
+  },
+  {
+    "cluster": 40
+  },
+  {
+    "cluster": 124
+  },
+  {
+    "cluster": 88
+  },
+  {
+    "cluster": 119
+  },
+  {
+    "cluster": 116
+  },
+  {
+    "cluster": 110
+  },
+  {
+    "cluster": 74
+  },
+  {
+    "cluster": 91
+  },
+  {
+    "cluster": 91
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 109
+  },
+  {
+    "cluster": 79
+  },
+  {
+    "cluster": 67
+  },
+  {
+    "cluster": 47
+  },
+  {
+    "cluster": 66
+  },
+  {
+    "cluster": 133
+  },
+  {
+    "cluster": 145
+  },
+  {
+    "cluster": 113
+  },
+  {
+    "cluster": 47
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 71
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 125
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 67
+  },
+  {
+    "cluster": 134
+  },
+  {
+    "cluster": 89
+  },
+  {
+    "cluster": 143
+  },
+  {
+    "cluster": 11
+  },
+  {
+    "cluster": 92
+  },
+  {
+    "cluster": 91
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 117
+  },
+  {
+    "cluster": 109
+  },
+  {
+    "cluster": 67
+  },
+  {
+    "cluster": 91
+  },
+  {
+    "cluster": 119
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 11
+  },
+  {
+    "cluster": 110
+  },
+  {
+    "cluster": 125
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 66
+  },
+  {
+    "cluster": 2
+  },
+  {
+    "cluster": 54
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 92
+  },
+  {
+    "cluster": 52
+  },
+  {
+    "cluster": 66
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 79
+  },
+  {
+    "cluster": 52
+  },
+  {
+    "cluster": 142
+  },
+  {
+    "cluster": 142
+  },
+  {
+    "cluster": 22
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 49
+  },
+  {
+    "cluster": 143
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 109
+  },
+  {
+    "cluster": 7
+  },
+  {
+    "cluster": 108
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 56
+  },
+  {
+    "cluster": 52
+  },
+  {
+    "cluster": 108
+  },
+  {
+    "cluster": 109
+  },
+  {
+    "cluster": 52
+  },
+  {
+    "cluster": 91
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 146
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 80
+  },
+  {
+    "cluster": 129
+  },
+  {
+    "cluster": 142
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 145
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 2
+  },
+  {
+    "cluster": 114
+  },
+  {
+    "cluster": 11
+  },
+  {
+    "cluster": 56
+  },
+  {
+    "cluster": 12
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 2
+  },
+  {
+    "cluster": 11
+  },
+  {
+    "cluster": 38
+  },
+  {
+    "cluster": 41
+  },
+  {
+    "cluster": 146
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 132
+  },
+  {
+    "cluster": 111
+  },
+  {
+    "cluster": 87
+  },
+  {
+    "cluster": 88
+  },
+  {
+    "cluster": 119
+  },
+  {
+    "cluster": 4
+  },
+  {
+    "cluster": 113
+  },
+  {
+    "cluster": 86
+  },
+  {
+    "cluster": 75
+  },
+  {
+    "cluster": 67
+  },
+  {
+    "cluster": 135
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 94
+  },
+  {
+    "cluster": 146
+  },
+  {
+    "cluster": 110
+  },
+  {
+    "cluster": 67
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 116
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 71
+  },
+  {
+    "cluster": 35
+  },
+  {
+    "cluster": 2
+  },
+  {
+    "cluster": 67
+  },
+  {
+    "cluster": 135
+  },
+  {
+    "cluster": 114
+  },
+  {
+    "cluster": 29
+  },
+  {
+    "cluster": 52
+  },
+  {
+    "cluster": 111
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 124
+  },
+  {
+    "cluster": 98
+  },
+  {
+    "cluster": 111
+  },
+  {
+    "cluster": 67
+  },
+  {
+    "cluster": 67
+  },
+  {
+    "cluster": 35
+  },
+  {
+    "cluster": 119
+  },
+  {
+    "cluster": 71
+  },
+  {
+    "cluster": 143
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 137
+  },
+  {
+    "cluster": 17
+  },
+  {
+    "cluster": 119
+  },
+  {
+    "cluster": 125
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 118
+  },
+  {
+    "cluster": 124
+  },
+  {
+    "cluster": 66
+  },
+  {
+    "cluster": 17
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 67
+  },
+  {
+    "cluster": 4
+  },
+  {
+    "cluster": 108
+  },
+  {
+    "cluster": 66
+  },
+  {
+    "cluster": 89
+  },
+  {
+    "cluster": 132
+  },
+  {
+    "cluster": 135
+  },
+  {
+    "cluster": 135
+  },
+  {
+    "cluster": 52
+  },
+  {
+    "cluster": 118
+  },
+  {
+    "cluster": 36
+  },
+  {
+    "cluster": 12
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 94
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 108
+  },
+  {
+    "cluster": 124
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 139
+  },
+  {
+    "cluster": 76
+  },
+  {
+    "cluster": 71
+  },
+  {
+    "cluster": 120
+  },
+  {
+    "cluster": 143
+  },
+  {
+    "cluster": 139
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 4
+  },
+  {
+    "cluster": 143
+  },
+  {
+    "cluster": 111
+  },
+  {
+    "cluster": 76
+  },
+  {
+    "cluster": 88
+  },
+  {
+    "cluster": 128
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 108
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 110
+  },
+  {
+    "cluster": 100
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 83
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 78
+  },
+  {
+    "cluster": 100
+  },
+  {
+    "cluster": 133
+  },
+  {
+    "cluster": 88
+  },
+  {
+    "cluster": 4
+  },
+  {
+    "cluster": 66
+  },
+  {
+    "cluster": 110
+  },
+  {
+    "cluster": 137
+  },
+  {
+    "cluster": 143
+  },
+  {
+    "cluster": 125
+  },
+  {
+    "cluster": 139
+  },
+  {
+    "cluster": 111
+  },
+  {
+    "cluster": 113
+  },
+  {
+    "cluster": 110
+  },
+  {
+    "cluster": 50
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 66
+  },
+  {
+    "cluster": 146
+  },
+  {
+    "cluster": 125
+  },
+  {
+    "cluster": 119
+  },
+  {
+    "cluster": 67
+  },
+  {
+    "cluster": 125
+  },
+  {
+    "cluster": 143
+  },
+  {
+    "cluster": 125
+  },
+  {
+    "cluster": 41
+  },
+  {
+    "cluster": 110
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 66
+  },
+  {
+    "cluster": 27
+  },
+  {
+    "cluster": 47
+  },
+  {
+    "cluster": 128
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 139
+  },
+  {
+    "cluster": 47
+  },
+  {
+    "cluster": 132
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 4
+  },
+  {
+    "cluster": 146
+  },
+  {
+    "cluster": 110
+  },
+  {
+    "cluster": 4
+  },
+  {
+    "cluster": 118
+  },
+  {
+    "cluster": 12
+  },
+  {
+    "cluster": 21
+  },
+  {
+    "cluster": 113
+  },
+  {
+    "cluster": 74
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 130
+  },
+  {
+    "cluster": 2
+  },
+  {
+    "cluster": 31
+  },
+  {
+    "cluster": 44
+  },
+  {
+    "cluster": 66
+  },
+  {
+    "cluster": 26
+  },
+  {
+    "cluster": 125
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 143
+  },
+  {
+    "cluster": 41
+  },
+  {
+    "cluster": 111
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 130
+  },
+  {
+    "cluster": 83
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 96
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 145
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 49
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 83
+  },
+  {
+    "cluster": 65
+  },
+  {
+    "cluster": 137
+  },
+  {
+    "cluster": 91
+  },
+  {
+    "cluster": 21
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 50
+  },
+  {
+    "cluster": 47
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 96
+  },
+  {
+    "cluster": 29
+  },
+  {
+    "cluster": 56
+  },
+  {
+    "cluster": 7
+  },
+  {
+    "cluster": 31
+  },
+  {
+    "cluster": 26
+  },
+  {
+    "cluster": 63
+  },
+  {
+    "cluster": 67
+  },
+  {
+    "cluster": 4
+  },
+  {
+    "cluster": 47
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 76
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 76
+  },
+  {
+    "cluster": 113
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 38
+  },
+  {
+    "cluster": 91
+  },
+  {
+    "cluster": 8
+  },
+  {
+    "cluster": 52
+  },
+  {
+    "cluster": 119
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 31
+  },
+  {
+    "cluster": 110
+  },
+  {
+    "cluster": 91
+  },
+  {
+    "cluster": 93
+  },
+  {
+    "cluster": 117
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 110
+  },
+  {
+    "cluster": 143
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 110
+  },
+  {
+    "cluster": 83
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 124
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 119
+  },
+  {
+    "cluster": 41
+  },
+  {
+    "cluster": 83
+  },
+  {
+    "cluster": 131
+  },
+  {
+    "cluster": 143
+  },
+  {
+    "cluster": 61
+  },
+  {
+    "cluster": 113
+  },
+  {
+    "cluster": 4
+  },
+  {
+    "cluster": 4
+  },
+  {
+    "cluster": 50
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 18
+  },
+  {
+    "cluster": 56
+  },
+  {
+    "cluster": 125
+  },
+  {
+    "cluster": 26
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 21
+  },
+  {
+    "cluster": 50
+  },
+  {
+    "cluster": 72
+  },
+  {
+    "cluster": 18
+  },
+  {
+    "cluster": 50
+  },
+  {
+    "cluster": 93
+  },
+  {
+    "cluster": 11
+  },
+  {
+    "cluster": 102
+  },
+  {
+    "cluster": 38
+  },
+  {
+    "cluster": 67
+  },
+  {
+    "cluster": 54
+  },
+  {
+    "cluster": 91
+  },
+  {
+    "cluster": 91
+  },
+  {
+    "cluster": 118
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 146
+  },
+  {
+    "cluster": 3
+  },
+  {
+    "cluster": 118
+  },
+  {
+    "cluster": 4
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 76
+  },
+  {
+    "cluster": 76
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 100
+  },
+  {
+    "cluster": 114
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 91
+  },
+  {
+    "cluster": 76
+  },
+  {
+    "cluster": 143
+  },
+  {
+    "cluster": 96
+  },
+  {
+    "cluster": 110
+  },
+  {
+    "cluster": 143
+  },
+  {
+    "cluster": 2
+  },
+  {
+    "cluster": 4
+  },
+  {
+    "cluster": 65
+  },
+  {
+    "cluster": 125
+  },
+  {
+    "cluster": 143
+  },
+  {
+    "cluster": 3
+  },
+  {
+    "cluster": 41
+  },
+  {
+    "cluster": 4
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 125
+  },
+  {
+    "cluster": 38
+  },
+  {
+    "cluster": 134
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 132
+  },
+  {
+    "cluster": 38
+  },
+  {
+    "cluster": 119
+  },
+  {
+    "cluster": 125
+  },
+  {
+    "cluster": 143
+  },
+  {
+    "cluster": 21
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 40
+  },
+  {
+    "cluster": 125
+  },
+  {
+    "cluster": 143
+  },
+  {
+    "cluster": 31
+  },
+  {
+    "cluster": 114
+  },
+  {
+    "cluster": 4
+  },
+  {
+    "cluster": 38
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 54
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 39
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 76
+  },
+  {
+    "cluster": 41
+  },
+  {
+    "cluster": 35
+  },
+  {
+    "cluster": 41
+  },
+  {
+    "cluster": 76
+  },
+  {
+    "cluster": 145
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 130
+  },
+  {
+    "cluster": 130
+  },
+  {
+    "cluster": 143
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 131
+  },
+  {
+    "cluster": 124
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 114
+  },
+  {
+    "cluster": 110
+  },
+  {
+    "cluster": 38
+  },
+  {
+    "cluster": 18
+  },
+  {
+    "cluster": 3
+  },
+  {
+    "cluster": 100
+  },
+  {
+    "cluster": 76
+  },
+  {
+    "cluster": 49
+  },
+  {
+    "cluster": 110
+  },
+  {
+    "cluster": 22
+  },
+  {
+    "cluster": 4
+  },
+  {
+    "cluster": 91
+  },
+  {
+    "cluster": 25
+  },
+  {
+    "cluster": 96
+  },
+  {
+    "cluster": 117
+  },
+  {
+    "cluster": 41
+  },
+  {
+    "cluster": 135
+  },
+  {
+    "cluster": 125
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 41
+  },
+  {
+    "cluster": 41
+  },
+  {
+    "cluster": 110
+  },
+  {
+    "cluster": 21
+  },
+  {
+    "cluster": 117
+  },
+  {
+    "cluster": 117
+  },
+  {
+    "cluster": 32
+  },
+  {
+    "cluster": 49
+  },
+  {
+    "cluster": 18
+  },
+  {
+    "cluster": 2
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 4
+  },
+  {
+    "cluster": 41
+  },
+  {
+    "cluster": 56
+  },
+  {
+    "cluster": 83
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 114
+  },
+  {
+    "cluster": 145
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 129
+  },
+  {
+    "cluster": 114
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 83
+  },
+  {
+    "cluster": 41
+  },
+  {
+    "cluster": 129
+  },
+  {
+    "cluster": 2
+  },
+  {
+    "cluster": 78
+  },
+  {
+    "cluster": 62
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 118
+  },
+  {
+    "cluster": 52
+  },
+  {
+    "cluster": 29
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 91
+  },
+  {
+    "cluster": 114
+  },
+  {
+    "cluster": 76
+  },
+  {
+    "cluster": 114
+  },
+  {
+    "cluster": 89
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 114
+  },
+  {
+    "cluster": 83
+  },
+  {
+    "cluster": 49
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 18
+  },
+  {
+    "cluster": 89
+  },
+  {
+    "cluster": 50
+  },
+  {
+    "cluster": 36
+  },
+  {
+    "cluster": 117
+  },
+  {
+    "cluster": 117
+  },
+  {
+    "cluster": 25
+  },
+  {
+    "cluster": 55
+  },
+  {
+    "cluster": 85
+  },
+  {
+    "cluster": 89
+  },
+  {
+    "cluster": 50
+  },
+  {
+    "cluster": 114
+  },
+  {
+    "cluster": 85
+  },
+  {
+    "cluster": 91
+  },
+  {
+    "cluster": 139
+  },
+  {
+    "cluster": 120
+  },
+  {
+    "cluster": 67
+  },
+  {
+    "cluster": 110
+  },
+  {
+    "cluster": 49
+  },
+  {
+    "cluster": 76
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 76
+  },
+  {
+    "cluster": 50
+  },
+  {
+    "cluster": 50
+  },
+  {
+    "cluster": 103
+  },
+  {
+    "cluster": 85
+  },
+  {
+    "cluster": 75
+  },
+  {
+    "cluster": 100
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 83
+  },
+  {
+    "cluster": 104
+  },
+  {
+    "cluster": 114
+  },
+  {
+    "cluster": 83
+  },
+  {
+    "cluster": 143
+  },
+  {
+    "cluster": 137
+  },
+  {
+    "cluster": 18
+  },
+  {
+    "cluster": 53
+  },
+  {
+    "cluster": 125
+  },
+  {
+    "cluster": 83
+  },
+  {
+    "cluster": 36
+  },
+  {
+    "cluster": 114
+  },
+  {
+    "cluster": 118
+  },
+  {
+    "cluster": 117
+  },
+  {
+    "cluster": 85
+  },
+  {
+    "cluster": 85
+  },
+  {
+    "cluster": 75
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 56
+  },
+  {
+    "cluster": 117
+  },
+  {
+    "cluster": 91
+  },
+  {
+    "cluster": 35
+  },
+  {
+    "cluster": 49
+  },
+  {
+    "cluster": 114
+  },
+  {
+    "cluster": 129
+  },
+  {
+    "cluster": 129
+  },
+  {
+    "cluster": 56
+  },
+  {
+    "cluster": 56
+  },
+  {
+    "cluster": 114
+  },
+  {
+    "cluster": 75
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 114
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 56
+  },
+  {
+    "cluster": 114
+  },
+  {
+    "cluster": 75
+  },
+  {
+    "cluster": 75
+  },
+  {
+    "cluster": 129
+  },
+  {
+    "cluster": 53
+  },
+  {
+    "cluster": 117
+  },
+  {
+    "cluster": 56
+  },
+  {
+    "cluster": 56
+  },
+  {
+    "cluster": 56
+  },
+  {
+    "cluster": 56
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 56
+  },
+  {
+    "cluster": 36
+  },
+  {
+    "cluster": 37
+  },
+  {
+    "cluster": 84
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 36
+  },
+  {
+    "cluster": 113
+  },
+  {
+    "cluster": 75
+  },
+  {
+    "cluster": 13
+  },
+  {
+    "cluster": 52
+  },
+  {
+    "cluster": 84
+  },
+  {
+    "cluster": 14
+  },
+  {
+    "cluster": 75
+  },
+  {
+    "cluster": 75
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 84
+  },
+  {
+    "cluster": 84
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 84
+  },
+  {
+    "cluster": 53
+  },
+  {
+    "cluster": 53
+  },
+  {
+    "cluster": 129
+  },
+  {
+    "cluster": 84
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 100
+  },
+  {
+    "cluster": 114
+  },
+  {
+    "cluster": 75
+  },
+  {
+    "cluster": 75
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 75
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 36
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 28
+  },
+  {
+    "cluster": 61
+  },
+  {
+    "cluster": 58
+  },
+  {
+    "cluster": 61
+  },
+  {
+    "cluster": 61
+  },
+  {
+    "cluster": 138
+  },
+  {
+    "cluster": 61
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": -1
+  },
+  {
+    "cluster": 104
+  },
+  {
+    "cluster": 9
+  },
+  {
+    "cluster": 114
+  }
+]
