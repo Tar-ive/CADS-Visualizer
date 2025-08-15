@@ -5,7 +5,14 @@ Database data integrity tests for CADS Research Visualization System
 import pytest
 import pandas as pd
 import psycopg2
+import os
 from tests.fixtures.test_helpers import assert_dataframe_structure
+
+# Skip database tests in CI environment since they require actual Supabase data
+pytestmark = pytest.mark.skipif(
+    os.getenv("CI") == "true" or os.getenv("GITHUB_ACTIONS") == "true",
+    reason="Database tests require actual Supabase data, not available in CI"
+)
 
 
 class TestDataIntegrity:
