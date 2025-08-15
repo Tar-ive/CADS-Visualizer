@@ -27,7 +27,7 @@ class TestCIEnvironment:
         assert (project_root / "visuals").exists(), "visuals directory missing"
         
         # Check key files exist
-        assert (project_root / "cads" / "requirements.txt").exists(), "requirements.txt missing"
+        assert (project_root / "requirements.txt").exists(), "root requirements.txt missing"
         assert (project_root / "README.md").exists(), "README.md missing"
     
     def test_environment_variables(self):
