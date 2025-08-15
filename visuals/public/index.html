@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CADS Research Visualization</title>
+    <title>CADS Research Visualization - Texas State University</title>
     <meta name="description" content="Interactive visualization of Texas State University CADS research landscape">
+    <link rel="icon" type="image/png" href="cads_logo.png">
 
     <!-- Sentry Error Tracking -->
     <script src="https://js.sentry-cdn.com/859c6ba713b1af67c44c0b217300cd9a.min.js"
@@ -91,54 +92,67 @@
             color: #888;
         }
 
-        /* Main visualization container */
+        /* Main visualization container - adjusted for sidebar */
         #map-container {
-            width: 100vw;
+            width: calc(100vw - 320px);
             height: 100vh;
             position: relative;
             background: #1a1a1a;
+            margin-left: 320px;
         }
 
-        /* UI Panel */
+        /* Gold overlay for visualization background */
+        #map-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(215, 189, 138, 0.2), rgba(172, 145, 85, 0.2));
+            pointer-events: none;
+            z-index: 1;
+        }
+
+
+
+        /* UI Panel - Texas State Maroon Sidebar */
         #ui-panel {
             position: fixed;
-            top: 20px;
-            left: 20px;
-            background: rgba(42, 42, 42, 0.95);
-            border: 1px solid #555;
-            border-radius: 8px;
-            padding: 14px;
-            min-width: 240px;
-            max-width: 260px;
-            max-height: calc(100vh - 40px);
+            top: 0;
+            left: 0;
+            width: 320px;
+            height: 100vh;
+            background: #501214; /* Texas State Maroon */
+            border: none;
+            border-radius: 0;
+            padding: 0;
             overflow-y: auto;
             overflow-x: hidden;
-            backdrop-filter: blur(10px);
             z-index: 100;
             transition: transform 0.3s ease;
+            box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3);
         }
 
-        #ui-panel.collapsed {
-            transform: translateX(-220px);
-        }
 
-        /* Custom scrollbar for UI panel */
+
+        /* Custom scrollbar for UI panel - Texas State Maroon */
         #ui-panel::-webkit-scrollbar {
             width: 6px;
         }
 
         #ui-panel::-webkit-scrollbar-track {
-            background: rgba(255, 255, 255, 0.1);
+            background: rgba(80, 18, 20, 0.3); /* Texas State Maroon with transparency */
             border-radius: 3px;
         }
 
         #ui-panel::-webkit-scrollbar-thumb {
-            background: rgba(255, 255, 255, 0.3);
+            background: #501214; /* Texas State Maroon */
             border-radius: 3px;
         }
 
         #ui-panel::-webkit-scrollbar-thumb:hover {
-            background: rgba(255, 255, 255, 0.5);
+            background: #EA664D; /* Lighter maroon on hover */
         }
 
         /* Zoom Controls */
@@ -153,13 +167,13 @@
         }
 
         .zoom-button {
-            width: 40px;
-            height: 40px;
-            background: rgba(42, 42, 42, 0.95);
-            border: 1px solid #555;
-            border-radius: 6px;
-            color: #fff;
-            font-size: 18px;
+            width: 44px;
+            height: 44px;
+            background: rgba(80, 18, 20, 0.95); /* Texas State Maroon */
+            border: 2px solid #AC9155; /* Texas State Dark Gold */
+            border-radius: 8px;
+            color: #D7BD8A; /* Texas State Bright Gold */
+            font-size: 20px;
             font-weight: bold;
             cursor: pointer;
             display: flex;
@@ -167,15 +181,19 @@
             justify-content: center;
             transition: all 0.2s ease;
             backdrop-filter: blur(10px);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
         }
 
         .zoom-button:hover {
-            background: rgba(60, 60, 60, 0.95);
-            border-color: #007acc;
+            background: rgba(172, 145, 85, 0.95); /* Texas State Dark Gold */
+            border-color: #D7BD8A; /* Texas State Bright Gold */
+            color: #501214; /* Texas State Maroon */
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
         }
 
         .zoom-button:active {
-            transform: scale(0.95);
+            transform: scale(0.95) translateY(0);
         }
 
         /* Onboarding Info Box */
@@ -252,78 +270,139 @@
         }
 
         .panel-header {
+            background: #501214; /* Texas State Maroon */
+            padding: 20px;
+            border-bottom: 2px solid #AC9155; /* Texas State Gold border */
+            position: relative;
+        }
+
+        .panel-title-container {
             display: flex;
-            justify-content: space-between;
+            flex-direction: column;
             align-items: center;
-            margin-bottom: 16px;
-            padding-bottom: 12px;
-            border-bottom: 1px solid #555;
+            gap: 12px;
+            text-align: center;
+        }
+
+        .cads-logo {
+            height: 48px;
+            width: auto;
+            object-fit: contain;
+            background: #D7BD8A; /* Texas State Bright Gold background */
+            border-radius: 50%;
+            padding: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+            filter: brightness(1.1) contrast(1.2);
         }
 
         .panel-title {
-            font-size: 18px;
-            font-weight: 600;
-            color: #fff;
+            font-size: 24px;
+            font-weight: 700;
+            color: #D7BD8A; /* Texas State Bright Gold */
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+            margin: 0;
         }
 
-        .toggle-button {
-            background: none;
-            border: none;
-            color: #ccc;
-            cursor: pointer;
-            font-size: 18px;
-            padding: 4px;
-            border-radius: 4px;
-            transition: background-color 0.2s;
+        .panel-subtitle {
+            font-size: 14px;
+            color: #D7BD8A;
+            opacity: 0.9;
+            margin-top: 8px;
+            line-height: 1.4;
         }
 
-        .toggle-button:hover {
-            background-color: rgba(255, 255, 255, 0.1);
+
+
+        /* Sidebar content area */
+        .sidebar-content {
+            padding: 20px;
+            height: calc(100vh - 240px); /* Adjust for header and footer height */
+            overflow-y: auto;
+        }
+
+        /* Sidebar footer */
+        .sidebar-footer {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            border-top: 2px solid #AC9155; /* Texas State Dark Gold */
+            text-align: center;
+        }
+
+        .university-info {
+            color: #D7BD8A; /* Texas State Bright Gold */
+        }
+
+        .university-name {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        .department-name {
+            font-size: 12px;
+            opacity: 0.9;
+            margin-bottom: 8px;
+            line-height: 1.3;
+        }
+
+        .rating-stars {
+            font-size: 14px;
+            color: #D7BD8A;
+            letter-spacing: 2px;
         }
 
         /* Search section */
         .search-section {
-            margin-bottom: 20px;
+            margin-bottom: 24px;
         }
 
         .section-title {
-            font-size: 14px;
-            font-weight: 500;
-            color: #ccc;
-            margin-bottom: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            color: #D7BD8A; /* Texas State Bright Gold */
+            margin-bottom: 12px;
             text-transform: uppercase;
-            letter-spacing: 0.5px;
+            letter-spacing: 0.8px;
+            border-bottom: 1px solid rgba(215, 189, 138, 0.3);
+            padding-bottom: 8px;
         }
 
         #search-input {
             width: 100%;
-            padding: 8px 12px;
-            background: #333;
-            border: 1px solid #555;
-            border-radius: 4px;
+            padding: 10px 14px;
+            background: rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(215, 189, 138, 0.4);
+            border-radius: 6px;
             color: #fff;
             font-size: 14px;
-            transition: border-color 0.2s;
+            transition: all 0.2s;
         }
 
         #search-input:focus {
             outline: none;
-            border-color: #007acc;
+            border-color: #D7BD8A;
+            background: rgba(0, 0, 0, 0.5);
+            box-shadow: 0 0 0 2px rgba(215, 189, 138, 0.2);
         }
 
         #search-input::placeholder {
-            color: #888;
+            color: rgba(255, 255, 255, 0.6);
         }
 
         /* Filter sections */
         .filter-section {
-            margin-bottom: 20px;
-            padding-bottom: 16px;
-            border-bottom: 1px solid #444;
+            margin-bottom: 28px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid rgba(215, 189, 138, 0.2);
         }
 
         .filter-section:last-of-type {
             border-bottom: none;
+            margin-bottom: 0;
         }
 
         .filter-group {
@@ -341,10 +420,10 @@
         input[type="range"],
         input[type="text"] {
             width: 100%;
-            padding: 6px 8px;
-            background: #333;
-            border: 1px solid #555;
-            border-radius: 4px;
+            padding: 8px 12px;
+            background: rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(215, 189, 138, 0.4);
+            border-radius: 6px;
             color: #fff;
             font-size: 13px;
         }
@@ -353,27 +432,29 @@
         input[type="range"]:focus,
         input[type="text"]:focus {
             outline: none;
-            border-color: #007acc;
+            border-color: #D7BD8A;
+            background: rgba(0, 0, 0, 0.5);
+            box-shadow: 0 0 0 2px rgba(215, 189, 138, 0.2);
         }
 
         input[type="text"]::placeholder {
-            color: #888;
+            color: rgba(255, 255, 255, 0.6);
         }
 
         /* Theme checklist styles */
         .theme-checklist {
-            max-height: 200px;
+            max-height: 240px;
             overflow-y: auto;
-            border: 1px solid #555;
-            border-radius: 4px;
-            background: #333;
+            border: 1px solid rgba(215, 189, 138, 0.4);
+            border-radius: 6px;
+            background: rgba(0, 0, 0, 0.3);
         }
 
         .theme-item {
             display: flex;
             align-items: center;
-            padding: 8px 10px;
-            border-bottom: 1px solid #444;
+            padding: 10px 12px;
+            border-bottom: 1px solid rgba(215, 189, 138, 0.2);
             cursor: pointer;
             transition: background-color 0.2s;
         }
@@ -383,7 +464,7 @@
         }
 
         .theme-item:hover {
-            background-color: #3a3a3a;
+            background-color: rgba(215, 189, 138, 0.1);
         }
 
         .theme-checkbox {
@@ -419,23 +500,25 @@
         }
 
         #add-keyword-btn {
-            background: #007acc;
+            background: #AC9155; /* Texas State Dark Gold */
             border: none;
             color: white;
-            padding: 6px 12px;
-            border-radius: 4px;
+            padding: 8px 14px;
+            border-radius: 6px;
             font-size: 12px;
+            font-weight: 600;
             cursor: pointer;
             transition: background-color 0.2s;
             white-space: nowrap;
         }
 
         #add-keyword-btn:hover {
-            background: #005a9e;
+            background: #D7BD8A; /* Texas State Bright Gold */
+            color: #501214; /* Texas State Maroon */
         }
 
         #add-keyword-btn:disabled {
-            background: #555;
+            background: rgba(172, 145, 85, 0.5);
             cursor: not-allowed;
         }
 
@@ -466,12 +549,13 @@
         .keyword-tag {
             display: inline-flex;
             align-items: center;
-            background: #007acc;
+            background: #AC9155; /* Texas State Dark Gold */
             color: white;
-            padding: 4px 8px;
-            border-radius: 12px;
+            padding: 6px 10px;
+            border-radius: 14px;
             font-size: 11px;
-            gap: 4px;
+            font-weight: 600;
+            gap: 6px;
         }
 
         .keyword-tag-remove {
@@ -497,24 +581,29 @@
 
         /* Stats section */
         .stats-section {
-            padding-top: 16px;
-            border-top: 1px solid #555;
+            padding-top: 20px;
+            border-top: 2px solid rgba(215, 189, 138, 0.3);
+            margin-top: 20px;
         }
 
         .stat-item {
             display: flex;
             justify-content: space-between;
-            margin-bottom: 8px;
-            font-size: 13px;
+            align-items: center;
+            margin-bottom: 12px;
+            font-size: 14px;
+            padding: 8px 0;
         }
 
         .stat-label {
-            color: #aaa;
+            color: rgba(255, 255, 255, 0.8);
+            font-weight: 500;
         }
 
         .stat-value {
-            color: #fff;
-            font-weight: 500;
+            color: #D7BD8A; /* Texas State Bright Gold */
+            font-weight: 700;
+            font-size: 16px;
         }
 
         /* Error message */
@@ -541,61 +630,158 @@
             opacity: 0.9;
         }
 
-        /* Tooltip */
+        /* Enhanced Tooltip - Solid Information Window */
         #tooltip {
-            position: absolute;
-            background: rgba(42, 42, 42, 0.95);
-            border: 1px solid #555;
-            border-radius: 6px;
-            padding: 12px;
-            max-width: 350px;
-            min-width: 200px;
-            z-index: 200;
+            position: fixed;
+            top: 80px;
+            right: 350px; /* Position next to sidebar */
+            background: #501214 !important; /* Texas State Maroon - solid background */
+            border: 2px solid #AC9155; /* Texas State Dark Gold border */
+            border-radius: 8px;
+            padding: 16px;
+            width: 300px;
+            max-height: 350px;
+            z-index: 1000;
             pointer-events: none;
-            backdrop-filter: blur(10px);
             display: none;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
+            overflow-y: auto;
+            opacity: 1 !important;
+            visibility: hidden;
+        }
+
+        #tooltip.visible {
+            display: block !important;
+            visibility: visible !important;
+        }
+
+        .tooltip-header {
+            border-bottom: 1px solid #AC9155;
+            padding-bottom: 12px;
+            margin-bottom: 12px;
         }
 
         .tooltip-title {
-            font-weight: 600;
-            margin-bottom: 6px;
-            color: #fff;
-            font-size: 14px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: #D7BD8A; /* Texas State Bright Gold */
+            font-size: 16px;
             line-height: 1.3;
             word-wrap: break-word;
         }
 
-        .tooltip-details {
+        .tooltip-authors {
+            font-size: 13px;
+            color: #ffffff;
+            margin-bottom: 6px;
+            font-weight: 500;
+        }
+
+        .tooltip-year {
             font-size: 12px;
-            color: #ccc;
+            color: #AC9155; /* Texas State Dark Gold */
+            font-weight: 600;
+        }
+
+        .tooltip-details {
+            font-size: 13px;
+            color: #ffffff;
+            line-height: 1.5;
+            margin-bottom: 12px;
+        }
+
+        .tooltip-abstract {
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.9);
             line-height: 1.4;
-            margin-bottom: 4px;
+            margin-bottom: 12px;
+            max-height: 120px;
+            overflow-y: auto;
+            padding-right: 8px;
         }
 
         .tooltip-meta {
-            margin-top: 8px;
-            padding-top: 8px;
-            border-top: 1px solid #555;
+            margin-top: 12px;
+            padding-top: 12px;
+            border-top: 1px solid rgba(172, 145, 85, 0.3);
             font-size: 11px;
-            color: #888;
+            color: rgba(255, 255, 255, 0.7);
             line-height: 1.4;
-            word-wrap: break-word;
+        }
+
+        .tooltip-meta-item {
+            margin-bottom: 4px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .tooltip-meta-label {
+            color: #AC9155;
+            font-weight: 600;
+        }
+
+        .tooltip-meta-value {
+            color: #ffffff;
+        }
+
+        /* Custom scrollbar for tooltip */
+        #tooltip::-webkit-scrollbar {
+            width: 4px;
+        }
+
+        #tooltip::-webkit-scrollbar-track {
+            background: rgba(172, 145, 85, 0.2);
+            border-radius: 2px;
+        }
+
+        #tooltip::-webkit-scrollbar-thumb {
+            background: #AC9155;
+            border-radius: 2px;
+        }
+
+        #tooltip::-webkit-scrollbar-thumb:hover {
+            background: #D7BD8A;
         }
 
         /* Responsive design */
         @media (max-width: 768px) {
             #ui-panel {
-                top: 10px;
-                left: 10px;
-                right: 10px;
-                min-width: auto;
-                max-width: none;
-                width: calc(100vw - 20px);
+                width: 100vw;
+                height: 50vh;
+                top: auto;
+                bottom: 0;
+                left: 0;
+                border-radius: 20px 20px 0 0;
             }
 
-            #ui-panel.collapsed {
-                transform: translateY(-calc(100% - 50px));
+            #map-container {
+                width: 100vw;
+                height: 50vh;
+                margin-left: 0;
+            }
+
+            .panel-header {
+                padding: 15px 20px;
+            }
+
+            .cads-logo {
+                height: 36px;
+                padding: 6px;
+            }
+
+            .panel-title {
+                font-size: 20px;
+            }
+
+            .sidebar-content {
+                height: calc(50vh - 180px);
+                padding: 15px 20px;
+            }
+
+            .sidebar-footer {
+                position: relative;
+                padding: 15px 20px;
             }
 
             #error-message {
@@ -603,6 +789,17 @@
                 right: 10px;
                 left: 10px;
                 max-width: none;
+            }
+
+            /* Mobile tooltip positioning */
+            #tooltip {
+                position: fixed;
+                top: auto;
+                bottom: 60px;
+                right: 10px;
+                left: 10px;
+                width: auto;
+                max-height: 200px;
             }
         }
 
@@ -646,7 +843,7 @@
     <!-- Loading Screen -->
     <div id="loading">
         <div class="spinner"></div>
-        <div class="loading-text">Loading CADS Research Visualization...</div>
+        <div class="loading-text">Loading CADS Research Explorer...</div>
         <div class="loading-progress" id="loading-progress">Initializing...</div>
     </div>
 
@@ -662,9 +859,15 @@
     <!-- UI Control Panel -->
     <div id="ui-panel">
         <div class="panel-header">
-            <div class="panel-title"> CADS Research Explorer</div>
-            <button class="toggle-button" id="panel-toggle" title="Toggle panel">−</button>
+            <div class="panel-title-container">
+                <img src="cads_logo.png" alt="CADS Logo" class="cads-logo">
+                <div class="panel-title">CADS Atlas</div>
+                <div class="panel-subtitle">Explore the research landscape of the<br>Center for Analytics and Data Science</div>
+            </div>
+
         </div>
+        
+        <div class="sidebar-content">
 
         <!-- Researcher Filter Section -->
         <div class="filter-section">
@@ -739,18 +942,34 @@
             </div>
         </div>
 
-        <!-- Credit -->
-        <div
-            style="margin-top: 16px; padding-top: 12px; border-top: 1px solid #555; font-size: 10px; color: #666; text-align: center;">
-            Built by Saksham Adhikari for CADS
-        </div>
+
     </div>
 
-    <!-- Tooltip -->
+    <!-- Enhanced Tooltip - Research Work Information Window -->
     <div id="tooltip">
-        <div class="tooltip-title" id="tooltip-title"></div>
+        <div class="tooltip-header">
+            <div class="tooltip-title" id="tooltip-title"></div>
+            <div class="tooltip-authors" id="tooltip-authors"></div>
+            <div class="tooltip-year" id="tooltip-year"></div>
+        </div>
+        
         <div class="tooltip-details" id="tooltip-details"></div>
-        <div class="tooltip-meta" id="tooltip-meta"></div>
+        <div class="tooltip-abstract" id="tooltip-abstract"></div>
+        
+        <div class="tooltip-meta" id="tooltip-meta">
+            <div class="tooltip-meta-item">
+                <span class="tooltip-meta-label">Citations:</span>
+                <span class="tooltip-meta-value" id="tooltip-citations">-</span>
+            </div>
+            <div class="tooltip-meta-item">
+                <span class="tooltip-meta-label">Research Theme:</span>
+                <span class="tooltip-meta-value" id="tooltip-theme">-</span>
+            </div>
+            <div class="tooltip-meta-item">
+                <span class="tooltip-meta-label">DOI:</span>
+                <span class="tooltip-meta-value" id="tooltip-doi">-</span>
+            </div>
+        </div>
     </div>
 
     <!-- Zoom Controls -->
@@ -766,7 +985,7 @@
             <button class="onboarding-close" id="onboarding-close" title="Close">×</button>
         </div>
         <div class="onboarding-content">
-            <strong>Explore CADS Research:</strong>
+            <strong>Explore Research:</strong>
             <ul>
                 <li><strong>Filter by Researcher:</strong> Type names to find specific faculty</li>
                 <li><strong>Select Themes:</strong> Check/uncheck research areas of interest</li>
@@ -775,6 +994,15 @@
                 <li><strong>Navigate:</strong> Click and drag to pan, scroll to zoom</li>
                 <li><strong>Details:</strong> Hover over points for paper information</li>
             </ul>
+        <!-- Sidebar Footer -->
+        <div class="sidebar-footer">
+            <div class="university-info">
+                <div class="university-name">Texas State University</div>
+                <div class="department-name">Center for Analytics and Data Science</div>
+                <div class="rating-stars">★ ★ ★</div>
+            </div>
+        </div>
+        
         </div>
     </div>
 

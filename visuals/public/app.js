@@ -39,7 +39,7 @@ const app = {
         errorDetails: document.getElementById('error-details'),
         mapContainer: document.getElementById('map-container'),
         uiPanel: document.getElementById('ui-panel'),
-        panelToggle: document.getElementById('panel-toggle'),
+        // panelToggle removed - sidebar is now permanent
         researcherInput: document.getElementById('researcher-input'),
         themeChecklist: document.getElementById('theme-checklist'),
         keywordsInput: document.getElementById('keywords-input'),
@@ -50,7 +50,10 @@ const app = {
         yearDisplay: document.getElementById('year-display'),
         tooltip: document.getElementById('tooltip'),
         tooltipTitle: document.getElementById('tooltip-title'),
+        tooltipAuthors: document.getElementById('tooltip-authors'),
+        tooltipYear: document.getElementById('tooltip-year'),
         tooltipDetails: document.getElementById('tooltip-details'),
+        tooltipAbstract: document.getElementById('tooltip-abstract'),
         tooltipMeta: document.getElementById('tooltip-meta'),
         visiblePapers: document.getElementById('visible-papers'),
         totalPapers: document.getElementById('total-papers'),
@@ -66,6 +69,16 @@ const app = {
 // Initialize the application
 function init() {
     console.log('🚀 Starting CADS Research Visualization...');
+    
+    // Debug: Check if all required elements exist (development only)
+    if (window.location.hostname === 'localhost') {
+        const requiredElements = ['loading', 'mapContainer', 'uiPanel', 'researcherInput', 'themeChecklist'];
+        for (const elementName of requiredElements) {
+            if (!app.elements[elementName]) {
+                console.error(`❌ Missing required element: ${elementName}`);
+            }
+        }
+    }
 
     // Track application initialization
     trackEvent('App Initialization', {
@@ -111,8 +124,7 @@ function initializeOnboarding() {
 
 // Set up UI event listeners
 function setupUIEventListeners() {
-    // Panel toggle
-    app.elements.panelToggle.addEventListener('click', togglePanel);
+    // Panel toggle removed - sidebar is now permanent
 
     // Year filter
     app.elements.yearFilter.addEventListener('input', (e) => {
@@ -199,15 +211,10 @@ function setupUIEventListeners() {
     });
 }
 
-// Toggle UI panel
-function togglePanel() {
-    const panel = app.elements.uiPanel;
-    const button = app.elements.panelToggle;
-
-    panel.classList.toggle('collapsed');
-    button.textContent = panel.classList.contains('collapsed') ? '+' : '−';
-    button.title = panel.classList.contains('collapsed') ? 'Show panel' : 'Hide panel';
-}
+// Toggle UI panel - REMOVED (sidebar is now permanent)
+// function togglePanel() {
+//     // Sidebar is now permanent, no toggle functionality needed
+// }
 
 // Update loading progress
 function updateLoadingProgress(message) {
@@ -251,47 +258,59 @@ function hideLoading() {
     }, 300);
 }
 
-// Show tooltip
-function showTooltip(x, y, title, details, meta) {
-    app.elements.tooltipTitle.textContent = title;
-    app.elements.tooltipDetails.textContent = details;
-    app.elements.tooltipMeta.textContent = meta;
-
+// Show simple tooltip first, then enhance
+function showTooltip(x, y, workData) {
+    // console.log('Showing tooltip for:', workData.title);
+    
     const tooltip = app.elements.tooltip;
+    if (!tooltip) {
+        console.error('Tooltip element not found');
+        return;
+    }
+
+    // Simple approach - just show basic info first
+    const title = workData.title || 'Untitled Work';
+    const authors = workData.authors || 'Unknown Authors';
+    const year = workData.year || 'Unknown Year';
+    
+    // Set basic content
+    tooltip.innerHTML = `
+        <div style="color: #D7BD8A; font-weight: bold; font-size: 16px; margin-bottom: 8px;">
+            ${title}
+        </div>
+        <div style="color: white; font-size: 13px; margin-bottom: 4px;">
+            ${authors}
+        </div>
+        <div style="color: #AC9155; font-size: 12px;">
+            ${year}
+        </div>
+    `;
+
+    // Show tooltip with direct styling
     tooltip.style.display = 'block';
-
-    // Position tooltip near cursor with small offset
-    const offsetX = 15;
-    const offsetY = 15;
-    let tooltipX = x + offsetX;
-    let tooltipY = y + offsetY;
-
-    tooltip.style.left = tooltipX + 'px';
-    tooltip.style.top = tooltipY + 'px';
-
-    // Adjust position if tooltip goes off screen
-    const rect = tooltip.getBoundingClientRect();
-    if (rect.right > window.innerWidth) {
-        tooltipX = x - rect.width - offsetX;
-        tooltip.style.left = tooltipX + 'px';
-    }
-    if (rect.bottom > window.innerHeight) {
-        tooltipY = y - rect.height - offsetY;
-        tooltip.style.top = tooltipY + 'px';
-    }
-
-    // Ensure tooltip doesn't go off the left or top edge
-    if (tooltipX < 0) {
-        tooltip.style.left = '10px';
-    }
-    if (tooltipY < 0) {
-        tooltip.style.top = '10px';
-    }
+    tooltip.style.visibility = 'visible';
+    tooltip.style.opacity = '1';
+    tooltip.style.background = '#501214';
+    tooltip.style.border = '2px solid #AC9155';
+    tooltip.style.borderRadius = '8px';
+    tooltip.style.padding = '16px';
+    tooltip.style.position = 'fixed';
+    tooltip.style.top = '80px';
+    tooltip.style.right = '350px';
+    tooltip.style.width = '300px';
+    tooltip.style.zIndex = '1000';
+    
+    // console.log('Simple tooltip should be visible now');
 }
 
 // Hide tooltip
 function hideTooltip() {
-    app.elements.tooltip.style.display = 'none';
+    const tooltip = app.elements.tooltip;
+    if (tooltip) {
+        tooltip.style.display = 'none';
+        tooltip.style.visibility = 'hidden';
+        tooltip.classList.remove('visible');
+    }
 }
 
 // Debounce utility function
@@ -784,7 +803,7 @@ const ZOOM_DISCLOSURE_CONFIG = {
 // Simplified label visibility check
 function shouldShowLabels() {
     const shouldShow = app.currentZoom >= ZOOM_DISCLOSURE_CONFIG.showLabelsZoom;
-    console.log(`🔍 shouldShowLabels: zoom=${app.currentZoom.toFixed(1)}, threshold=${ZOOM_DISCLOSURE_CONFIG.showLabelsZoom}, result=${shouldShow}`);
+    // console.log(`🔍 shouldShowLabels: zoom=${app.currentZoom.toFixed(1)}, threshold=${ZOOM_DISCLOSURE_CONFIG.showLabelsZoom}, result=${shouldShow}`);
     return shouldShow;
 }
 
@@ -957,11 +976,20 @@ function handleHover(info) {
         const researcher = app.data.r.find(r => r.i === publication.r);
         const cluster = app.data.c.find(c => c.i === publication.c);
 
-        const title = publication.t || 'Untitled';
-        const details = `${researcher ? researcher.n : 'Unknown Author'} • ${publication.y || 'Unknown Year'}`;
-        const meta = `${publication.cit || 0} citations • ${cluster ? cluster.n : 'Uncategorized'}`;
+        // Create enhanced work data object for tooltip
+        const workData = {
+            title: publication.t || 'Untitled Work',
+            authors: researcher ? researcher.n : 'Unknown Author',
+            year: publication.y || 'Unknown Year',
+            abstract: publication.a || 'No abstract available for this work.',
+            cit: publication.cit || 0,
+            doi: publication.doi || 'Not available',
+            venue: publication.v || publication.j || '', // venue or journal
+            cluster: publication.c,
+            researcher: researcher ? researcher.n : 'Unknown'
+        };
 
-        showTooltip(info.x, info.y, title, details, meta);
+        showTooltip(info.x, info.y, workData);
     } else {
         hideTooltip();
     }
@@ -1082,8 +1110,11 @@ function applyFilters() {
             filter_summary: filterSummary
         });
         
-        console.log('🔍 Active filters:', filterSummary);
-        console.log(`📊 Filtered results: ${filteredData.length}/${app.data.p.length} papers`);
+        // Development logging only
+        if (window.location.hostname === 'localhost') {
+            console.log('🔍 Active filters:', filterSummary);
+            console.log(`📊 Filtered results: ${filteredData.length}/${app.data.p.length} papers`);
+        }
     }
 }
 
@@ -1095,17 +1126,31 @@ function performSearch(query) {
         return;
     }
 
-    // Removed logging for better performance
-    // TODO: Implement search functionality with search index
-    // For now, just apply current filters
+    // Apply current filters (search functionality integrated)
     applyFilters();
 }
 
 // Initialize when DOM is loaded
 if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', init);
+    document.addEventListener('DOMContentLoaded', () => {
+        try {
+            init();
+        } catch (error) {
+            console.error('❌ Initialization error:', error);
+            if (window.showError) {
+                window.showError('Initialization Error', error.message);
+            }
+        }
+    });
 } else {
-    init();
+    try {
+        init();
+    } catch (error) {
+        console.error('❌ Initialization error:', error);
+        if (window.showError) {
+            window.showError('Initialization Error', error.message);
+        }
+    }
 }
 
 // Monitoring and Analytics Functions
@@ -1263,7 +1308,7 @@ if (document.readyState === 'loading') {
     initializeMonitoring();
 }
 
-// Expose functions and app object globally for debugging and error handling
+// Expose functions and app object globally for error handling
 window.CADSVisualization = app;
 window.showError = showError;
 window.trackEvent = trackEvent;
