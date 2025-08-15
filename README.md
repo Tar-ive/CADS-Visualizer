@@ -345,21 +345,30 @@ python3 cads/process_data.py
 
 ## 📚 Documentation
 
-### Quick Reference
-- **[CADS Pipeline](cads/README.md)** - Core processing system documentation
+### 🚀 Getting Started
+- **[Installation Guide](docs/setup/INSTALLATION_GUIDE.md)** - Complete setup instructions from scratch
+- **[User Guide](docs/setup/USER_GUIDE.md)** - How to use the visualization system
+- **[Troubleshooting Guide](docs/setup/TROUBLESHOOTING_GUIDE.md)** - Common issues and solutions
+
+### 🔧 System Operation
+- **[CI/CD Pipeline Guide](docs/setup/CICD_PIPELINE_GUIDE.md)** - Automated testing and deployment
+- **[Monitoring Setup](docs/monitoring/MONITORING_SETUP.md)** - Error tracking and analytics
+- **[Monitoring Interpretation](docs/monitoring/MONITORING_INTERPRETATION_GUIDE.md)** - Understanding metrics and alerts
+
+### 📖 Component Documentation
+- **[CADS Pipeline](cads/README.md)** - Core data processing system
 - **[Database Schema](database/README.md)** - Table structure and relationships
 - **[Scripts Guide](scripts/README.md)** - Utility scripts and workflows
 - **[Data Organization](data/README.md)** - Data structure and formats
 
-### Comprehensive Guides
-- **[Setup Documentation](docs/setup/)** - Installation and configuration guides
-- **[Pipeline Documentation](docs/pipeline/)** - Technical architecture details
-- **[Migration Reports](docs/migration/)** - Historical context and migration records
+### 🧪 Testing and Quality
+- **[Testing Guide](docs/TESTING_GUIDE.md)** - Comprehensive test suite documentation
+- **[Test Results](tests/README.md)** - Current test status and coverage
 
-### Technical References
-- **[Repository Analysis](CADS_REPOSITORY_ANALYSIS.md)** - Detailed organization analysis
-- **API Documentation**: Function docstrings in source code
-- **Test Documentation**: Test file headers and comments
+### 📋 Technical References
+- **[Repository Analysis](docs/CADS_REPOSITORY_ANALYSIS.md)** - Detailed organization analysis
+- **[Migration Reports](docs/migration/)** - Historical context and migration records
+- **[API Documentation](docs/api/)** - Function references and examples
 
 ## 🤝 Contributing
 

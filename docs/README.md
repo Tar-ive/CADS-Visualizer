@@ -1,214 +1,190 @@
-# CADS Research Visualization Documentation
+# CADS Research Visualization System - Documentation
 
-## 📚 Overview
+Welcome to the comprehensive documentation for the CADS Research Visualization System. This documentation covers everything from initial setup to advanced system operation and maintenance.
 
-This directory contains comprehensive documentation for the CADS (Computer Science Department) Research Visualization project. The documentation is organized by topic for easy navigation and reference.
+## 📋 Documentation Structure
 
-## 📁 Documentation Structure
+### 🚀 Getting Started (Essential Reading)
 
-```
-docs/
-├── README.md                    # This documentation index
-├── setup/                       # Installation and configuration guides
-│   ├── installation.md          # Step-by-step installation
-│   ├── configuration.md         # Environment and system configuration
-│   └── troubleshooting.md       # Common issues and solutions
-├── pipeline/                    # Data pipeline documentation
-│   ├── data-flow.md            # Data flow diagrams and explanations
-│   ├── architecture.md         # System architecture overview
-│   └── api-reference.md        # API and function reference
-└── migration/                   # Migration and historical documentation
-    ├── cads_migration_report.md
-    └── supabase_connection_issue_analysis.md
-```
+#### [Installation Guide](setup/INSTALLATION_GUIDE.md)
+Complete step-by-step installation instructions from prerequisites to first launch.
+- System requirements and prerequisites
+- Database setup with Supabase
+- Python environment configuration
+- Data processing pipeline setup
+- Visualization deployment
+- Verification and testing procedures
 
-## 🚀 Quick Start
+#### [User Guide](setup/USER_GUIDE.md)
+Comprehensive guide for using the visualization system to explore research data.
+- Understanding the visualization interface
+- Search and discovery features
+- Filtering and analysis tools
+- Advanced usage patterns
+- Mobile and accessibility features
 
-### New Users
-1. **[Installation Guide](setup/installation.md)** - Get the system running
-2. **[Configuration Guide](setup/configuration.md)** - Set up your environment
-3. **[Architecture Overview](pipeline/architecture.md)** - Understand the system
+#### [Troubleshooting Guide](setup/TROUBLESHOOTING_GUIDE.md)
+Solutions for common issues and debugging procedures.
+- Database connection problems
+- Python dependency issues
+- Visualization display problems
+- API and external service issues
+- Performance optimization
+- Emergency recovery procedures
 
-### Developers
-1. **[Data Flow Documentation](pipeline/data-flow.md)** - Understand data processing
-2. **[API Reference](pipeline/api-reference.md)** - Function and class documentation
-3. **[Troubleshooting Guide](setup/troubleshooting.md)** - Debug common issues
+### 🔧 System Operation (For Administrators)
 
-### System Administrators
-1. **[Migration Documentation](migration/)** - Historical context and migration reports
-2. **[Configuration Guide](setup/configuration.md)** - System configuration
-3. **[Troubleshooting Guide](setup/troubleshooting.md)** - System maintenance
+#### [CI/CD Pipeline Guide](setup/CICD_PIPELINE_GUIDE.md)
+Understanding and managing the automated testing and deployment pipeline.
+- Pipeline architecture and workflow
+- Testing strategy and execution
+- Deployment processes
+- Monitoring integration
+- Pipeline maintenance and optimization
 
-## 📖 Documentation Categories
+#### [Monitoring Setup](monitoring/MONITORING_SETUP.md)
+Configuring error tracking, analytics, and performance monitoring.
+- Sentry error tracking setup
+- Vercel Analytics configuration
+- GitHub Actions monitoring
+- Alert configuration
+- Dashboard setup
 
-### 🛠️ Setup Documentation (`setup/`)
+#### [Monitoring Interpretation Guide](monitoring/MONITORING_INTERPRETATION_GUIDE.md)
+Understanding metrics, alerts, and system health indicators.
+- Core Web Vitals interpretation
+- Error rate analysis
+- Performance metrics
+- User engagement analytics
+- Alert response procedures
 
-Essential guides for getting the system running:
+### 📖 Component Documentation (For Developers)
 
-- **Installation**: Step-by-step setup instructions
-- **Configuration**: Environment variables, database setup, API keys
-- **Troubleshooting**: Common issues and their solutions
+#### Core System Components
+- **[CADS Pipeline](../cads/README.md)** - Data processing and ML pipeline
+- **[Database Schema](../database/README.md)** - PostgreSQL schema and relationships
+- **[Scripts Collection](../scripts/README.md)** - Utility scripts and automation
+- **[Data Organization](../data/README.md)** - Data structure and file formats
 
-### 🔄 Pipeline Documentation (`pipeline/`)
+#### Visualization System
+- **[Visualization Architecture](../visuals/README.md)** - Frontend architecture and components
+- **[JavaScript Documentation](../visuals/public/README.md)** - Client-side code documentation
+- **[Data API](api/DATA_API.md)** - Data file formats and structures
 
-Technical documentation for the data processing system:
+### 🧪 Testing and Quality Assurance
 
-- **Data Flow**: How data moves through the system
-- **Architecture**: System design and component relationships
-- **API Reference**: Detailed function and class documentation
+#### [Testing Guide](TESTING_GUIDE.md)
+Comprehensive testing documentation and procedures.
+- Test suite organization
+- Running tests locally and in CI
+- Test data management
+- Performance testing
+- Integration testing
 
-### 📋 Migration Documentation (`migration/`)
+#### Test Categories
+- **[Database Tests](../tests/database/README.md)** - Database connectivity and integrity
+- **[Pipeline Tests](../tests/pipeline/README.md)** - ML pipeline validation
+- **[Visualization Tests](../tests/visualization/README.md)** - Frontend functionality
+- **[Integration Tests](../tests/integration/README.md)** - End-to-end workflows
 
-Historical documentation and migration reports:
+### 📋 Technical References
 
-- **Migration Reports**: Records of database migrations and data transfers
-- **Issue Analysis**: Detailed analysis of technical challenges and solutions
+#### System Architecture
+- **[Repository Analysis](CADS_REPOSITORY_ANALYSIS.md)** - Detailed code organization
+- **[Architecture Overview](architecture/SYSTEM_ARCHITECTURE.md)** - High-level system design
+- **[Technology Stack](architecture/TECHNOLOGY_STACK.md)** - Libraries and frameworks used
 
-## 🎯 Key Concepts
+#### Historical Documentation
+- **[Migration Reports](migration/)** - Database migration history
+- **[Cleanup Documentation](CLEANUP_COMPLETED.md)** - Code organization improvements
+- **[Implementation Summaries](monitoring/IMPLEMENTATION_SUMMARY.md)** - Feature implementation records
 
-### System Components
+## 🎯 Quick Navigation by Role
 
-1. **CADS Pipeline** (`cads/`)
-   - Data loading and processing
-   - Embedding generation
-   - Clustering and analysis
+### For New Users
+1. Start with [User Guide](setup/USER_GUIDE.md)
+2. Access the visualization and explore features
+3. Refer to [Troubleshooting Guide](setup/TROUBLESHOOTING_GUIDE.md) if needed
 
-2. **Visualization Dashboard** (`visuals/`)
-   - Interactive web interface
-   - Research data visualization
-   - Search and filtering capabilities
+### For System Administrators
+1. Follow [Installation Guide](setup/INSTALLATION_GUIDE.md) for setup
+2. Configure [Monitoring Setup](monitoring/MONITORING_SETUP.md)
+3. Understand [CI/CD Pipeline](setup/CICD_PIPELINE_GUIDE.md)
+4. Learn [Monitoring Interpretation](monitoring/MONITORING_INTERPRETATION_GUIDE.md)
 
-3. **Database Layer** (`database/`)
-   - PostgreSQL with vector extensions
-   - CADS-specific tables and relationships
-   - Optimized indexes for performance
+### For Developers
+1. Review [Installation Guide](setup/INSTALLATION_GUIDE.md) for development setup
+2. Study component documentation ([CADS Pipeline](../cads/README.md), [Database](../database/README.md))
+3. Understand [Testing Guide](TESTING_GUIDE.md)
+4. Review [Repository Analysis](CADS_REPOSITORY_ANALYSIS.md)
 
-4. **Scripts and Utilities** (`scripts/`)
-   - Migration and setup scripts
-   - Data processing utilities
-   - Maintenance and verification tools
+### For Researchers
+1. Use [User Guide](setup/USER_GUIDE.md) to explore research data
+2. Learn advanced search and filtering techniques
+3. Understand research cluster analysis
+4. Discover collaboration opportunities
 
-### Data Flow Overview
+## 📊 Documentation Metrics
 
-```
-OpenAlex API → Database → CADS Pipeline → Visualization Dashboard
-     ↓              ↓           ↓              ↓
-  Research      PostgreSQL   Embeddings    Interactive
-    Data         Tables      Clustering      Display
-```
+### Coverage Status
+- ✅ **Installation**: Complete step-by-step guide
+- ✅ **User Interface**: Comprehensive usage documentation
+- ✅ **System Operation**: CI/CD and monitoring guides
+- ✅ **Troubleshooting**: Common issues and solutions
+- ✅ **Component APIs**: All major components documented
+- ✅ **Testing**: Complete test suite documentation
 
-## 📊 Project Metrics
+### Maintenance Schedule
+- **Weekly**: Update troubleshooting guide with new issues
+- **Monthly**: Review and update installation procedures
+- **Quarterly**: Comprehensive documentation review and updates
+- **Per Release**: Update component documentation and API references
 
-### Data Volume
-- **~32 CADS Researchers**: Faculty from CS Department
-- **~2,454 Research Works**: Academic papers and publications
-- **~6,834 Research Topics**: Topic classifications
-- **384-dimensional embeddings**: Semantic representations
-
-### System Performance
-- **Data Loading**: ~30 seconds for 2,454 works
-- **Embedding Generation**: ~2 minutes for missing embeddings
-- **Clustering**: ~1 minute for complete analysis
-- **Visualization**: Real-time interactive display
-
-## 🔧 Technical Stack
-
-### Backend
-- **Python 3.8+**: Core processing language
-- **PostgreSQL**: Database with vector extensions
-- **Supabase**: Database hosting and management
-- **OpenAlex API**: Research data source
-
-### Machine Learning
-- **SentenceTransformers**: Embedding generation
-- **UMAP**: Dimensionality reduction
-- **HDBSCAN**: Clustering algorithm
-- **scikit-learn**: ML utilities
-
-### Frontend
-- **HTML/CSS/JavaScript**: Web interface
-- **D3.js**: Data visualization
-- **Interactive components**: Search and filtering
-
-## 📝 Contributing to Documentation
-
-### Adding New Documentation
-
-1. **Choose appropriate category** (setup, pipeline, migration)
-2. **Follow markdown standards** with clear headings and structure
-3. **Include code examples** where relevant
-4. **Add cross-references** to related documentation
-5. **Update this index** to include new files
+## 🤝 Contributing to Documentation
 
 ### Documentation Standards
+- **Clear Structure**: Use consistent heading hierarchy
+- **Code Examples**: Include working code snippets
+- **Screenshots**: Add visual guides where helpful
+- **Cross-References**: Link related documentation
+- **Update Dates**: Keep modification dates current
 
-- **Clear headings**: Use hierarchical markdown headers
-- **Code blocks**: Include syntax highlighting
-- **Examples**: Provide practical examples
-- **Links**: Cross-reference related documentation
-- **Updates**: Keep documentation current with code changes
+### How to Contribute
+1. **Identify Gaps**: Find missing or outdated documentation
+2. **Create Issues**: Report documentation problems
+3. **Submit PRs**: Contribute improvements and additions
+4. **Review Process**: All documentation changes are reviewed
+5. **Style Guide**: Follow existing documentation patterns
 
-### File Naming Convention
+### Documentation Tools
+- **Markdown**: All documentation in Markdown format
+- **Mermaid**: Diagrams and flowcharts
+- **Code Blocks**: Syntax highlighting for examples
+- **Links**: Internal and external reference linking
 
-- Use lowercase with hyphens: `data-flow.md`
-- Be descriptive: `troubleshooting-database-connections.md`
-- Group by category in appropriate subdirectories
+## 📞 Getting Help
 
-## 🔍 Finding Information
+### Documentation Issues
+- **Missing Information**: Create GitHub issue with "documentation" label
+- **Unclear Instructions**: Submit improvement suggestions
+- **Broken Links**: Report broken internal/external links
+- **Outdated Content**: Flag content that needs updates
 
-### By Topic
-
-| Topic | Location | Description |
-|-------|----------|-------------|
-| **Installation** | `setup/installation.md` | Getting started guide |
-| **Database Setup** | `setup/configuration.md` | Database configuration |
-| **Data Processing** | `pipeline/data-flow.md` | Pipeline documentation |
-| **API Usage** | `pipeline/api-reference.md` | Function reference |
-| **Common Issues** | `setup/troubleshooting.md` | Problem solving |
-| **System Design** | `pipeline/architecture.md` | Architecture overview |
-
-### By User Type
-
-| User Type | Recommended Reading |
-|-----------|-------------------|
-| **New User** | installation.md → configuration.md → architecture.md |
-| **Developer** | architecture.md → data-flow.md → api-reference.md |
-| **Admin** | configuration.md → troubleshooting.md → migration/ |
-| **Researcher** | architecture.md → data-flow.md → troubleshooting.md |
-
-## 🔄 Documentation Maintenance
-
-### Regular Updates
-
-- **Code changes**: Update documentation when code changes
-- **New features**: Document new functionality
-- **Bug fixes**: Update troubleshooting guides
-- **Performance improvements**: Update benchmarks and metrics
-
-### Review Process
-
-1. **Technical accuracy**: Verify all instructions work
-2. **Clarity**: Ensure documentation is clear and understandable
-3. **Completeness**: Check that all features are documented
-4. **Currency**: Remove outdated information
-
-## 📞 Support
-
-### Getting Help
-
-1. **Check troubleshooting guide** first
-2. **Search existing documentation** for similar issues
-3. **Review migration reports** for historical context
-4. **Create detailed issue reports** with error messages and context
-
-### Reporting Issues
-
-When reporting documentation issues:
-- **Specify the document** and section
-- **Describe the problem** clearly
-- **Suggest improvements** if possible
-- **Include context** about your use case
+### Support Channels
+1. **GitHub Issues**: Technical problems and bug reports
+2. **GitHub Discussions**: General questions and community help
+3. **Documentation PRs**: Direct improvements and additions
+4. **Team Contact**: Direct contact for urgent documentation needs
 
 ---
 
-**📖 Comprehensive documentation for successful CADS research visualization!**
+**📚 Documentation Complete**
+
+This documentation provides comprehensive coverage of the CADS Research Visualization System. Whether you're a new user, system administrator, or developer, you'll find the information needed to successfully work with the system.
+
+**Quick Start Paths:**
+- **New User**: [User Guide](setup/USER_GUIDE.md) → Start exploring
+- **Administrator**: [Installation Guide](setup/INSTALLATION_GUIDE.md) → [Monitoring Setup](monitoring/MONITORING_SETUP.md)
+- **Developer**: [Installation Guide](setup/INSTALLATION_GUIDE.md) → [Component Docs](../cads/README.md) → [Testing Guide](TESTING_GUIDE.md)
+
+Happy documenting! 📖✨

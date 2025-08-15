@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Visual Testing Script for CADS Research Visualization
-Tests that the visualization is working after cleanup
+Visual Integration Testing Script for CADS Research Visualization
+Tests that the visualization is working after cleanup and deployment
 """
 
 import os
@@ -110,6 +110,7 @@ def test_html_structure():
 
 def start_local_server(port=8000):
     """Start a local HTTP server for testing"""
+    original_dir = os.getcwd()
     os.chdir("visuals/public")
     
     class QuietHandler(SimpleHTTPRequestHandler):
@@ -123,6 +124,9 @@ def start_local_server(port=8000):
     
     thread = threading.Thread(target=run_server, daemon=True)
     thread.start()
+    
+    # Change back to original directory
+    os.chdir(original_dir)
     
     return server, f"http://localhost:{port}"
 
@@ -164,11 +168,12 @@ def test_server_response(url):
 
 def main():
     """Main testing function"""
-    print("🧪 CADS Research Visualization - Visual Testing")
+    print("🧪 CADS Research Visualization - Visual Integration Testing")
     print("=" * 60)
     
     # Change to project root
-    os.chdir(Path(__file__).parent)
+    project_root = Path(__file__).parent.parent.parent
+    os.chdir(project_root)
     
     # Test 1: Data files
     data_ok = test_data_files()

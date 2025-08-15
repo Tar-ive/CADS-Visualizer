@@ -22,11 +22,13 @@
   - Implement release tracking and deployment correlation
   - _Requirements: 5.1, 5.2, 5.3, 5.4, 5.5_
 
-- [ ] 4. Create comprehensive system documentation
+- [x] 4. Create comprehensive system documentation
   - Write complete setup and installation guide with step-by-step instructions
   - Document how the CI/CD pipeline works and how testing is executed
   - Create troubleshooting guide for common issues and solutions
   - Write user guide for visualization features and system operation
   - Document monitoring setup and how to interpret metrics and alerts
   - Do code clean up and also update the README file 
+  - Check if there are any test files in the main file directory and not in test folder, or any files in the test directory that dont need to be there. move them accordingly. 
+
   - _Requirements: 4.1, 4.2, 4.3, 4.4, 4.5, 4.6_
