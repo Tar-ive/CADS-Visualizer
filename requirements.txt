@@ -1,0 +1,4 @@
+# Root requirements file - points to main requirements
+# Main requirements are in cads/requirements.txt
+
+-r cads/requirements.txt
