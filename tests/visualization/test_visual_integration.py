@@ -27,7 +27,8 @@ def test_data_files():
         "search-index.json"
     ]
     
-    all_good = True
+    missing_files = []
+    invalid_files = []
     
     for filename in required_files:
         file_path = data_dir / filename
@@ -38,12 +39,14 @@ def test_data_files():
                 print(f"   ✅ {filename} - Valid JSON with {len(str(data))} characters")
             except json.JSONDecodeError as e:
                 print(f"   ❌ {filename} - Invalid JSON: {e}")
-                all_good = False
+                invalid_files.append(f"{filename}: {e}")
         else:
             print(f"   ❌ {filename} - File missing")
-            all_good = False
+            missing_files.append(filename)
     
-    return all_good
+    # Use assertions instead of returning boolean
+    assert not missing_files, f"Missing data files: {missing_files}"
+    assert not invalid_files, f"Invalid JSON files: {invalid_files}"
 
 
 def test_compressed_files():
@@ -58,7 +61,8 @@ def test_compressed_files():
         "search-index.json.gz"
     ]
     
-    all_good = True
+    missing_files = []
+    invalid_files = []
     
     for filename in compressed_files:
         file_path = data_dir / filename
@@ -69,12 +73,14 @@ def test_compressed_files():
                 print(f"   ✅ {filename} - Valid compressed JSON")
             except (gzip.BadGzipFile, json.JSONDecodeError) as e:
                 print(f"   ❌ {filename} - Invalid compressed file: {e}")
-                all_good = False
+                invalid_files.append(f"{filename}: {e}")
         else:
             print(f"   ❌ {filename} - File missing")
-            all_good = False
+            missing_files.append(filename)
     
-    return all_good
+    # Use assertions instead of returning boolean
+    assert not missing_files, f"Missing compressed files: {missing_files}"
+    assert not invalid_files, f"Invalid compressed files: {invalid_files}"
 
 
 def test_html_structure():
@@ -82,9 +88,7 @@ def test_html_structure():
     print("🌐 Testing HTML structure...")
     
     html_file = Path("visuals/public/index.html")
-    if not html_file.exists():
-        print("   ❌ index.html not found")
-        return False
+    assert html_file.exists(), "index.html not found"
     
     with open(html_file, 'r') as f:
         content = f.read()
@@ -97,15 +101,15 @@ def test_html_structure():
         'cluster_themes.json'
     ]
     
-    all_good = True
+    missing_elements = []
     for element in required_elements:
         if element in content:
             print(f"   ✅ Found: {element}")
         else:
             print(f"   ❌ Missing: {element}")
-            all_good = False
+            missing_elements.append(element)
     
-    return all_good
+    assert not missing_elements, f"Missing HTML elements: {missing_elements}"
 
 
 def start_local_server(port=8000):
@@ -131,18 +135,21 @@ def start_local_server(port=8000):
     return server, f"http://localhost:{port}"
 
 
-def test_server_response(url):
+def test_server_response():
     """Test that the server responds correctly"""
-    print(f"🌐 Testing server response at {url}...")
+    print("🌐 Testing server response...")
+    
+    # Start server
+    server, url = start_local_server(port=8001)
     
     try:
+        # Give server time to start
+        time.sleep(1)
+        
         # Test main page
         response = requests.get(url, timeout=5)
-        if response.status_code == 200:
-            print("   ✅ Main page loads successfully")
-        else:
-            print(f"   ❌ Main page returned status {response.status_code}")
-            return False
+        assert response.status_code == 200, f"Main page returned status {response.status_code}"
+        print("   ✅ Main page loads successfully")
         
         # Test data files
         data_files = [
@@ -151,19 +158,22 @@ def test_server_response(url):
             "data/search-index.json"
         ]
         
+        failed_files = []
         for data_file in data_files:
             response = requests.get(f"{url}/{data_file}", timeout=5)
             if response.status_code == 200:
                 print(f"   ✅ {data_file} accessible")
             else:
                 print(f"   ❌ {data_file} returned status {response.status_code}")
-                return False
+                failed_files.append(f"{data_file} (status {response.status_code})")
         
-        return True
+        assert not failed_files, f"Failed to access data files: {failed_files}"
         
     except requests.RequestException as e:
-        print(f"   ❌ Server test failed: {e}")
-        return False
+        assert False, f"Server test failed: {e}"
+    finally:
+        # Clean up server
+        server.shutdown()
 
 
 def main():
