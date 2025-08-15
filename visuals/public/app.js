@@ -13,6 +13,15 @@ const app = {
     currentZoom: 8,
     labelSizeCache: new Map(), // Cache for calculated label sizes
     
+    // Performance monitoring
+    performance: {
+        loadStartTime: performance.now(),
+        dataLoadTime: null,
+        renderTime: null,
+        interactionCount: 0,
+        errorCount: 0
+    },
+    
     // Filter state tracking
     filterState: {
         researcher: '',
@@ -57,6 +66,13 @@ const app = {
 // Initialize the application
 function init() {
     console.log('🚀 Starting CADS Research Visualization...');
+
+    // Track application initialization
+    trackEvent('App Initialization', {
+        timestamp: new Date().toISOString(),
+        user_agent: navigator.userAgent,
+        viewport: `${window.innerWidth}x${window.innerHeight}`
+    });
 
     // Clear any existing label size cache to ensure fresh calculations
     clearLabelCacheIfNeeded();
@@ -204,6 +220,20 @@ function showError(title, details) {
     app.elements.errorDetails.textContent = details;
     app.elements.errorMessage.style.display = 'block';
 
+    // Track error occurrence
+    app.performance.errorCount++;
+    trackEvent('Application Error', {
+        error_title: title,
+        error_details: details,
+        error_count: app.performance.errorCount,
+        timestamp: new Date().toISOString()
+    });
+
+    // Report to Sentry if available
+    if (typeof Sentry !== 'undefined') {
+        Sentry.captureMessage(`${title}: ${details}`, 'error');
+    }
+
     // Auto-hide after 10 seconds
     setTimeout(() => {
         app.elements.errorMessage.style.display = 'none';
@@ -348,12 +378,44 @@ async function loadVisualization() {
 
         setTimeout(() => {
             hideLoading();
+            
+            // Track successful load
+            app.performance.dataLoadTime = performance.now() - app.performance.loadStartTime;
+            trackEvent('Data Load Complete', {
+                load_time_ms: Math.round(app.performance.dataLoadTime),
+                publications_count: data.p.length,
+                researchers_count: data.r.length,
+                clusters_count: data.c.length,
+                timestamp: new Date().toISOString()
+            });
+            
             console.log('✅ CADS Research Visualization - Loaded successfully!');
             console.log(`📊 Displaying ${data.p.length} publications from ${data.r.length} researchers`);
+            console.log(`⏱️ Load time: ${Math.round(app.performance.dataLoadTime)}ms`);
         }, 300);
 
     } catch (error) {
         console.error('Failed to load visualization:', error);
+        
+        // Track load failure
+        trackEvent('Data Load Failed', {
+            error_message: error.message,
+            load_time_ms: Math.round(performance.now() - app.performance.loadStartTime),
+            timestamp: new Date().toISOString()
+        });
+        
+        // Report to Sentry if available
+        if (typeof Sentry !== 'undefined') {
+            Sentry.captureException(error, {
+                tags: {
+                    component: 'data-loading'
+                },
+                extra: {
+                    loadTime: performance.now() - app.performance.loadStartTime
+                }
+            });
+        }
+        
         showError('Loading Failed', `Could not load visualization data: ${error.message}`);
         hideLoading();
     }
@@ -909,7 +971,16 @@ function handleHover(info) {
 function handleClick(info) {
     if (info.object) {
         const publication = info.object;
-        // Removed logging for better performance
+        const researcher = app.data.r.find(r => r.i === publication.r);
+        
+        // Track paper click interaction
+        trackUserInteraction('Paper Click', {
+            paper_title: publication.t || 'Untitled',
+            researcher_name: researcher ? researcher.n : 'Unknown',
+            publication_year: publication.y || 'Unknown',
+            has_doi: !!publication.d,
+            cluster_id: publication.c
+        });
 
         // Could implement paper details modal here
         if (publication.d) {
@@ -935,6 +1006,12 @@ function addKeywordTag() {
         return;
     }
     
+    // Track keyword addition
+    trackUserInteraction('Keyword Added', {
+        keyword: keyword,
+        existing_keywords_count: existingKeywords.length
+    });
+    
     // Create keyword tag
     const tag = document.createElement('div');
     tag.className = 'keyword-tag';
@@ -946,6 +1023,9 @@ function addKeywordTag() {
     
     // Add remove functionality
     tag.querySelector('.keyword-tag-remove').addEventListener('click', () => {
+        trackUserInteraction('Keyword Removed', {
+            keyword: keyword
+        });
         tag.remove();
         applyFilters();
     });
@@ -980,6 +1060,7 @@ function getFilterSummary() {
 function applyFilters() {
     if (!app.deckgl || !app.data) return;
 
+    const startTime = performance.now();
     const filteredData = getCurrentFilteredData();
 
     // Update layers with filtered data
@@ -990,9 +1071,18 @@ function applyFilters() {
     // Update visible papers count
     app.elements.visiblePapers.textContent = filteredData.length.toLocaleString();
 
-    // Log filter state for debugging (can be removed in production)
+    // Track filter performance and usage
+    const filterTime = performance.now() - startTime;
     if (hasActiveFilters()) {
-        console.log('🔍 Active filters:', getFilterSummary());
+        const filterSummary = getFilterSummary();
+        trackUserInteraction('Filter Applied', {
+            filter_time_ms: Math.round(filterTime),
+            results_count: filteredData.length,
+            total_count: app.data.p.length,
+            filter_summary: filterSummary
+        });
+        
+        console.log('🔍 Active filters:', filterSummary);
         console.log(`📊 Filtered results: ${filteredData.length}/${app.data.p.length} papers`);
     }
 }
@@ -1018,6 +1108,163 @@ if (document.readyState === 'loading') {
     init();
 }
 
+// Monitoring and Analytics Functions
+function trackEvent(eventName, properties = {}) {
+    try {
+        // Track with Vercel Analytics
+        if (window.va) {
+            window.va('track', eventName, properties);
+        }
+        
+        // Track with Sentry (for performance events)
+        if (typeof Sentry !== 'undefined' && eventName.includes('Performance')) {
+            Sentry.addBreadcrumb({
+                message: eventName,
+                category: 'performance',
+                data: properties,
+                level: 'info'
+            });
+        }
+        
+        // Console log for development
+        if (window.location.hostname === 'localhost') {
+            console.log(`📊 Event: ${eventName}`, properties);
+        }
+    } catch (error) {
+        console.warn('Failed to track event:', error);
+    }
+}
+
+function trackPerformance(metricName, value, unit = 'ms') {
+    trackEvent('Performance Metric', {
+        metric: metricName,
+        value: value,
+        unit: unit,
+        timestamp: new Date().toISOString()
+    });
+}
+
+function trackUserInteraction(interactionType, details = {}) {
+    app.performance.interactionCount++;
+    trackEvent('User Interaction', {
+        interaction_type: interactionType,
+        interaction_count: app.performance.interactionCount,
+        ...details,
+        timestamp: new Date().toISOString()
+    });
+}
+
+// Enhanced error boundary for async operations
+function withErrorBoundary(asyncFn, context = 'unknown') {
+    return async (...args) => {
+        try {
+            const startTime = performance.now();
+            const result = await asyncFn(...args);
+            const duration = performance.now() - startTime;
+            
+            if (duration > 1000) { // Track slow operations
+                trackPerformance(`${context}_duration`, Math.round(duration));
+            }
+            
+            return result;
+        } catch (error) {
+            console.error(`Error in ${context}:`, error);
+            
+            // Track error
+            trackEvent('Function Error', {
+                context: context,
+                error_message: error.message,
+                error_stack: error.stack?.substring(0, 500), // Limit stack trace length
+                timestamp: new Date().toISOString()
+            });
+            
+            // Report to Sentry
+            if (typeof Sentry !== 'undefined') {
+                Sentry.captureException(error, {
+                    tags: {
+                        component: context
+                    }
+                });
+            }
+            
+            throw error; // Re-throw to maintain original behavior
+        }
+    };
+}
+
+// Monitor visualization performance
+function monitorVisualizationPerformance() {
+    // Track render performance
+    const observer = new PerformanceObserver((list) => {
+        for (const entry of list.getEntries()) {
+            if (entry.name.includes('deck.gl') || entry.name.includes('webgl')) {
+                trackPerformance('render_frame', Math.round(entry.duration));
+            }
+        }
+    });
+    
+    try {
+        observer.observe({ entryTypes: ['measure', 'navigation'] });
+    } catch (error) {
+        console.warn('Performance observer not supported:', error);
+    }
+    
+    // Track memory usage periodically
+    if (performance.memory) {
+        setInterval(() => {
+            const memoryInfo = {
+                used: Math.round(performance.memory.usedJSHeapSize / 1024 / 1024),
+                total: Math.round(performance.memory.totalJSHeapSize / 1024 / 1024),
+                limit: Math.round(performance.memory.jsHeapSizeLimit / 1024 / 1024)
+            };
+            
+            trackEvent('Memory Usage', memoryInfo);
+            
+            // Alert if memory usage is high
+            if (memoryInfo.used > memoryInfo.limit * 0.8) {
+                console.warn('High memory usage detected:', memoryInfo);
+                trackEvent('High Memory Usage', memoryInfo);
+            }
+        }, 30000); // Every 30 seconds
+    }
+}
+
+// Initialize performance monitoring
+function initializeMonitoring() {
+    // Start performance monitoring
+    monitorVisualizationPerformance();
+    
+    // Track page visibility changes
+    document.addEventListener('visibilitychange', () => {
+        trackEvent('Page Visibility', {
+            visible: !document.hidden,
+            timestamp: new Date().toISOString()
+        });
+    });
+    
+    // Track window resize
+    let resizeTimeout;
+    window.addEventListener('resize', () => {
+        clearTimeout(resizeTimeout);
+        resizeTimeout = setTimeout(() => {
+            trackEvent('Window Resize', {
+                width: window.innerWidth,
+                height: window.innerHeight,
+                timestamp: new Date().toISOString()
+            });
+        }, 250);
+    });
+}
+
+// Initialize monitoring when app loads
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initializeMonitoring);
+} else {
+    initializeMonitoring();
+}
+
 // Expose functions and app object globally for debugging and error handling
 window.CADSVisualization = app;
 window.showError = showError;
+window.trackEvent = trackEvent;
+window.trackPerformance = trackPerformance;

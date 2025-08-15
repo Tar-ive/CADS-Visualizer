@@ -1,23 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CADS Research Visualization</title>
     <meta name="description" content="Interactive visualization of Texas State University CADS research landscape">
-    
+
+    <!-- Sentry Error Tracking -->
+    <script src="https://js.sentry-cdn.com/859c6ba713b1af67c44c0b217300cd9a.min.js"
+        crossorigin="anonymous"></script>
+
+    <!-- Vercel Analytics -->
+    <script>
+        window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+    </script>
+    <script defer src="/_vercel/insights/script.js"></script>
+
     <!-- Preload critical data (compressed versions) -->
     <link rel="preload" href="/data/visualization-data.json.gz" as="fetch" type="application/json">
     <link rel="preload" href="/data/search-index.json.gz" as="fetch" type="application/json">
     <link rel="preload" href="/data/cluster_themes.json.gz" as="fetch" type="application/json">
     <link rel="preload" href="/data/clustering_results.json.gz" as="fetch" type="application/json">
-    
+
     <style>
         /* Reset and base styles */
         * {
             box-sizing: border-box;
         }
-        
+
         body {
             margin: 0;
             padding: 0;
@@ -27,7 +38,7 @@
             overflow: hidden;
             line-height: 1.4;
         }
-        
+
         /* Loading screen */
         #loading {
             position: fixed;
@@ -43,12 +54,12 @@
             z-index: 1000;
             transition: opacity 0.3s ease-out;
         }
-        
+
         #loading.hidden {
             opacity: 0;
             pointer-events: none;
         }
-        
+
         .spinner {
             border: 3px solid #333;
             border-top: 3px solid #fff;
@@ -58,23 +69,28 @@
             animation: spin 1s linear infinite;
             margin-bottom: 20px;
         }
-        
+
         @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
         }
-        
+
         .loading-text {
             font-size: 16px;
             color: #ccc;
             margin-bottom: 10px;
         }
-        
+
         .loading-progress {
             font-size: 14px;
             color: #888;
         }
-        
+
         /* Main visualization container */
         #map-container {
             width: 100vw;
@@ -82,7 +98,7 @@
             position: relative;
             background: #1a1a1a;
         }
-        
+
         /* UI Panel */
         #ui-panel {
             position: fixed;
@@ -101,30 +117,30 @@
             z-index: 100;
             transition: transform 0.3s ease;
         }
-        
+
         #ui-panel.collapsed {
             transform: translateX(-220px);
         }
-        
+
         /* Custom scrollbar for UI panel */
         #ui-panel::-webkit-scrollbar {
             width: 6px;
         }
-        
+
         #ui-panel::-webkit-scrollbar-track {
             background: rgba(255, 255, 255, 0.1);
             border-radius: 3px;
         }
-        
+
         #ui-panel::-webkit-scrollbar-thumb {
             background: rgba(255, 255, 255, 0.3);
             border-radius: 3px;
         }
-        
+
         #ui-panel::-webkit-scrollbar-thumb:hover {
             background: rgba(255, 255, 255, 0.5);
         }
-        
+
         /* Zoom Controls */
         #zoom-controls {
             position: fixed;
@@ -135,7 +151,7 @@
             gap: 8px;
             z-index: 100;
         }
-        
+
         .zoom-button {
             width: 40px;
             height: 40px;
@@ -152,16 +168,16 @@
             transition: all 0.2s ease;
             backdrop-filter: blur(10px);
         }
-        
+
         .zoom-button:hover {
             background: rgba(60, 60, 60, 0.95);
             border-color: #007acc;
         }
-        
+
         .zoom-button:active {
             transform: scale(0.95);
         }
-        
+
         /* Onboarding Info Box */
         #onboarding-info {
             position: fixed;
@@ -176,26 +192,26 @@
             z-index: 100;
             transition: all 0.3s ease;
         }
-        
+
         #onboarding-info.hidden {
             opacity: 0;
             transform: translateY(20px);
             pointer-events: none;
         }
-        
+
         .onboarding-header {
             display: flex;
             justify-content: space-between;
             align-items: center;
             margin-bottom: 12px;
         }
-        
+
         .onboarding-title {
             font-size: 16px;
             font-weight: 600;
             color: #fff;
         }
-        
+
         .onboarding-close {
             background: none;
             border: none;
@@ -211,30 +227,30 @@
             border-radius: 50%;
             transition: background-color 0.2s;
         }
-        
+
         .onboarding-close:hover {
             background-color: rgba(255, 255, 255, 0.1);
         }
-        
+
         .onboarding-content {
             font-size: 13px;
             color: #ccc;
             line-height: 1.4;
         }
-        
+
         .onboarding-content ul {
             margin: 8px 0;
             padding-left: 16px;
         }
-        
+
         .onboarding-content li {
             margin-bottom: 4px;
         }
-        
+
         .onboarding-content strong {
             color: #fff;
         }
-        
+
         .panel-header {
             display: flex;
             justify-content: space-between;
@@ -243,13 +259,13 @@
             padding-bottom: 12px;
             border-bottom: 1px solid #555;
         }
-        
+
         .panel-title {
             font-size: 18px;
             font-weight: 600;
             color: #fff;
         }
-        
+
         .toggle-button {
             background: none;
             border: none;
@@ -260,16 +276,16 @@
             border-radius: 4px;
             transition: background-color 0.2s;
         }
-        
+
         .toggle-button:hover {
             background-color: rgba(255, 255, 255, 0.1);
         }
-        
+
         /* Search section */
         .search-section {
             margin-bottom: 20px;
         }
-        
+
         .section-title {
             font-size: 14px;
             font-weight: 500;
@@ -278,7 +294,7 @@
             text-transform: uppercase;
             letter-spacing: 0.5px;
         }
-        
+
         #search-input {
             width: 100%;
             padding: 8px 12px;
@@ -289,39 +305,41 @@
             font-size: 14px;
             transition: border-color 0.2s;
         }
-        
+
         #search-input:focus {
             outline: none;
             border-color: #007acc;
         }
-        
+
         #search-input::placeholder {
             color: #888;
         }
-        
+
         /* Filter sections */
         .filter-section {
             margin-bottom: 20px;
             padding-bottom: 16px;
             border-bottom: 1px solid #444;
         }
-        
+
         .filter-section:last-of-type {
             border-bottom: none;
         }
-        
+
         .filter-group {
             margin-bottom: 12px;
         }
-        
+
         .filter-label {
             display: block;
             font-size: 12px;
             color: #aaa;
             margin-bottom: 4px;
         }
-        
-        select, input[type="range"], input[type="text"] {
+
+        select,
+        input[type="range"],
+        input[type="text"] {
             width: 100%;
             padding: 6px 8px;
             background: #333;
@@ -330,16 +348,18 @@
             color: #fff;
             font-size: 13px;
         }
-        
-        select:focus, input[type="range"]:focus, input[type="text"]:focus {
+
+        select:focus,
+        input[type="range"]:focus,
+        input[type="text"]:focus {
             outline: none;
             border-color: #007acc;
         }
-        
+
         input[type="text"]::placeholder {
             color: #888;
         }
-        
+
         /* Theme checklist styles */
         .theme-checklist {
             max-height: 200px;
@@ -348,7 +368,7 @@
             border-radius: 4px;
             background: #333;
         }
-        
+
         .theme-item {
             display: flex;
             align-items: center;
@@ -357,20 +377,20 @@
             cursor: pointer;
             transition: background-color 0.2s;
         }
-        
+
         .theme-item:last-child {
             border-bottom: none;
         }
-        
+
         .theme-item:hover {
             background-color: #3a3a3a;
         }
-        
+
         .theme-checkbox {
             margin-right: 8px;
             cursor: pointer;
         }
-        
+
         .theme-color-swatch {
             width: 12px;
             height: 12px;
@@ -379,25 +399,25 @@
             border: 1px solid #666;
             flex-shrink: 0;
         }
-        
+
         .theme-name {
             font-size: 12px;
             color: #fff;
             flex-grow: 1;
             line-height: 1.3;
         }
-        
+
         /* Keywords input styles */
         .keywords-input-container {
             display: flex;
             gap: 6px;
             margin-bottom: 8px;
         }
-        
+
         .keywords-input-container input {
             flex-grow: 1;
         }
-        
+
         #add-keyword-btn {
             background: #007acc;
             border: none;
@@ -409,20 +429,20 @@
             transition: background-color 0.2s;
             white-space: nowrap;
         }
-        
+
         #add-keyword-btn:hover {
             background: #005a9e;
         }
-        
+
         #add-keyword-btn:disabled {
             background: #555;
             cursor: not-allowed;
         }
-        
+
         .keywords-logic-toggle {
             margin-bottom: 8px;
         }
-        
+
         .toggle-label {
             display: flex;
             align-items: center;
@@ -430,19 +450,19 @@
             color: #ccc;
             cursor: pointer;
         }
-        
+
         .toggle-label input[type="checkbox"] {
             width: auto;
             margin-right: 6px;
         }
-        
+
         .keywords-tags {
             display: flex;
             flex-wrap: wrap;
             gap: 4px;
             min-height: 24px;
         }
-        
+
         .keyword-tag {
             display: inline-flex;
             align-items: center;
@@ -453,7 +473,7 @@
             font-size: 11px;
             gap: 4px;
         }
-        
+
         .keyword-tag-remove {
             background: none;
             border: none;
@@ -470,33 +490,33 @@
             justify-content: center;
             transition: background-color 0.2s;
         }
-        
+
         .keyword-tag-remove:hover {
             background-color: rgba(255, 255, 255, 0.2);
         }
-        
+
         /* Stats section */
         .stats-section {
             padding-top: 16px;
             border-top: 1px solid #555;
         }
-        
+
         .stat-item {
             display: flex;
             justify-content: space-between;
             margin-bottom: 8px;
             font-size: 13px;
         }
-        
+
         .stat-label {
             color: #aaa;
         }
-        
+
         .stat-value {
             color: #fff;
             font-weight: 500;
         }
-        
+
         /* Error message */
         #error-message {
             position: fixed;
@@ -510,17 +530,17 @@
             z-index: 1001;
             display: none;
         }
-        
+
         .error-title {
             font-weight: 600;
             margin-bottom: 4px;
         }
-        
+
         .error-details {
             font-size: 14px;
             opacity: 0.9;
         }
-        
+
         /* Tooltip */
         #tooltip {
             position: absolute;
@@ -536,7 +556,7 @@
             display: none;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
         }
-        
+
         .tooltip-title {
             font-weight: 600;
             margin-bottom: 6px;
@@ -545,14 +565,14 @@
             line-height: 1.3;
             word-wrap: break-word;
         }
-        
+
         .tooltip-details {
             font-size: 12px;
             color: #ccc;
             line-height: 1.4;
             margin-bottom: 4px;
         }
-        
+
         .tooltip-meta {
             margin-top: 8px;
             padding-top: 8px;
@@ -562,7 +582,7 @@
             line-height: 1.4;
             word-wrap: break-word;
         }
-        
+
         /* Responsive design */
         @media (max-width: 768px) {
             #ui-panel {
@@ -573,11 +593,11 @@
                 max-width: none;
                 width: calc(100vw - 20px);
             }
-            
+
             #ui-panel.collapsed {
                 transform: translateY(-calc(100% - 50px));
             }
-            
+
             #error-message {
                 top: 10px;
                 right: 10px;
@@ -585,7 +605,7 @@
                 max-width: none;
             }
         }
-        
+
         /* Cluster labels styling */
         .cluster-label {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
@@ -594,32 +614,34 @@
             pointer-events: none;
             user-select: none;
         }
-        
+
         /* Accessibility */
         @media (prefers-reduced-motion: reduce) {
             .spinner {
                 animation: none;
             }
-            
+
             * {
                 transition: none !important;
             }
         }
-        
+
         /* High contrast mode */
         @media (prefers-contrast: high) {
             #ui-panel {
                 background: rgba(0, 0, 0, 0.9);
                 border-color: #fff;
             }
-            
-            #search-input, select {
+
+            #search-input,
+            select {
                 background: #000;
                 border-color: #fff;
             }
         }
     </style>
 </head>
+
 <body>
     <!-- Loading Screen -->
     <div id="loading">
@@ -627,23 +649,23 @@
         <div class="loading-text">Loading CADS Research Visualization...</div>
         <div class="loading-progress" id="loading-progress">Initializing...</div>
     </div>
-    
+
     <!-- Error Message -->
     <div id="error-message">
         <div class="error-title">Error Loading Visualization</div>
         <div class="error-details" id="error-details">Please refresh the page to try again.</div>
     </div>
-    
+
     <!-- Main Visualization Container -->
     <div id="map-container"></div>
-    
+
     <!-- UI Control Panel -->
     <div id="ui-panel">
         <div class="panel-header">
             <div class="panel-title"> CADS Research Explorer</div>
             <button class="toggle-button" id="panel-toggle" title="Toggle panel">−</button>
         </div>
-        
+
         <!-- Researcher Filter Section -->
         <div class="filter-section">
             <div class="section-title">Researcher</div>
@@ -651,7 +673,7 @@
                 <input type="text" id="researcher-input" placeholder="Search by researcher name...">
             </div>
         </div>
-        
+
         <!-- Research Theme Filter Section -->
         <div class="filter-section">
             <div class="section-title">Research Theme</div>
@@ -661,7 +683,7 @@
                 </div>
             </div>
         </div>
-        
+
         <!-- Keywords Filter Section -->
         <div class="filter-section">
             <div class="section-title">Keywords</div>
@@ -681,20 +703,21 @@
                 </div>
             </div>
         </div>
-        
+
         <!-- Publication Year Filter Section -->
         <div class="filter-section">
             <div class="section-title">Publication Year</div>
             <div class="filter-group">
                 <input type="range" id="year-filter" min="2010" max="2024" value="2010">
-                <div style="display: flex; justify-content: space-between; font-size: 11px; color: #888; margin-top: 2px;">
+                <div
+                    style="display: flex; justify-content: space-between; font-size: 11px; color: #888; margin-top: 2px;">
                     <span>2010</span>
                     <span id="year-display">2010</span>
                     <span>2024</span>
                 </div>
             </div>
         </div>
-        
+
         <!-- Stats Section -->
         <div class="stats-section">
             <div class="section-title">Statistics</div>
@@ -715,26 +738,27 @@
                 <span class="stat-value" id="total-clusters">0</span>
             </div>
         </div>
-        
+
         <!-- Credit -->
-        <div style="margin-top: 16px; padding-top: 12px; border-top: 1px solid #555; font-size: 10px; color: #666; text-align: center;">
+        <div
+            style="margin-top: 16px; padding-top: 12px; border-top: 1px solid #555; font-size: 10px; color: #666; text-align: center;">
             Built by Saksham Adhikari for CADS
+        </div>
     </div>
-    </div>
-    
+
     <!-- Tooltip -->
     <div id="tooltip">
         <div class="tooltip-title" id="tooltip-title"></div>
         <div class="tooltip-details" id="tooltip-details"></div>
         <div class="tooltip-meta" id="tooltip-meta"></div>
     </div>
-    
+
     <!-- Zoom Controls -->
     <div id="zoom-controls">
         <button class="zoom-button" id="zoom-in" title="Zoom In">+</button>
         <button class="zoom-button" id="zoom-out" title="Zoom Out">−</button>
     </div>
-    
+
     <!-- Onboarding Info Box -->
     <div id="onboarding-info">
         <div class="onboarding-header">
@@ -753,29 +777,155 @@
             </ul>
         </div>
     </div>
-    
+
     <!-- Deck.gl from CDN -->
     <script src="https://unpkg.com/deck.gl@latest/dist.min.js"></script>
+
+    <!-- Error Boundary -->
+    <script src="monitoring/error-boundary.js"></script>
     
     <!-- Main Application Script -->
     <script src="app.js"></script>
-    
-    <!-- Global error handling and app exposure -->
+
+    <!-- Monitoring and Error Tracking Setup -->
     <script>
-        // Global error handling
+        // Sentry auto-initializes with your project configuration
+        // Just add some additional context
+        if (typeof Sentry !== 'undefined') {
+            console.log('✅ Sentry initialized successfully');
+            
+            // Set additional context
+            Sentry.setContext('application', {
+                name: 'CADS Research Visualization',
+                version: document.querySelector('meta[name="version"]')?.content || 'unknown',
+                environment: window.location.hostname === 'localhost' ? 'development' : 'production'
+            });
+            
+            // Configure scope for better error context
+            Sentry.configureScope((scope) => {
+                scope.setTag('component', 'cads-visualization');
+                scope.setTag('framework', 'vanilla-js');
+                scope.setLevel('error');
+            });
+        }
+
+        // Enhanced global error handling with Sentry integration
         window.addEventListener('error', (event) => {
             console.error('Application error:', event.error);
+
+            // Report to Sentry if available
+            if (typeof Sentry !== 'undefined') {
+                Sentry.captureException(event.error, {
+                    tags: {
+                        component: 'global-error-handler',
+                        source: event.filename || 'unknown',
+                        line: event.lineno || 'unknown'
+                    },
+                    extra: {
+                        message: event.message,
+                        filename: event.filename,
+                        lineno: event.lineno,
+                        colno: event.colno
+                    }
+                });
+            }
+
+            // Track error in Vercel Analytics
+            if (window.va) {
+                window.va('track', 'Error', {
+                    error_type: 'javascript_error',
+                    error_message: event.message,
+                    error_source: event.filename || 'unknown'
+                });
+            }
+
             if (window.showError) {
                 window.showError('Application Error', 'An unexpected error occurred. Please refresh the page.');
             }
         });
-        
+
         window.addEventListener('unhandledrejection', (event) => {
             console.error('Unhandled promise rejection:', event.reason);
+
+            // Report to Sentry if available
+            if (typeof Sentry !== 'undefined') {
+                Sentry.captureException(event.reason, {
+                    tags: {
+                        component: 'unhandled-promise-rejection'
+                    },
+                    extra: {
+                        reason: event.reason
+                    }
+                });
+            }
+
+            // Track error in Vercel Analytics
+            if (window.va) {
+                window.va('track', 'Error', {
+                    error_type: 'promise_rejection',
+                    error_message: event.reason?.message || 'Unknown promise rejection'
+                });
+            }
+
             if (window.showError) {
                 window.showError('Loading Error', 'Failed to load visualization data. Please check your connection and try again.');
             }
         });
+
+        // Core Web Vitals tracking
+        function trackWebVitals() {
+            // Track Largest Contentful Paint (LCP)
+            new PerformanceObserver((entryList) => {
+                for (const entry of entryList.getEntries()) {
+                    if (window.va) {
+                        window.va('track', 'Web Vital', {
+                            metric: 'LCP',
+                            value: Math.round(entry.startTime),
+                            rating: entry.startTime < 2500 ? 'good' : entry.startTime < 4000 ? 'needs-improvement' : 'poor'
+                        });
+                    }
+                }
+            }).observe({ entryTypes: ['largest-contentful-paint'] });
+
+            // Track First Input Delay (FID)
+            new PerformanceObserver((entryList) => {
+                for (const entry of entryList.getEntries()) {
+                    if (window.va) {
+                        window.va('track', 'Web Vital', {
+                            metric: 'FID',
+                            value: Math.round(entry.processingStart - entry.startTime),
+                            rating: entry.processingStart - entry.startTime < 100 ? 'good' :
+                                entry.processingStart - entry.startTime < 300 ? 'needs-improvement' : 'poor'
+                        });
+                    }
+                }
+            }).observe({ entryTypes: ['first-input'] });
+
+            // Track Cumulative Layout Shift (CLS)
+            let clsValue = 0;
+            new PerformanceObserver((entryList) => {
+                for (const entry of entryList.getEntries()) {
+                    if (!entry.hadRecentInput) {
+                        clsValue += entry.value;
+                    }
+                }
+                if (window.va) {
+                    window.va('track', 'Web Vital', {
+                        metric: 'CLS',
+                        value: Math.round(clsValue * 1000) / 1000,
+                        rating: clsValue < 0.1 ? 'good' : clsValue < 0.25 ? 'needs-improvement' : 'poor'
+                    });
+                }
+            }).observe({ entryTypes: ['layout-shift'] });
+        }
+
+        // Initialize Web Vitals tracking when page loads
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', trackWebVitals);
+        } else {
+            trackWebVitals();
+        }
     </script>
 </body>
+
 </html>

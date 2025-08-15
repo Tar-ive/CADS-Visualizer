@@ -14,7 +14,7 @@
   - Organize all tests into a coherent test structure with proper fixtures. Also make sure to cleanup the code and create a test directory and keep all the tests there from anywhere in the code. 
   - _Requirements: 2.1, 2.2, 2.3, 2.4, 2.5_
 
-- [ ] 3. Integrate monitoring with Sentry and Vercel Analytics
+- [x] 3. Integrate monitoring with Sentry and Vercel Analytics
   - Set up Sentry project and configure JavaScript SDK for error tracking
   - Enable Vercel Analytics for performance and user interaction monitoring
   - Configure error boundaries and automatic error capture
@@ -28,4 +28,5 @@
   - Create troubleshooting guide for common issues and solutions
   - Write user guide for visualization features and system operation
   - Document monitoring setup and how to interpret metrics and alerts
+  - Do code clean up and also update the README file 
   - _Requirements: 4.1, 4.2, 4.3, 4.4, 4.5, 4.6_

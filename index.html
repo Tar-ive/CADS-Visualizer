@@ -6,6 +6,18 @@
     <title>CADS Research Visualization</title>
     <meta name="description" content="Interactive visualization of Texas State University CADS research landscape">
     
+    <!-- Sentry Error Tracking -->
+    <script
+        src="https://js.sentry-cdn.com/859c6ba713b1af67c44c0b217300cd9a.min.js"
+        crossorigin="anonymous"
+    ></script>
+    
+    <!-- Vercel Analytics -->
+    <script>
+        window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+    </script>
+    <script defer src="/_vercel/insights/script.js"></script>
+    
     <!-- Preload critical data (compressed versions) -->
     <link rel="preload" href="/data/visualization-data.json.gz" as="fetch" type="application/json">
     <link rel="preload" href="/data/search-index.json.gz" as="fetch" type="application/json">
@@ -757,14 +769,64 @@
     <!-- Deck.gl from CDN -->
     <script src="https://unpkg.com/deck.gl@latest/dist.min.js"></script>
     
+    <!-- Error Boundary -->
+    <script src="monitoring/error-boundary.js"></script>
+    
     <!-- Main Application Script -->
     <script src="app.js"></script>
     
-    <!-- Global error handling and app exposure -->
+    <!-- Monitoring and Error Tracking Setup -->
     <script>
-        // Global error handling
+        // Sentry auto-initializes with your project configuration
+        // Just add some additional context
+        if (typeof Sentry !== 'undefined') {
+            console.log('✅ Sentry initialized successfully');
+            
+            // Set additional context
+            Sentry.setContext('application', {
+                name: 'CADS Research Visualization',
+                version: document.querySelector('meta[name="version"]')?.content || 'unknown',
+                environment: window.location.hostname === 'localhost' ? 'development' : 'production'
+            });
+            
+            // Configure scope for better error context
+            Sentry.configureScope((scope) => {
+                scope.setTag('component', 'cads-visualization');
+                scope.setTag('framework', 'vanilla-js');
+                scope.setLevel('error');
+            });
+        }
+
+        // Enhanced global error handling with Sentry integration
         window.addEventListener('error', (event) => {
             console.error('Application error:', event.error);
+            
+            // Report to Sentry if available
+            if (typeof Sentry !== 'undefined') {
+                Sentry.captureException(event.error, {
+                    tags: {
+                        component: 'global-error-handler',
+                        source: event.filename || 'unknown',
+                        line: event.lineno || 'unknown'
+                    },
+                    extra: {
+                        message: event.message,
+                        filename: event.filename,
+                        lineno: event.lineno,
+                        colno: event.colno
+                    }
+                });
+            }
+            
+            // Track error in Vercel Analytics
+            if (window.va) {
+                window.va('track', 'Error', {
+                    error_type: 'javascript_error',
+                    error_message: event.message,
+                    error_source: event.filename || 'unknown'
+                });
+            }
+            
             if (window.showError) {
                 window.showError('Application Error', 'An unexpected error occurred. Please refresh the page.');
             }
@@ -772,10 +834,85 @@
         
         window.addEventListener('unhandledrejection', (event) => {
             console.error('Unhandled promise rejection:', event.reason);
+            
+            // Report to Sentry if available
+            if (typeof Sentry !== 'undefined') {
+                Sentry.captureException(event.reason, {
+                    tags: {
+                        component: 'unhandled-promise-rejection'
+                    },
+                    extra: {
+                        reason: event.reason
+                    }
+                });
+            }
+            
+            // Track error in Vercel Analytics
+            if (window.va) {
+                window.va('track', 'Error', {
+                    error_type: 'promise_rejection',
+                    error_message: event.reason?.message || 'Unknown promise rejection'
+                });
+            }
+            
             if (window.showError) {
                 window.showError('Loading Error', 'Failed to load visualization data. Please check your connection and try again.');
             }
         });
+
+        // Core Web Vitals tracking
+        function trackWebVitals() {
+            // Track Largest Contentful Paint (LCP)
+            new PerformanceObserver((entryList) => {
+                for (const entry of entryList.getEntries()) {
+                    if (window.va) {
+                        window.va('track', 'Web Vital', {
+                            metric: 'LCP',
+                            value: Math.round(entry.startTime),
+                            rating: entry.startTime < 2500 ? 'good' : entry.startTime < 4000 ? 'needs-improvement' : 'poor'
+                        });
+                    }
+                }
+            }).observe({ entryTypes: ['largest-contentful-paint'] });
+
+            // Track First Input Delay (FID)
+            new PerformanceObserver((entryList) => {
+                for (const entry of entryList.getEntries()) {
+                    if (window.va) {
+                        window.va('track', 'Web Vital', {
+                            metric: 'FID',
+                            value: Math.round(entry.processingStart - entry.startTime),
+                            rating: entry.processingStart - entry.startTime < 100 ? 'good' : 
+                                   entry.processingStart - entry.startTime < 300 ? 'needs-improvement' : 'poor'
+                        });
+                    }
+                }
+            }).observe({ entryTypes: ['first-input'] });
+
+            // Track Cumulative Layout Shift (CLS)
+            let clsValue = 0;
+            new PerformanceObserver((entryList) => {
+                for (const entry of entryList.getEntries()) {
+                    if (!entry.hadRecentInput) {
+                        clsValue += entry.value;
+                    }
+                }
+                if (window.va) {
+                    window.va('track', 'Web Vital', {
+                        metric: 'CLS',
+                        value: Math.round(clsValue * 1000) / 1000,
+                        rating: clsValue < 0.1 ? 'good' : clsValue < 0.25 ? 'needs-improvement' : 'poor'
+                    });
+                }
+            }).observe({ entryTypes: ['layout-shift'] });
+        }
+
+        // Initialize Web Vitals tracking when page loads
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', trackWebVitals);
+        } else {
+            trackWebVitals();
+        }
     </script>
 </body>
 </html>
