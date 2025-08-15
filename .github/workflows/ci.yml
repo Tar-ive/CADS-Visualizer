@@ -56,7 +56,9 @@ jobs:
           echo "Python version: $(python --version)"
           echo "Current directory: $(pwd)"
           echo "Requirements file check:"
-          ls -la cads/requirements.txt
+          ls -la requirements.txt
+          echo "Project structure:"
+          ls -la
 
       - name: Set up test environment variables
         run: |
