@@ -32,12 +32,15 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: ${{ env.PYTHON_VERSION }}
           cache: 'pip'
+          cache-dependency-path: 'cads/requirements.txt'
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
@@ -46,8 +49,20 @@ jobs:
 
       - name: Install Python dependencies
         run: |
-          cd cads
-          pip install -r requirements.txt
+          python -m pip install --upgrade pip
+          pip install -r cads/requirements.txt
+
+      - name: Debug environment
+        run: |
+          echo "Python version: $(python --version)"
+          echo "Pip version: $(pip --version)"
+          echo "Current directory: $(pwd)"
+          echo "Directory contents:"
+          ls -la
+          echo "CADS directory contents:"
+          ls -la cads/
+          echo "Requirements file exists:"
+          cat cads/requirements.txt | head -10
 
       - name: Set up test environment variables
         run: |
