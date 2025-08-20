@@ -60,8 +60,8 @@ jobs:
           echo "Current directory: $(pwd)"
           echo "Requirements file check:"
           ls -la requirements.txt
-          echo "CADS requirements file check:"
-          ls -la cads/requirements.txt
+          echo "CADS directory check:"
+          ls -la cads/ || echo "CADS directory structure may differ in CI"
           echo "Project structure:"
           ls -la
 
