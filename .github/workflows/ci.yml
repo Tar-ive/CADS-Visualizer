@@ -42,6 +42,7 @@ jobs:
         with:
           python-version: ${{ env.PYTHON_VERSION }}
           cache: 'pip'
+          cache-dependency-path: 'requirements.txt'
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
@@ -51,13 +52,15 @@ jobs:
       - name: Install Python dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -r cads/requirements.txt
+          pip install -r requirements.txt
 
       - name: Debug environment
         run: |
           echo "Python version: $(python --version)"
           echo "Current directory: $(pwd)"
           echo "Requirements file check:"
+          ls -la requirements.txt
+          echo "CADS requirements file check:"
           ls -la cads/requirements.txt
           echo "Project structure:"
           ls -la

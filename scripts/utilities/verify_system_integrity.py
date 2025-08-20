@@ -58,7 +58,8 @@ def check_critical_files():
         ("database/schema/create_cads_tables.sql", "Database schema"),
         ("scripts/migration/execute_cads_migration.py", "Database migration"),
         (".github/workflows/ci.yml", "CI/CD configuration"),
-        ("cads/requirements.txt", "Python dependencies"),
+        ("requirements.txt", "Root Python dependencies"),
+        ("cads/requirements.txt", "CADS Python dependencies"),
         ("vercel.json", "Deployment configuration")
     ]
     
