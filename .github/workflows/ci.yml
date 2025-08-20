@@ -14,11 +14,13 @@ jobs:
   test:
     name: Run Tests
     runs-on: ubuntu-latest
+    environment: cads-research
     
     services:
       postgres:
         image: postgres:14
         env:
+          POSTGRES_USER: postgres
           POSTGRES_PASSWORD: postgres
           POSTGRES_DB: test_db
         options: >-
@@ -63,9 +65,29 @@ jobs:
       - name: Set up test environment variables
         run: |
           echo "DATABASE_URL=postgresql://postgres:postgres@localhost:5432/test_db" >> $GITHUB_ENV
+          echo "SUPABASE_URL=${{ secrets.DATABASE_URL }}" >> $GITHUB_ENV
           echo "OPENALEX_EMAIL=test@example.com" >> $GITHUB_ENV
-          echo "SUPABASE_URL=${{ secrets.SUPABASE_URL || 'test-supabase-url' }}" >> $GITHUB_ENV
-          echo "GROQ_API_KEY=${{ secrets.GROQ_API_KEY || 'test-groq-key' }}" >> $GITHUB_ENV
+          echo "GROQ_API_KEY=${{ secrets.GROQ_API_KEY }}" >> $GITHUB_ENV
+          echo "CI=true" >> $GITHUB_ENV
+
+      - name: Generate test data files
+        run: |
+          echo "📁 Creating required data directories..."
+          mkdir -p data/processed visuals/public/data data/search
+          
+          echo "📄 Generating minimal test data files..."
+          echo '{"test": "data", "items": []}' > data/processed/visualization-data.json
+          echo '{"clusters": []}' > data/processed/cluster_themes.json
+          echo '{"results": []}' > data/processed/clustering_results.json
+          echo '{"index": []}' > data/search/search-index.json
+          
+          # Copy to visualization directory
+          cp data/processed/visualization-data.json visuals/public/data/
+          cp data/processed/cluster_themes.json visuals/public/data/
+          cp data/processed/clustering_results.json visuals/public/data/
+          cp data/search/search-index.json visuals/public/data/
+          
+          echo "✅ Test data files generated successfully"
 
       - name: Run comprehensive test suite
         run: |

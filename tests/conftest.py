@@ -20,11 +20,90 @@ load_dotenv()
 
 @pytest.fixture(scope="session")
 def database_url():
-    """Provide database URL from environment"""
+    """Provide database URL from environment with CI/local handling"""
+    # In CI, prefer local PostgreSQL for unit tests
+    if os.getenv("CI") == "true":
+        local_url = "postgresql://postgres:postgres@localhost:5432/test_db"
+        return local_url
+    
+    # For local development, use configured DATABASE_URL
     url = os.getenv("DATABASE_URL")
     if not url:
         pytest.skip("DATABASE_URL not configured")
     return url
+
+@pytest.fixture(scope="session")
+def supabase_url():
+    """Provide Supabase URL for integration tests"""
+    url = os.getenv("SUPABASE_URL")
+    if not url:
+        pytest.skip("SUPABASE_URL not configured for integration tests")
+    return url
+
+@pytest.fixture(scope="session")
+def test_database_connection():
+    """Provide database connection with proper error handling"""
+    import psycopg2
+    
+    database_url_val = database_url()
+    try:
+        conn = psycopg2.connect(database_url_val)
+        yield conn
+        conn.close()
+    except psycopg2.OperationalError as e:
+        pytest.skip(f"Database connection failed: {e}")
+
+@pytest.fixture(scope="session")
+def ensure_test_tables():
+    """Ensure test tables exist for CI testing"""
+    import psycopg2
+    
+    if os.getenv("CI") != "true":
+        return  # Skip for local development
+    
+    database_url_val = database_url()
+    try:
+        conn = psycopg2.connect(database_url_val)
+        cursor = conn.cursor()
+        
+        # Create minimal test tables for CI
+        cursor.execute("""
+            CREATE TABLE IF NOT EXISTS cads_researchers (
+                id SERIAL PRIMARY KEY,
+                full_name VARCHAR(255) NOT NULL,
+                department VARCHAR(255) NOT NULL
+            )
+        """)
+        
+        cursor.execute("""
+            CREATE TABLE IF NOT EXISTS cads_works (
+                id SERIAL PRIMARY KEY,
+                title TEXT NOT NULL,
+                researcher_id INTEGER REFERENCES cads_researchers(id),
+                publication_year INTEGER,
+                embedding TEXT
+            )
+        """)
+        
+        # Insert minimal test data
+        cursor.execute("""
+            INSERT INTO cads_researchers (id, full_name, department) 
+            VALUES (1, 'Test Researcher', 'Computer Science')
+            ON CONFLICT (id) DO NOTHING
+        """)
+        
+        cursor.execute("""
+            INSERT INTO cads_works (id, title, researcher_id, publication_year, embedding)
+            VALUES (1, 'Test Paper', 1, 2023, '[0.1, 0.2, 0.3]')
+            ON CONFLICT (id) DO NOTHING
+        """)
+        
+        conn.commit()
+        cursor.close()
+        conn.close()
+        
+    except psycopg2.OperationalError:
+        pass  # Skip if database setup fails
 
 @pytest.fixture(scope="session")
 def sample_data_dir():
@@ -118,17 +197,25 @@ def pytest_configure(config):
     )
 
 def pytest_collection_modifyitems(config, items):
-    """Automatically mark tests based on their location"""
+    """Automatically mark tests based on their location and content"""
     for item in items:
         # Mark database tests
         if "database" in str(item.fspath):
             item.add_marker(pytest.mark.database)
         
-        # Mark integration tests
-        if "integration" in str(item.fspath) or "full_pipeline" in str(item.fspath):
+        # Mark integration tests (tests that use Supabase)
+        if ("integration" in str(item.fspath) or 
+            "full_pipeline" in str(item.fspath) or
+            "supabase" in item.name.lower()):
             item.add_marker(pytest.mark.integration)
             item.add_marker(pytest.mark.slow)
             
         # Mark visualization tests
         if "visualization" in str(item.fspath) or "html" in str(item.fspath):
             item.add_marker(pytest.mark.visualization)
+
+# Auto-use fixtures for CI environment
+@pytest.fixture(autouse=True, scope="session")
+def setup_ci_environment(ensure_test_tables):
+    """Automatically set up CI test environment"""
+    pass

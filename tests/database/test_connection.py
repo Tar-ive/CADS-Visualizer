@@ -10,11 +10,8 @@ from unittest.mock import patch, MagicMock
 
 from tests.fixtures.test_helpers import mock_database_connection, assert_dataframe_structure
 
-# Skip database tests in CI environment since they require actual Supabase data
-pytestmark = pytest.mark.skipif(
-    os.getenv("CI") == "true" or os.getenv("GITHUB_ACTIONS") == "true",
-    reason="Database tests require actual Supabase data, not available in CI"
-)
+# Database tests now run in CI with proper test database configuration
+pytestmark = pytest.mark.database
 
 
 class TestDatabaseConnection:
@@ -40,7 +37,7 @@ class TestDatabaseConnection:
             psycopg2.connect(invalid_url)
     
     @pytest.mark.database
-    def test_fetch_works_table(self, database_url):
+    def test_fetch_works_table(self, database_url, ensure_test_tables):
         """Test fetching data from cads_works table"""
         try:
             conn = psycopg2.connect(database_url)
@@ -55,7 +52,7 @@ class TestDatabaseConnection:
             pytest.skip("Database not available for testing")
     
     @pytest.mark.database
-    def test_fetch_researchers_table(self, database_url):
+    def test_fetch_researchers_table(self, database_url, ensure_test_tables):
         """Test fetching data from cads_researchers table"""
         try:
             conn = psycopg2.connect(database_url)
@@ -70,7 +67,7 @@ class TestDatabaseConnection:
             pytest.skip("Database not available for testing")
     
     @pytest.mark.database
-    def test_table_counts(self, database_url):
+    def test_table_counts(self, database_url, ensure_test_tables):
         """Test getting record counts from tables"""
         try:
             conn = psycopg2.connect(database_url)
