@@ -308,11 +308,8 @@ class TestPipelineErrorHandling:
             from cads.data_loader import DataProcessor
             
             # Mock empty dataset
-            with patch.object(DataProcessor, 'fetch_research_data') as mock_fetch:
-                mock_fetch.return_value = {
-                    'works': pd.DataFrame(columns=['id', 'title', 'researcher_id']),
-                    'researchers': pd.DataFrame(columns=['id', 'full_name', 'department'])
-                }
+            with patch.object(DataProcessor, 'load_cads_data_with_researchers') as mock_load:
+                mock_load.return_value = pd.DataFrame(columns=['id', 'title', 'researcher_id', 'full_name', 'department'])
                 
                 processor = DataProcessor()
                 result = processor.process_complete_dataset()

@@ -150,7 +150,7 @@ class TestPythonFileStructure:
         
         # Test for key components
         assert 'class DataProcessor' in content, "DataProcessor class not found"
-        assert 'def fetch_research_data' in content or 'def process_' in content, \
+        assert 'def load_cads_data_with_researchers' in content or 'def process_' in content, \
             "Main processing method not found"
     
     def test_process_data_structure(self):

@@ -165,11 +165,14 @@ def mock_data_processor(sample_works_data, sample_researchers_data):
         def __init__(self):
             self.connected = True
             
-        def fetch_research_data(self):
-            return {
-                "works": sample_works_data,
-                "researchers": sample_researchers_data
-            }
+        def load_cads_data_with_researchers(self):
+            # Return a DataFrame that matches the expected structure
+            import pandas as pd
+            works_df = pd.DataFrame(sample_works_data)
+            researchers_df = pd.DataFrame(sample_researchers_data)
+            
+            # Merge to match the expected joined structure
+            return works_df.merge(researchers_df, left_on='researcher_id', right_on='id', suffixes=('', '_researcher'))
             
         def parse_embeddings(self, embeddings):
             import numpy as np
