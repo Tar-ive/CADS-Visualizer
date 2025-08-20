@@ -41,29 +41,27 @@ def supabase_url():
     return url
 
 @pytest.fixture(scope="session")
-def test_database_connection():
+def test_database_connection(database_url):
     """Provide database connection with proper error handling"""
     import psycopg2
     
-    database_url_val = database_url()
     try:
-        conn = psycopg2.connect(database_url_val)
+        conn = psycopg2.connect(database_url)
         yield conn
         conn.close()
     except psycopg2.OperationalError as e:
         pytest.skip(f"Database connection failed: {e}")
 
 @pytest.fixture(scope="session")
-def ensure_test_tables():
+def ensure_test_tables(database_url):
     """Ensure test tables exist for CI testing"""
     import psycopg2
     
     if os.getenv("CI") != "true":
         return  # Skip for local development
     
-    database_url_val = database_url()
     try:
-        conn = psycopg2.connect(database_url_val)
+        conn = psycopg2.connect(database_url)
         cursor = conn.cursor()
         
         # Create minimal test tables for CI
@@ -161,7 +159,7 @@ def sample_researchers_data():
     ]
 
 @pytest.fixture
-def mock_data_processor():
+def mock_data_processor(sample_works_data, sample_researchers_data):
     """Provide a mock DataProcessor for testing"""
     class MockDataProcessor:
         def __init__(self):
@@ -169,8 +167,8 @@ def mock_data_processor():
             
         def fetch_research_data(self):
             return {
-                "works": sample_works_data(),
-                "researchers": sample_researchers_data()
+                "works": sample_works_data,
+                "researchers": sample_researchers_data
             }
             
         def parse_embeddings(self, embeddings):
