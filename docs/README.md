@@ -2,11 +2,26 @@
 
 Welcome to the comprehensive documentation for the CADS Research Visualization System. This documentation covers everything from initial setup to advanced system operation and maintenance.
 
+## 🎯 Quick Start
+
+**New to the system?** Start here:
+1. **[Handoff Guide](HANDOFF_GUIDE.md)** - Complete system overview and essential information
+2. **[Installation Guide](setup/INSTALLATION_GUIDE.md)** - Step-by-step setup instructions
+3. **[User Guide](setup/USER_GUIDE.md)** - How to use the visualization system
+
 ## 📋 Documentation Structure
 
 ### 🚀 Getting Started (Essential Reading)
 
-#### [Installation Guide](setup/INSTALLATION_GUIDE.md)
+#### [📖 Handoff Guide](HANDOFF_GUIDE.md) **← START HERE**
+Comprehensive system overview consolidating all essential information for new developers.
+- System architecture and capabilities
+- Quick start procedures
+- Known issues and workarounds
+- Emergency procedures
+- Critical maintenance tasks
+
+#### [🔧 Installation Guide](setup/INSTALLATION_GUIDE.md)
 Complete step-by-step installation instructions from prerequisites to first launch.
 - System requirements and prerequisites
 - Database setup with Supabase
@@ -15,7 +30,7 @@ Complete step-by-step installation instructions from prerequisites to first laun
 - Visualization deployment
 - Verification and testing procedures
 
-#### [User Guide](setup/USER_GUIDE.md)
+#### [👤 User Guide](setup/USER_GUIDE.md)
 Comprehensive guide for using the visualization system to explore research data.
 - Understanding the visualization interface
 - Search and discovery features
@@ -23,7 +38,7 @@ Comprehensive guide for using the visualization system to explore research data.
 - Advanced usage patterns
 - Mobile and accessibility features
 
-#### [Troubleshooting Guide](setup/TROUBLESHOOTING_GUIDE.md)
+#### [🚨 Troubleshooting Guide](setup/TROUBLESHOOTING_GUIDE.md)
 Solutions for common issues and debugging procedures.
 - Database connection problems
 - Python dependency issues
@@ -67,9 +82,8 @@ Understanding metrics, alerts, and system health indicators.
 - **[Data Organization](../data/README.md)** - Data structure and file formats
 
 #### Visualization System
-- **[Visualization Architecture](../visuals/README.md)** - Frontend architecture and components
-- **[JavaScript Documentation](../visuals/public/README.md)** - Client-side code documentation
-- **[Data API](api/DATA_API.md)** - Data file formats and structures
+- **[Data Organization](../data/README.md)** - Data file formats and structures
+- **[Visualization Files](../visuals/public/)** - Frontend web application
 
 ### 🧪 Testing and Quality Assurance
 
@@ -82,47 +96,40 @@ Comprehensive testing documentation and procedures.
 - Integration testing
 
 #### Test Categories
-- **[Database Tests](../tests/database/README.md)** - Database connectivity and integrity
-- **[Pipeline Tests](../tests/pipeline/README.md)** - ML pipeline validation
-- **[Visualization Tests](../tests/visualization/README.md)** - Frontend functionality
-- **[Integration Tests](../tests/integration/README.md)** - End-to-end workflows
+- **[Database Tests](../tests/database/)** - Database connectivity and integrity
+- **[Pipeline Tests](../tests/pipeline/)** - ML pipeline validation
+- **[Visualization Tests](../tests/visualization/)** - Frontend functionality
 
 ### 📋 Technical References
 
 #### System Architecture
-- **[Repository Analysis](CADS_REPOSITORY_ANALYSIS.md)** - Detailed code organization
-- **[Architecture Overview](architecture/SYSTEM_ARCHITECTURE.md)** - High-level system design
-- **[Technology Stack](architecture/TECHNOLOGY_STACK.md)** - Libraries and frameworks used
+- **[Repository Analysis](CADS_REPOSITORY_ANALYSIS.md)** - Detailed code organization analysis
 
 #### Historical Documentation
-- **[Migration Reports](migration/)** - Database migration history
-- **[Cleanup Documentation](CLEANUP_COMPLETED.md)** - Code organization improvements
+- **[Migration Reports](migration/)** - Database migration history and connection issues
 - **[Implementation Summaries](monitoring/IMPLEMENTATION_SUMMARY.md)** - Feature implementation records
 
 ## 🎯 Quick Navigation by Role
 
-### For New Users
-1. Start with [User Guide](setup/USER_GUIDE.md)
-2. Access the visualization and explore features
-3. Refer to [Troubleshooting Guide](setup/TROUBLESHOOTING_GUIDE.md) if needed
+### For New Developers (Start Here!)
+1. **[Handoff Guide](HANDOFF_GUIDE.md)** - Complete system overview and essential information
+2. **[Installation Guide](setup/INSTALLATION_GUIDE.md)** - Development environment setup
+3. **[Component Documentation](../cads/README.md)** - Core system components
+4. **[Testing Guide](TESTING_GUIDE.md)** - Quality assurance procedures
 
 ### For System Administrators
-1. Follow [Installation Guide](setup/INSTALLATION_GUIDE.md) for setup
-2. Configure [Monitoring Setup](monitoring/MONITORING_SETUP.md)
-3. Understand [CI/CD Pipeline](setup/CICD_PIPELINE_GUIDE.md)
-4. Learn [Monitoring Interpretation](monitoring/MONITORING_INTERPRETATION_GUIDE.md)
+1. **[Handoff Guide](HANDOFF_GUIDE.md)** - System operation procedures and emergency protocols
+2. **[Installation Guide](setup/INSTALLATION_GUIDE.md)** - Production setup
+3. **[Monitoring Setup](monitoring/MONITORING_SETUP.md)** - Error tracking and analytics
+4. **[CI/CD Pipeline Guide](setup/CICD_PIPELINE_GUIDE.md)** - Automated testing and deployment
 
-### For Developers
-1. Review [Installation Guide](setup/INSTALLATION_GUIDE.md) for development setup
-2. Study component documentation ([CADS Pipeline](../cads/README.md), [Database](../database/README.md))
-3. Understand [Testing Guide](TESTING_GUIDE.md)
-4. Review [Repository Analysis](CADS_REPOSITORY_ANALYSIS.md)
+### For End Users
+1. **[User Guide](setup/USER_GUIDE.md)** - How to use the visualization system
+2. **[Troubleshooting Guide](setup/TROUBLESHOOTING_GUIDE.md)** - Common issues and solutions
 
 ### For Researchers
-1. Use [User Guide](setup/USER_GUIDE.md) to explore research data
-2. Learn advanced search and filtering techniques
-3. Understand research cluster analysis
-4. Discover collaboration opportunities
+1. **[User Guide](setup/USER_GUIDE.md)** - Explore research data and discover patterns
+2. **[Handoff Guide](HANDOFF_GUIDE.md)** - Understanding system capabilities and data sources
 
 ## 📊 Documentation Metrics
 
@@ -183,8 +190,8 @@ Comprehensive testing documentation and procedures.
 This documentation provides comprehensive coverage of the CADS Research Visualization System. Whether you're a new user, system administrator, or developer, you'll find the information needed to successfully work with the system.
 
 **Quick Start Paths:**
-- **New User**: [User Guide](setup/USER_GUIDE.md) → Start exploring
-- **Administrator**: [Installation Guide](setup/INSTALLATION_GUIDE.md) → [Monitoring Setup](monitoring/MONITORING_SETUP.md)
-- **Developer**: [Installation Guide](setup/INSTALLATION_GUIDE.md) → [Component Docs](../cads/README.md) → [Testing Guide](TESTING_GUIDE.md)
+- **New Developer**: [Handoff Guide](HANDOFF_GUIDE.md) → [Installation Guide](setup/INSTALLATION_GUIDE.md) → [Component Docs](../cads/README.md)
+- **System Administrator**: [Handoff Guide](HANDOFF_GUIDE.md) → [Installation Guide](setup/INSTALLATION_GUIDE.md) → [Monitoring Setup](monitoring/MONITORING_SETUP.md)
+- **End User**: [User Guide](setup/USER_GUIDE.md) → Start exploring the visualization
 
 Happy documenting! 📖✨

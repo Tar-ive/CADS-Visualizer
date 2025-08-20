@@ -14,7 +14,6 @@ class TestHTMLStructure:
     def test_html_file_exists(self):
         """Test that HTML files exist in expected locations"""
         html_paths = [
-            Path("index.html"),
             Path("visuals/public/index.html"),
             Path("test.html")
         ]
@@ -140,8 +139,7 @@ class TestCSSStructure:
         """Test that CSS is present in HTML"""
         # Try to read the actual HTML file
         html_paths = [
-            Path("visuals/public/index.html"),
-            Path("index.html")
+            Path("visuals/public/index.html")
         ]
         
         content = None
@@ -174,7 +172,6 @@ class TestCSSStructure:
         """Test dark theme color scheme"""
         # For this test, we'll check if we can find actual HTML files
         html_paths = [
-            Path("index.html"),
             Path("visuals/public/index.html")
         ]
         
@@ -274,7 +271,6 @@ class TestDataLoading:
         """Test references to data files"""
         # Check if we can find actual HTML files with data references
         html_paths = [
-            Path("index.html"),
             Path("visuals/public/index.html")
         ]
         

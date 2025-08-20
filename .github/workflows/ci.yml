@@ -51,14 +51,14 @@ jobs:
       - name: Install Python dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements.txt
+          pip install -r cads/requirements.txt
 
       - name: Debug environment
         run: |
           echo "Python version: $(python --version)"
           echo "Current directory: $(pwd)"
           echo "Requirements file check:"
-          ls -la requirements.txt
+          ls -la cads/requirements.txt
           echo "Project structure:"
           ls -la
 

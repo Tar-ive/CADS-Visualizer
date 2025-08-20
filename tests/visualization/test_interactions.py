@@ -180,7 +180,6 @@ class TestResponsiveInteraction:
         """Test that mobile interaction is considered"""
         # Check if actual HTML files have responsive CSS
         html_paths = [
-            Path("index.html"),
             Path("visuals/public/index.html")
         ]
         
@@ -244,7 +243,6 @@ class TestAccessibilityInteractions:
         """Test that ARIA labels are considered"""
         # Check if actual HTML files have ARIA labels
         html_paths = [
-            Path("index.html"),
             Path("visuals/public/index.html")
         ]
         

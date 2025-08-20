@@ -14,8 +14,6 @@ class TestProjectStructure:
         """Test that required root files exist"""
         root_files = [
             "README.md",
-            "index.html",
-            "app.js",
             "vercel.json",
             ".gitignore"
         ]
