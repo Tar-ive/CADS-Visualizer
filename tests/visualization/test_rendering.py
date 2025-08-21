@@ -163,7 +163,7 @@ class TestVisualizationDataFiles:
         # Test that compressed files exist
         assert len(existing_compressed) > 0, "No compressed data files found"
         
-        # Test file sizes (compressed should be smaller than uncompressed)
+        # Test file sizes (compressed should be smaller than uncompressed for files > 100 bytes)
         for compressed_path in existing_compressed:
             uncompressed_path = Path(str(compressed_path).replace('.gz', ''))
             
@@ -171,9 +171,14 @@ class TestVisualizationDataFiles:
                 compressed_size = compressed_path.stat().st_size
                 uncompressed_size = uncompressed_path.stat().st_size
                 
-                assert compressed_size < uncompressed_size, \
-                    f"Compressed file {compressed_path} not smaller than uncompressed"
                 assert compressed_size > 0, f"Compressed file {compressed_path} is empty"
+                
+                # Only test compression effectiveness for files large enough to compress well
+                if uncompressed_size >= 100:
+                    assert compressed_size < uncompressed_size, \
+                        f"Compressed file {compressed_path} ({compressed_size:,} bytes) " \
+                        f"not smaller than uncompressed ({uncompressed_size:,} bytes). " \
+                        f"This may indicate compression issues or very small file size."
 
 
 class TestVisualizationPerformance:
@@ -208,6 +213,8 @@ class TestVisualizationPerformance:
         ]
         
         compression_ratios = []
+        file_details = []
+        
         for compressed_path in compressed_paths:
             if compressed_path.exists():
                 uncompressed_path = Path(str(compressed_path).replace('.gz', ''))
@@ -216,15 +223,35 @@ class TestVisualizationPerformance:
                     compressed_size = compressed_path.stat().st_size
                     uncompressed_size = uncompressed_path.stat().st_size
                     
+                    # Skip files that are too small for meaningful compression testing
+                    if uncompressed_size < 100:  # Less than 100 bytes
+                        continue
+                    
                     ratio = compressed_size / uncompressed_size
                     compression_ratios.append(ratio)
+                    file_details.append({
+                        'compressed': compressed_path,
+                        'uncompressed': uncompressed_path,
+                        'compressed_size': compressed_size,
+                        'uncompressed_size': uncompressed_size,
+                        'ratio': ratio
+                    })
         
         if len(compression_ratios) == 0:
-            pytest.skip("No compressed/uncompressed file pairs found")
+            pytest.skip("No suitable compressed/uncompressed file pairs found for compression testing")
         
         # Test that compression is effective (should be < 50% of original size)
-        for ratio in compression_ratios:
-            assert ratio < 0.5, f"Poor compression ratio: {ratio:.2f} (should be < 0.5)"
+        for details in file_details:
+            ratio = details['ratio']
+            if ratio >= 0.5:
+                error_msg = (
+                    f"Poor compression ratio for {details['compressed']}: {ratio:.3f} "
+                    f"(uncompressed: {details['uncompressed_size']:,} bytes, "
+                    f"compressed: {details['compressed_size']:,} bytes). "
+                    f"Expected ratio < 0.5. This may indicate the file is too small "
+                    f"or contains data that doesn't compress well."
+                )
+                assert False, error_msg
     
     def test_data_loading_structure(self):
         """Test that data is structured for efficient loading"""

@@ -73,24 +73,21 @@ jobs:
           echo "GROQ_API_KEY=${{ secrets.GROQ_API_KEY }}" >> $GITHUB_ENV
           echo "CI=true" >> $GITHUB_ENV
 
-      - name: Generate test data files
+      - name: Generate comprehensive test data
         run: |
-          echo "📁 Creating required data directories..."
-          mkdir -p data/processed visuals/public/data data/search
+          echo "🔧 Generating comprehensive test data for CI environment..."
+          python3 scripts/ci/generate_test_data.py
           
-          echo "📄 Generating minimal test data files..."
-          echo '{"test": "data", "items": []}' > data/processed/visualization-data.json
-          echo '{"clusters": []}' > data/processed/cluster_themes.json
-          echo '{"results": []}' > data/processed/clustering_results.json
-          echo '{"index": []}' > data/search/search-index.json
+          echo "📋 Verifying generated files..."
+          ls -la data/processed/
+          ls -la visuals/public/data/
           
-          # Copy to visualization directory
-          cp data/processed/visualization-data.json visuals/public/data/
-          cp data/processed/cluster_themes.json visuals/public/data/
-          cp data/processed/clustering_results.json visuals/public/data/
-          cp data/search/search-index.json visuals/public/data/
+          echo "📊 File sizes:"
+          find data/ visuals/public/data/ -name "*.json" -exec ls -lh {} \;
+          echo "📦 Compressed files:"
+          find data/ visuals/public/data/ -name "*.gz" -exec ls -lh {} \;
           
-          echo "✅ Test data files generated successfully"
+          echo "✅ Comprehensive test data generated successfully"
 
       - name: Run comprehensive test suite
         run: |

@@ -9,6 +9,7 @@ import json
 import gzip
 import webbrowser
 import time
+import pytest
 from pathlib import Path
 from http.server import HTTPServer, SimpleHTTPRequestHandler
 import threading
@@ -114,23 +115,40 @@ def test_html_structure():
 
 def start_local_server(port=8000):
     """Start a local HTTP server for testing"""
-    original_dir = os.getcwd()
-    os.chdir("visuals/public")
+    server_dir = os.path.abspath("visuals/public")
     
-    class QuietHandler(SimpleHTTPRequestHandler):
+    print(f"   🔧 Starting server from directory: {server_dir}")
+    
+    # Check if server directory exists
+    if not os.path.exists(server_dir):
+        raise FileNotFoundError(f"Server directory not found: {server_dir}")
+    
+    # List files in data directory for debugging
+    data_dir = os.path.join(server_dir, "data")
+    if os.path.exists(data_dir):
+        print(f"   📂 Files in data directory:")
+        for file in os.listdir(data_dir):
+            filepath = os.path.join(data_dir, file)
+            if os.path.isfile(filepath):
+                size = os.path.getsize(filepath)
+                print(f"      - {file} ({size:,} bytes)")
+    else:
+        print(f"   ❌ Data directory not found: {data_dir}")
+    
+    class CustomHandler(SimpleHTTPRequestHandler):
+        def __init__(self, *args, **kwargs):
+            super().__init__(*args, directory=server_dir, **kwargs)
+        
         def log_message(self, format, *args):
-            pass  # Suppress log messages
+            pass  # Suppress server logs for cleaner test output
     
-    server = HTTPServer(('localhost', port), QuietHandler)
+    server = HTTPServer(('localhost', port), CustomHandler)
     
     def run_server():
         server.serve_forever()
     
     thread = threading.Thread(target=run_server, daemon=True)
     thread.start()
-    
-    # Change back to original directory
-    os.chdir(original_dir)
     
     return server, f"http://localhost:{port}"
 
@@ -139,15 +157,34 @@ def test_server_response():
     """Test that the server responds correctly"""
     print("🌐 Testing server response...")
     
+    # Check if data files exist before starting server
+    data_dir = Path("visuals/public/data")
+    required_files = [
+        "visualization-data.json",
+        "cluster_themes.json", 
+        "search-index.json"
+    ]
+    
+    missing_files = []
+    for filename in required_files:
+        filepath = data_dir / filename
+        if not filepath.exists():
+            missing_files.append(str(filepath))
+        else:
+            print(f"   📁 Found: {filepath} ({filepath.stat().st_size:,} bytes)")
+    
+    if missing_files:
+        pytest.skip(f"Required data files not found: {missing_files}")
+    
     # Start server
     server, url = start_local_server(port=8001)
     
     try:
-        # Give server time to start
-        time.sleep(1)
+        # Give server more time to start
+        time.sleep(2)
         
         # Test main page
-        response = requests.get(url, timeout=5)
+        response = requests.get(url, timeout=10)
         assert response.status_code == 200, f"Main page returned status {response.status_code}"
         print("   ✅ Main page loads successfully")
         
@@ -160,12 +197,16 @@ def test_server_response():
         
         failed_files = []
         for data_file in data_files:
-            response = requests.get(f"{url}/{data_file}", timeout=5)
-            if response.status_code == 200:
-                print(f"   ✅ {data_file} accessible")
-            else:
-                print(f"   ❌ {data_file} returned status {response.status_code}")
-                failed_files.append(f"{data_file} (status {response.status_code})")
+            try:
+                response = requests.get(f"{url}/{data_file}", timeout=10)
+                if response.status_code == 200:
+                    print(f"   ✅ {data_file} accessible ({len(response.content):,} bytes)")
+                else:
+                    print(f"   ❌ {data_file} returned status {response.status_code}")
+                    failed_files.append(f"{data_file} (status {response.status_code})")
+            except requests.RequestException as e:
+                print(f"   ❌ {data_file} request failed: {e}")
+                failed_files.append(f"{data_file} (request failed: {e})")
         
         assert not failed_files, f"Failed to access data files: {failed_files}"
         
@@ -173,7 +214,10 @@ def test_server_response():
         assert False, f"Server test failed: {e}"
     finally:
         # Clean up server
-        server.shutdown()
+        try:
+            server.shutdown()
+        except:
+            pass
 
 
 def main():

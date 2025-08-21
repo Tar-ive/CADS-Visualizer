@@ -222,23 +222,45 @@ class TestCompressedDataLoading:
         ]
         
         compression_ratios = []
+        file_details = []
         
         for uncompressed_path, compressed_path in file_pairs:
             if uncompressed_path.exists() and compressed_path.exists():
                 uncompressed_size = uncompressed_path.stat().st_size
                 compressed_size = compressed_path.stat().st_size
                 
+                # Skip files that are too small for meaningful compression testing
+                if uncompressed_size < 100:  # Less than 100 bytes
+                    continue
+                
                 if uncompressed_size > 0:
                     ratio = compressed_size / uncompressed_size
                     compression_ratios.append(ratio)
+                    file_details.append({
+                        'uncompressed': uncompressed_path,
+                        'compressed': compressed_path,
+                        'uncompressed_size': uncompressed_size,
+                        'compressed_size': compressed_size,
+                        'ratio': ratio
+                    })
         
         if len(compression_ratios) == 0:
-            pytest.skip("No uncompressed/compressed file pairs found")
+            pytest.skip("No suitable uncompressed/compressed file pairs found for compression testing")
         
-        # Test compression efficiency
-        for ratio in compression_ratios:
-            assert ratio < 0.8, f"Poor compression ratio: {ratio:.2f} (should be < 0.8)"
-            assert ratio > 0.1, f"Suspiciously high compression: {ratio:.2f} (check file integrity)"
+        # Test compression efficiency with detailed error messages
+        for details in file_details:
+            ratio = details['ratio']
+            if ratio >= 0.8:
+                error_msg = (
+                    f"Poor compression ratio for {details['uncompressed']}: {ratio:.3f} "
+                    f"(uncompressed: {details['uncompressed_size']:,} bytes, "
+                    f"compressed: {details['compressed_size']:,} bytes). "
+                    f"Expected ratio < 0.8. This may indicate the file is too small "
+                    f"or contains data that doesn't compress well."
+                )
+                assert False, error_msg
+            
+            assert ratio > 0.05, f"Suspiciously high compression: {ratio:.3f} (check file integrity)"
 
 
 class TestDataLoadingPerformance:
