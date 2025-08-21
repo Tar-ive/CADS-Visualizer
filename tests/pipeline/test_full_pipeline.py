@@ -307,9 +307,13 @@ class TestPipelineErrorHandling:
         try:
             from cads.data_loader import DataProcessor
             
-            # Mock empty dataset
+            # Mock empty dataset with all expected columns
             with patch.object(DataProcessor, 'load_cads_data_with_researchers') as mock_load:
-                mock_load.return_value = pd.DataFrame(columns=['id', 'title', 'researcher_id', 'full_name', 'department'])
+                empty_df = pd.DataFrame(columns=[
+                    'id', 'title', 'researcher_id', 'full_name', 'department',
+                    'citations', 'abstract', 'publication_year', 'embedding'
+                ])
+                mock_load.return_value = empty_df
                 
                 processor = DataProcessor()
                 result = processor.process_complete_dataset()
