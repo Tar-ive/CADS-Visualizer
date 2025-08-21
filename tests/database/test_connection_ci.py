@@ -3,71 +3,72 @@
 import pytest
 import psycopg2
 import os
+from sqlalchemy import text
+from tests.utils.database_utils import get_test_database_engine
 
 
 class TestDatabaseConnectionCI:
     """Basic database connection tests for CI environment"""
     
     def test_database_connection_available(self):
-        """Test that database connection is available in CI"""
+        """Test that database connection is available in CI using SQLAlchemy engine"""
         database_url = os.getenv("DATABASE_URL")
         if not database_url:
             pytest.skip("DATABASE_URL not set - this test only runs in CI environment")
         
         try:
-            conn = psycopg2.connect(database_url)
-            assert conn is not None
-            assert not conn.closed
+            engine = get_test_database_engine(database_url)
             
-            # Test basic query
-            cursor = conn.cursor()
-            cursor.execute("SELECT 1 as test_value")
-            result = cursor.fetchone()
-            assert result[0] == 1
+            # Test basic query using SQLAlchemy engine
+            with engine.connect() as connection:
+                result = connection.execute(text("SELECT 1 as test_value"))
+                row = result.fetchone()
+                assert row[0] == 1
             
-            cursor.close()
-            conn.close()
+            engine.dispose()
             
-        except psycopg2.OperationalError as e:
+        except Exception as e:
             pytest.fail(f"Database connection failed: {e}")
     
     def test_database_can_create_table(self):
-        """Test that we can create and drop a test table"""
+        """Test that we can create and drop a test table using SQLAlchemy engine"""
         database_url = os.getenv("DATABASE_URL")
         if not database_url:
             pytest.skip("DATABASE_URL not set")
         
         try:
-            conn = psycopg2.connect(database_url)
-            cursor = conn.cursor()
+            engine = get_test_database_engine(database_url)
             
-            # Create test table
-            cursor.execute("""
-                CREATE TABLE IF NOT EXISTS test_ci_table (
-                    id SERIAL PRIMARY KEY,
-                    test_data VARCHAR(100)
+            with engine.connect() as connection:
+                # Create test table
+                connection.execute(text("""
+                    CREATE TABLE IF NOT EXISTS test_ci_table (
+                        id SERIAL PRIMARY KEY,
+                        test_data VARCHAR(100)
+                    )
+                """))
+                
+                # Insert test data
+                connection.execute(
+                    text("INSERT INTO test_ci_table (test_data) VALUES (:test_data)"),
+                    {"test_data": "CI test data"}
                 )
-            """)
+                
+                # Query test data
+                result = connection.execute(
+                    text("SELECT test_data FROM test_ci_table WHERE test_data = :test_data"), 
+                    {"test_data": "CI test data"}
+                )
+                row = result.fetchone()
+                assert row[0] == "CI test data"
+                
+                # Clean up
+                connection.execute(text("DROP TABLE test_ci_table"))
+                connection.commit()
             
-            # Insert test data
-            cursor.execute(
-                "INSERT INTO test_ci_table (test_data) VALUES (%s)",
-                ("CI test data",)
-            )
+            engine.dispose()
             
-            # Query test data
-            cursor.execute("SELECT test_data FROM test_ci_table WHERE test_data = %s", ("CI test data",))
-            result = cursor.fetchone()
-            assert result[0] == "CI test data"
-            
-            # Clean up
-            cursor.execute("DROP TABLE test_ci_table")
-            
-            conn.commit()
-            cursor.close()
-            conn.close()
-            
-        except psycopg2.Error as e:
+        except Exception as e:
             pytest.fail(f"Database operation failed: {e}")
     
     def test_database_environment_variables(self):

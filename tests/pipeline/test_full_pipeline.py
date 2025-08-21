@@ -324,3 +324,34 @@ class TestPipelineErrorHandling:
                 
         except ImportError:
             pytest.skip("DataProcessor not available")
+    
+    def test_handle_missing_columns_in_dataframe(self):
+        """Test handling of DataFrame with missing expected columns"""
+        try:
+            from cads.data_loader import DataProcessor
+            
+            # Create DataFrame with missing columns
+            incomplete_df = pd.DataFrame({
+                'id': [1, 2, 3],
+                'title': ['Paper 1', 'Paper 2', 'Paper 3'],
+                # Missing: citations, abstract, publication_year, embedding, full_name
+            })
+            
+            processor = DataProcessor()
+            embeddings = np.zeros((3, 384))  # Mock embeddings
+            
+            # Should handle missing columns gracefully without crashing
+            validation_results = processor.validate_data(incomplete_df, embeddings)
+            
+            assert 'missing_columns' in validation_results
+            assert 'citations' in validation_results['missing_columns']
+            assert 'abstract' in validation_results['missing_columns']
+            assert 'publication_year' in validation_results['missing_columns']
+            assert 'full_name' in validation_results['missing_columns']
+            
+            # Should still provide basic validation info
+            assert validation_results['total_works'] == 3
+            assert validation_results['embedding_dimensions'] == 384
+            
+        except ImportError:
+            pytest.skip("DataProcessor not available")

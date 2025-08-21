@@ -9,6 +9,7 @@ import tempfile
 import json
 from pathlib import Path
 from dotenv import load_dotenv
+from sqlalchemy import Engine
 
 # Add project root to Python path
 project_root = Path(__file__).parent.parent
@@ -17,6 +18,9 @@ sys.path.insert(0, str(project_root / "cads"))
 
 # Load environment variables
 load_dotenv()
+
+# Import database utilities
+from tests.utils.database_utils import get_test_database_engine, get_supabase_engine, create_test_tables_if_needed
 
 @pytest.fixture(scope="session")
 def database_url():
@@ -41,67 +45,48 @@ def supabase_url():
     return url
 
 @pytest.fixture(scope="session")
-def test_database_connection(database_url):
-    """Provide database connection with proper error handling"""
+def database_engine(database_url) -> Engine:
+    """
+    Provide SQLAlchemy engine for database connections.
+    
+    This fixture replaces direct psycopg2 connections to resolve pandas
+    deprecation warnings when using pd.read_sql().
+    """
+    engine = get_test_database_engine(database_url)
+    create_test_tables_if_needed(engine)
+    yield engine
+    engine.dispose()
+
+@pytest.fixture(scope="session")
+def supabase_engine(supabase_url) -> Engine:
+    """Provide SQLAlchemy engine for Supabase integration tests"""
+    engine = get_supabase_engine(supabase_url)
+    yield engine
+    engine.dispose()
+
+@pytest.fixture(scope="session")
+def test_database_connection(database_engine):
+    """
+    Provide database connection with proper error handling.
+    
+    Note: This fixture is deprecated. Use database_engine fixture instead
+    for pandas operations to avoid deprecation warnings.
+    """
     import psycopg2
     
     try:
-        conn = psycopg2.connect(database_url)
+        # Extract connection URL from engine
+        url = str(database_engine.url)
+        conn = psycopg2.connect(url)
         yield conn
         conn.close()
-    except psycopg2.OperationalError as e:
+    except Exception as e:
         pytest.skip(f"Database connection failed: {e}")
 
 @pytest.fixture(scope="session")
-def ensure_test_tables(database_url):
+def ensure_test_tables(database_engine):
     """Ensure test tables exist for CI testing"""
-    import psycopg2
-    
-    if os.getenv("CI") != "true":
-        return  # Skip for local development
-    
-    try:
-        conn = psycopg2.connect(database_url)
-        cursor = conn.cursor()
-        
-        # Create minimal test tables for CI
-        cursor.execute("""
-            CREATE TABLE IF NOT EXISTS cads_researchers (
-                id SERIAL PRIMARY KEY,
-                full_name VARCHAR(255) NOT NULL,
-                department VARCHAR(255) NOT NULL
-            )
-        """)
-        
-        cursor.execute("""
-            CREATE TABLE IF NOT EXISTS cads_works (
-                id SERIAL PRIMARY KEY,
-                title TEXT NOT NULL,
-                researcher_id INTEGER REFERENCES cads_researchers(id),
-                publication_year INTEGER,
-                embedding TEXT
-            )
-        """)
-        
-        # Insert minimal test data
-        cursor.execute("""
-            INSERT INTO cads_researchers (id, full_name, department) 
-            VALUES (1, 'Test Researcher', 'Computer Science')
-            ON CONFLICT (id) DO NOTHING
-        """)
-        
-        cursor.execute("""
-            INSERT INTO cads_works (id, title, researcher_id, publication_year, embedding)
-            VALUES (1, 'Test Paper', 1, 2023, '[0.1, 0.2, 0.3]')
-            ON CONFLICT (id) DO NOTHING
-        """)
-        
-        conn.commit()
-        cursor.close()
-        conn.close()
-        
-    except psycopg2.OperationalError:
-        pass  # Skip if database setup fails
+    create_test_tables_if_needed(database_engine)
 
 @pytest.fixture(scope="session")
 def sample_data_dir():
@@ -218,49 +203,13 @@ def pytest_collection_modifyitems(config, items):
 # Auto-use fixtures for CI environment
 @pytest.fixture(autouse=True, scope="session")
 def setup_ci_environment():
-    """Automatically set up CI test environment"""
+    """Automatically set up CI test environment using SQLAlchemy engine"""
     # Only set up test tables if we're in CI and have a database URL
     if os.getenv("CI") == "true" and os.getenv("DATABASE_URL"):
         try:
-            import psycopg2
             database_url = os.getenv("DATABASE_URL")
-            conn = psycopg2.connect(database_url)
-            cursor = conn.cursor()
-            
-            # Create minimal test tables for CI
-            cursor.execute("""
-                CREATE TABLE IF NOT EXISTS cads_researchers (
-                    id SERIAL PRIMARY KEY,
-                    full_name VARCHAR(255) NOT NULL,
-                    department VARCHAR(255) NOT NULL
-                )
-            """)
-            
-            cursor.execute("""
-                CREATE TABLE IF NOT EXISTS cads_works (
-                    id SERIAL PRIMARY KEY,
-                    title TEXT NOT NULL,
-                    researcher_id INTEGER REFERENCES cads_researchers(id),
-                    publication_year INTEGER,
-                    embedding TEXT
-                )
-            """)
-            
-            # Insert minimal test data
-            cursor.execute("""
-                INSERT INTO cads_researchers (id, full_name, department) 
-                VALUES (1, 'Test Researcher', 'Computer Science')
-                ON CONFLICT (id) DO NOTHING
-            """)
-            
-            cursor.execute("""
-                INSERT INTO cads_works (id, title, researcher_id, publication_year, embedding)
-                VALUES (1, 'Test Paper', 1, 2023, '[0.1, 0.2, 0.3]')
-                ON CONFLICT (id) DO NOTHING
-            """)
-            
-            conn.commit()
-            cursor.close()
-            conn.close()
-        except (ImportError, psycopg2.OperationalError):
+            engine = get_test_database_engine(database_url)
+            create_test_tables_if_needed(engine)
+            engine.dispose()
+        except Exception:
             pass  # Skip if database setup fails

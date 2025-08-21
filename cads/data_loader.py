@@ -218,13 +218,55 @@ class DataProcessor:
         """
         validation_results = {
             'total_works': len(df),
-            'works_with_researchers': df['full_name'].notna().sum(),
-            'works_with_citations': df['citations'].notna().sum(),
-            'works_with_abstracts': df['abstract'].notna().sum(),
+            'works_with_researchers': 0,
+            'works_with_citations': 0,
+            'works_with_abstracts': 0,
             'embedding_dimensions': embeddings.shape[1] if len(embeddings) > 0 else 0,
             'non_zero_embeddings': (embeddings != 0).any(axis=1).sum() if len(embeddings) > 0 else 0,
-            'validation_passed': True
+            'validation_passed': True,
+            'missing_columns': []
         }
+        
+        # Safely check for required columns with try/catch blocks
+        try:
+            if 'full_name' in df.columns:
+                validation_results['works_with_researchers'] = df['full_name'].notna().sum()
+            else:
+                validation_results['missing_columns'].append('full_name')
+                logger.warning("Column 'full_name' not found in DataFrame")
+        except Exception as e:
+            logger.error(f"Error validating researcher data: {e}")
+            validation_results['missing_columns'].append('full_name')
+        
+        try:
+            if 'citations' in df.columns:
+                validation_results['works_with_citations'] = df['citations'].notna().sum()
+            else:
+                validation_results['missing_columns'].append('citations')
+                logger.warning("Column 'citations' not found in DataFrame")
+        except Exception as e:
+            logger.error(f"Error validating citations data: {e}")
+            validation_results['missing_columns'].append('citations')
+        
+        try:
+            if 'abstract' in df.columns:
+                validation_results['works_with_abstracts'] = df['abstract'].notna().sum()
+            else:
+                validation_results['missing_columns'].append('abstract')
+                logger.warning("Column 'abstract' not found in DataFrame")
+        except Exception as e:
+            logger.error(f"Error validating abstract data: {e}")
+            validation_results['missing_columns'].append('abstract')
+        
+        try:
+            if 'publication_year' in df.columns:
+                validation_results['works_with_publication_year'] = df['publication_year'].notna().sum()
+            else:
+                validation_results['missing_columns'].append('publication_year')
+                logger.warning("Column 'publication_year' not found in DataFrame")
+        except Exception as e:
+            logger.error(f"Error validating publication_year data: {e}")
+            validation_results['missing_columns'].append('publication_year')
         
         # Check validation criteria
         if validation_results['total_works'] == 0:
@@ -237,6 +279,10 @@ class DataProcessor:
         
         if validation_results['non_zero_embeddings'] < validation_results['total_works'] * 0.9:
             logger.warning("Less than 90% of works have non-zero embeddings")
+        
+        # Warn about missing columns but don't fail validation
+        if validation_results['missing_columns']:
+            logger.warning(f"Missing expected columns: {validation_results['missing_columns']}")
         
         logger.info(f"Data validation results: {validation_results}")
         return validation_results
