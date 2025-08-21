@@ -205,14 +205,14 @@ class TestErrorHandling:
     
     def test_handle_missing_database_url(self):
         """Test handling of missing database URL"""
-        with patch.dict('os.environ', {}, clear=True):
-            try:
-                from cads.data_loader import DataProcessor
+        from cads.data_loader import DataProcessor
+        
+        # Clear environment and mock load_dotenv to prevent loading from .env file
+        with patch.dict('os.environ', {}, clear=True), \
+             patch('cads.data_loader.load_dotenv'):
+            # Should raise ValueError when DATABASE_URL is missing
+            with pytest.raises(ValueError, match="DATABASE_URL must be set"):
                 processor = DataProcessor()
-                # Should handle missing DATABASE_URL gracefully
-                assert processor is not None
-            except ImportError:
-                pytest.skip("DataProcessor not available")
     
     def test_handle_invalid_embeddings(self):
         """Test handling of invalid embedding formats"""

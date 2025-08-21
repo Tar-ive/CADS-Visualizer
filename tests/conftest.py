@@ -217,6 +217,50 @@ def pytest_collection_modifyitems(config, items):
 
 # Auto-use fixtures for CI environment
 @pytest.fixture(autouse=True, scope="session")
-def setup_ci_environment(ensure_test_tables):
+def setup_ci_environment():
     """Automatically set up CI test environment"""
-    pass
+    # Only set up test tables if we're in CI and have a database URL
+    if os.getenv("CI") == "true" and os.getenv("DATABASE_URL"):
+        try:
+            import psycopg2
+            database_url = os.getenv("DATABASE_URL")
+            conn = psycopg2.connect(database_url)
+            cursor = conn.cursor()
+            
+            # Create minimal test tables for CI
+            cursor.execute("""
+                CREATE TABLE IF NOT EXISTS cads_researchers (
+                    id SERIAL PRIMARY KEY,
+                    full_name VARCHAR(255) NOT NULL,
+                    department VARCHAR(255) NOT NULL
+                )
+            """)
+            
+            cursor.execute("""
+                CREATE TABLE IF NOT EXISTS cads_works (
+                    id SERIAL PRIMARY KEY,
+                    title TEXT NOT NULL,
+                    researcher_id INTEGER REFERENCES cads_researchers(id),
+                    publication_year INTEGER,
+                    embedding TEXT
+                )
+            """)
+            
+            # Insert minimal test data
+            cursor.execute("""
+                INSERT INTO cads_researchers (id, full_name, department) 
+                VALUES (1, 'Test Researcher', 'Computer Science')
+                ON CONFLICT (id) DO NOTHING
+            """)
+            
+            cursor.execute("""
+                INSERT INTO cads_works (id, title, researcher_id, publication_year, embedding)
+                VALUES (1, 'Test Paper', 1, 2023, '[0.1, 0.2, 0.3]')
+                ON CONFLICT (id) DO NOTHING
+            """)
+            
+            conn.commit()
+            cursor.close()
+            conn.close()
+        except (ImportError, psycopg2.OperationalError):
+            pass  # Skip if database setup fails
