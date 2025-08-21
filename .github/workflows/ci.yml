@@ -98,6 +98,7 @@ jobs:
     name: Deploy to Vercel
     needs: test
     runs-on: ubuntu-latest
+    environment: cads-research
     # Only deploy if tests pass AND we're on main branch AND it's a push (not PR)
     if: success() && github.ref == 'refs/heads/main' && github.event_name == 'push'
     
@@ -110,6 +111,14 @@ jobs:
           echo "✅ All tests passed successfully - proceeding with deployment"
           echo "Branch: ${{ github.ref }}"
           echo "Event: ${{ github.event_name }}"
+
+      - name: Debug Vercel configuration
+        run: |
+          echo "🔍 Verifying Vercel environment variables..."
+          echo "VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN != '' && 'SET' || 'NOT SET' }}"
+          echo "VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID != '' && 'SET' || 'NOT SET' }}"
+          echo "VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID != '' && 'SET' || 'NOT SET' }}"
+          echo "Environment: cads-research"
 
       - name: Deploy to Vercel
         uses: amondnet/vercel-action@v25

@@ -4,7 +4,9 @@ This document explains how to configure the required secrets and environment var
 
 ## Required Secrets
 
-Navigate to your repository's Settings > Secrets and variables > Actions, then add the following secrets:
+Navigate to your repository's Settings > Environments > cads-research > Environment secrets, then add the following secrets:
+
+**Important**: Secrets must be added to the `cads-research` environment, not repository-level secrets, as both test and deploy jobs target this environment.
 
 ### Vercel Deployment Secrets
 
@@ -73,14 +75,31 @@ The CI pipeline runs the following tests:
 4. Health check verification after deployment
 5. Rollback capability through Vercel dashboard
 
+## Environment Configuration
+
+### GitHub Environment Setup
+
+1. Go to Repository Settings > Environments
+2. Create or select the `cads-research` environment
+3. Add environment protection rules (optional):
+   - Required reviewers for production deployments
+   - Deployment branches: `main` only
+   - Wait timer: 0 minutes (for immediate deployment)
+
+### Environment Variables vs Repository Secrets
+
+- **Environment Secrets**: Used for deployment credentials (Vercel tokens)
+- **Repository Secrets**: Used for general CI/CD secrets (database URLs, API keys)
+
 ## Troubleshooting
 
 ### Common Issues
 
-1. **Missing Secrets**: Ensure all required secrets are configured
-2. **Test Failures**: Check test logs for specific error messages
-3. **Deployment Failures**: Verify Vercel configuration and secrets
-4. **Health Check Failures**: Confirm deployment URL is accessible
+1. **Missing Secrets**: Ensure all required secrets are configured in the `cads-research` environment
+2. **Environment Mismatch**: Verify both test and deploy jobs target the same environment
+3. **Test Failures**: Check test logs for specific error messages
+4. **Deployment Failures**: Verify Vercel configuration and secrets
+5. **Health Check Failures**: Confirm deployment URL is accessible
 
 ### Debug Steps
 
