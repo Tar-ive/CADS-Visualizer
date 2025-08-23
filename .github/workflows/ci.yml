@@ -145,27 +145,15 @@ jobs:
           
           echo "✅ All Vercel environment variables are set"
           
-          # Deploy to existing project using correct project IDs
-          echo "🚀 Deploying to existing Vercel project..."
+          # Deploy to cads-research project (create if it doesn't exist)
+          echo "🚀 Deploying to cads-research project..."
           
           # Remove any existing .vercel directory to ensure clean deployment
           rm -rf .vercel
           
-          # Create .vercel directory with correct project configuration
-          mkdir -p .vercel
-          cat > .vercel/project.json << EOF
-          {
-            "projectId": "$VERCEL_PROJECT_ID",
-            "orgId": "$VERCEL_ORG_ID"
-          }
-          EOF
-          
-          echo "📁 Using project configuration:"
-          cat .vercel/project.json
-          
-          # Deploy to the existing cads-research project
-          echo "🚀 Deploying to cads-research project..."
-          vercel --prod --token "$VERCEL_TOKEN" --yes
+          # Deploy with specific project name to create/update cads-research project
+          echo "🚀 Creating/updating cads-research project..."
+          vercel --prod --token "$VERCEL_TOKEN" --yes --name cads-research
         env:
           VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
           VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
