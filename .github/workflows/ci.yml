@@ -145,19 +145,21 @@ jobs:
           
           echo "✅ All Vercel environment variables are set"
           
-          # Deploy to cads-research project (create if it doesn't exist)
-          echo "🚀 Deploying to cads-research project..."
+          # Deploy to create fresh cads-research project 
+          echo "🚀 Creating fresh cads-research project..."
           
           # Remove any existing .vercel directory to ensure clean deployment
           rm -rf .vercel
           
-          # Deploy with specific project name to create/update cads-research project
-          echo "🚀 Creating/updating cads-research project..."
-          vercel --prod --token "$VERCEL_TOKEN" --yes --name cads-research
+          # Unset the problematic environment variables
+          unset VERCEL_ORG_ID
+          unset VERCEL_PROJECT_ID
+          
+          # Deploy with specific project name - this will create the project
+          echo "🚀 Deploying fresh cads-research project..."
+          vercel --prod --token "$VERCEL_TOKEN" --yes
         env:
           VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
-          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
-          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
 
       - name: Health check
         run: |
