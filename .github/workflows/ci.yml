@@ -127,23 +127,13 @@ jobs:
         run: |
           echo "🚀 Starting Vercel deployment..."
           
-          # Verify environment variables are available
+          # Verify required environment variables
           if [ -z "$VERCEL_TOKEN" ]; then
             echo "❌ VERCEL_TOKEN is not set"
             exit 1
           fi
           
-          if [ -z "$VERCEL_ORG_ID" ]; then
-            echo "❌ VERCEL_ORG_ID is not set"
-            exit 1
-          fi
-          
-          if [ -z "$VERCEL_PROJECT_ID" ]; then
-            echo "❌ VERCEL_PROJECT_ID is not set"
-            exit 1
-          fi
-          
-          echo "✅ All Vercel environment variables are set"
+          echo "✅ Vercel token is set"
           
           # Deploy to create fresh cads-research project 
           echo "🚀 Creating fresh cads-research project..."
