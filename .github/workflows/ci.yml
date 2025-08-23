@@ -145,16 +145,26 @@ jobs:
           
           echo "✅ All Vercel environment variables are set"
           
-          # Deploy completely fresh (ignore old project IDs)
-          echo "🆕 Creating completely fresh Vercel deployment..."
+          # Deploy to existing project using correct project IDs
+          echo "🚀 Deploying to existing Vercel project..."
           
-          # Remove any existing .vercel directory and environment variable interference
+          # Remove any existing .vercel directory to ensure clean deployment
           rm -rf .vercel
-          unset VERCEL_PROJECT_ID
-          unset VERCEL_ORG_ID
           
-          # Deploy and let Vercel create a brand new project
-          echo "🚀 Deploying to Vercel (creating brand new project)..."
+          # Create .vercel directory with correct project configuration
+          mkdir -p .vercel
+          cat > .vercel/project.json << EOF
+          {
+            "projectId": "$VERCEL_PROJECT_ID",
+            "orgId": "$VERCEL_ORG_ID"
+          }
+          EOF
+          
+          echo "📁 Using project configuration:"
+          cat .vercel/project.json
+          
+          # Deploy to the existing cads-research project
+          echo "🚀 Deploying to cads-research project..."
           vercel --prod --token "$VERCEL_TOKEN" --yes
         env:
           VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
@@ -164,8 +174,19 @@ jobs:
       - name: Health check
         run: |
           echo "🏥 Running post-deployment health check..."
+          echo "Checking URL: ${{ secrets.VERCEL_DEPLOYMENT_URL }}"
+          
+          # Wait for deployment to be fully available
           sleep 30
-          curl -f ${{ secrets.VERCEL_DEPLOYMENT_URL }} || exit 1
+          
+          # Test main page
+          echo "Testing main page..."
+          curl -f -s "${{ secrets.VERCEL_DEPLOYMENT_URL }}" > /dev/null || exit 1
+          
+          # Test data endpoint
+          echo "Testing data endpoint..."
+          curl -f -s "${{ secrets.VERCEL_DEPLOYMENT_URL }}/data/visualization-data.json" > /dev/null || exit 1
+          
           echo "✅ Deployment health check passed"
 
       - name: Deployment success notification
