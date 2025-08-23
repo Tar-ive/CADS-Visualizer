@@ -5,7 +5,7 @@
     "github": {
       "silent": true
     },
-    "outputDirectory": "visuals/public",
+    "outputDirectory": "visuals/public-prod",
 
     "headers": [
       {
