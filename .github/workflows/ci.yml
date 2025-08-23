@@ -145,8 +145,23 @@ jobs:
           
           echo "✅ All Vercel environment variables are set"
           
-          # Deploy with proper error handling
-          vercel deploy --prod --token "$VERCEL_TOKEN" --confirm
+          # Deploy with proper error handling for hobby plan
+          echo "🔗 Setting up project for deployment..."
+          
+          # Create .vercel directory with project configuration
+          mkdir -p .vercel
+          cat > .vercel/project.json << EOF
+          {
+            "projectId": "$VERCEL_PROJECT_ID",
+            "orgId": "$VERCEL_ORG_ID"
+          }
+          EOF
+          
+          echo "📁 Project configuration created"
+          cat .vercel/project.json
+          
+          # Deploy with project configuration
+          vercel deploy --prod --token "$VERCEL_TOKEN" --yes
         env:
           VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
           VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
