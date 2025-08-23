@@ -145,15 +145,17 @@ jobs:
           
           echo "✅ All Vercel environment variables are set"
           
-          # Deploy fresh without existing project (will create new one)
-          echo "🆕 Creating fresh Vercel deployment..."
+          # Deploy completely fresh (ignore old project IDs)
+          echo "🆕 Creating completely fresh Vercel deployment..."
           
-          # Remove any existing .vercel directory  
+          # Remove any existing .vercel directory and environment variable interference
           rm -rf .vercel
+          unset VERCEL_PROJECT_ID
+          unset VERCEL_ORG_ID
           
-          # Deploy and create new project automatically
-          echo "🚀 Deploying to Vercel (will create new project if needed)..."
-          vercel --prod --token "$VERCEL_TOKEN" --yes --name "cads-research"
+          # Deploy and let Vercel create a brand new project
+          echo "🚀 Deploying to Vercel (creating brand new project)..."
+          vercel --prod --token "$VERCEL_TOKEN" --yes
         env:
           VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
           VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
