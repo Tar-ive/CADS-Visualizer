@@ -123,6 +123,7 @@ jobs:
       - name: Install Vercel CLI
         run: npm install -g vercel@latest
 
+
       - name: Deploy to Vercel
         run: |
           echo "🚀 Starting Vercel deployment..."
@@ -134,45 +135,89 @@ jobs:
           fi
           
           echo "✅ Vercel token is set"
+          echo "🔧 Using existing Vercel project for consistent URLs..."
           
-          # Deploy to create fresh cads-research project 
-          echo "🚀 Creating fresh cads-research project..."
+          # Deploy to existing project with proper configuration
+          echo "🚀 Deploying to existing cads-research project..."
           
-          # Remove any existing .vercel directory to ensure clean deployment
-          rm -rf .vercel
+          # Capture the deployment URL from Vercel output
+          DEPLOYMENT_OUTPUT=$(vercel --prod --token "$VERCEL_TOKEN" --yes 2>&1)
+          echo "$DEPLOYMENT_OUTPUT"
           
-          # Unset the problematic environment variables
-          unset VERCEL_ORG_ID
-          unset VERCEL_PROJECT_ID
+          # Extract the production URL from the output
+          DEPLOYMENT_URL=$(echo "$DEPLOYMENT_OUTPUT" | grep -E "https://.*\.vercel\.app" | tail -1 | awk '{print $1}')
           
-          # Deploy with specific project name - this will create the project
-          echo "🚀 Deploying fresh cads-research project..."
-          vercel --prod --token "$VERCEL_TOKEN" --yes
+          if [ -z "$DEPLOYMENT_URL" ]; then
+            echo "❌ Failed to extract deployment URL from Vercel output"
+            echo "Vercel output was:"
+            echo "$DEPLOYMENT_OUTPUT"
+            exit 1
+          fi
+          
+          echo "✅ Deployment successful!"
+          echo "📍 Deployment URL: $DEPLOYMENT_URL"
+          
+          # Save URL for health check
+          echo "DEPLOYMENT_URL=$DEPLOYMENT_URL" >> $GITHUB_ENV
         env:
           VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
 
       - name: Health check
         run: |
           echo "🏥 Running post-deployment health check..."
-          echo "Checking URL: ${{ secrets.VERCEL_DEPLOYMENT_URL }}"
+          echo "📍 Testing URL: $DEPLOYMENT_URL"
           
-          # Wait for deployment to be fully available
-          sleep 30
+          # Function to test an endpoint with retry logic
+          test_endpoint() {
+            local url="$1"
+            local description="$2"
+            local max_attempts=5
+            local wait_time=15
+            
+            for attempt in $(seq 1 $max_attempts); do
+              echo "🔍 Testing $description (attempt $attempt/$max_attempts)..."
+              
+              if curl -f -s -w "HTTP %{http_code} | Size: %{size_download} bytes | Time: %{time_total}s\n" "$url" > /dev/null; then
+                echo "✅ $description - SUCCESS"
+                return 0
+              else
+                echo "❌ $description - Failed (attempt $attempt/$max_attempts)"
+                if [ $attempt -lt $max_attempts ]; then
+                  echo "⏳ Waiting ${wait_time}s before retry..."
+                  sleep $wait_time
+                fi
+              fi
+            done
+            
+            echo "💥 $description - All attempts failed"
+            return 1
+          }
+          
+          # Wait for initial deployment propagation
+          echo "⏳ Waiting 60 seconds for deployment to fully propagate..."
+          sleep 60
           
           # Test main page
-          echo "Testing main page..."
-          curl -f -s "${{ secrets.VERCEL_DEPLOYMENT_URL }}" > /dev/null || exit 1
+          test_endpoint "$DEPLOYMENT_URL" "Main page"
           
           # Test data endpoint
-          echo "Testing data endpoint..."
-          curl -f -s "${{ secrets.VERCEL_DEPLOYMENT_URL }}/data/visualization-data.json" > /dev/null || exit 1
+          test_endpoint "$DEPLOYMENT_URL/data/visualization-data.json" "Data endpoint"
           
-          echo "✅ Deployment health check passed"
+          # Test static assets
+          test_endpoint "$DEPLOYMENT_URL/app.js" "JavaScript assets"
+          
+          echo "🎉 All health checks passed successfully!"
+          echo "🚀 Deployment is fully operational at: $DEPLOYMENT_URL"
+
 
       - name: Deployment success notification
         run: |
           echo "🚀 Deployment completed successfully!"
-          echo "URL: ${{ secrets.VERCEL_DEPLOYMENT_URL }}"
+          echo "📍 Live URL: $DEPLOYMENT_URL"
+          echo "🎯 All health checks passed - application is fully operational"
+          echo "📊 Sentry monitoring ready (configured in frontend)"
 
   # This job runs when tests fail to provide clear feedback
   test-failure-notification:

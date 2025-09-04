@@ -8,8 +8,10 @@
     <meta name="description" content="Interactive visualization of Texas State University CADS research landscape">
     <link rel="icon" type="image/png" href="cads_logo.png">
 
-    <!-- Sentry Error Tracking -->
-    <script src="https://js.sentry-cdn.com/859c6ba713b1af67c44c0b217300cd9a.min.js" crossorigin="anonymous"></script>
+    <!-- Sentry Error Tracking (Standard SDK) -->
+    <script src="https://browser.sentry-cdn.com/7.100.1/bundle.tracing.min.js" 
+            integrity="sha384-wbvA2NmqqALPaRHQ4+7eEp6vwvk1cJ4z3UJ3W7xOZFj+g4H5yALFPO9LHoB4cU0K" 
+            crossorigin="anonymous"></script>
 
     <!-- Vercel Analytics -->
     <script>
@@ -1053,26 +1055,57 @@
     <!-- Main Application Script -->
     <script src="app.js"></script>
 
-    <!-- Monitoring and Error Tracking Setup -->
+    <!-- Sentry Configuration (Standard 4-Step Setup) -->
     <script>
-        // Sentry auto-initializes with your project configuration
-        // Just add some additional context
+        // Step 1: Sentry installed via CDN (script tag above)
+        // Step 2: Configure Sentry
         if (typeof Sentry !== 'undefined') {
-            console.log('✅ Sentry initialized successfully');
+            Sentry.init({
+                // Your Sentry DSN for CADS Visualizer project
+                dsn: "https://859c6ba713b1af67c44c0b217300cd9a@o4509845138178048.ingest.us.sentry.io/4509845178351616",
+                
+                // Step 3: Add Distributed Tracing (Optional)
+                integrations: [
+                    new Sentry.BrowserTracing({
+                        tracingOrigins: [window.location.hostname, /^\//],
+                    }),
+                ],
+                
+                // Performance monitoring
+                tracesSampleRate: 0.1, // 10% of transactions
+                
+                // Session replay
+                replaysSessionSampleRate: 0.1,
+                replaysOnErrorSampleRate: 1.0,
+                
+                // Environment
+                environment: window.location.hostname === 'localhost' ? 'development' : 'production',
+                
+                // Filter out common non-issues
+                beforeSend(event, hint) {
+                    if (event.exception) {
+                        const error = event.exception.values[0];
+                        if (error && error.value) {
+                            if (error.value.includes('ResizeObserver loop')) return null;
+                            if (error.value.includes('Failed to fetch')) return null;
+                        }
+                    }
+                    return event;
+                },
+            });
 
-            // Set additional context
+            // Set additional context for CADS
             Sentry.setContext('application', {
                 name: 'CADS Research Visualization',
-                version: document.querySelector('meta[name="version"]')?.content || 'unknown',
-                environment: window.location.hostname === 'localhost' ? 'development' : 'production'
+                version: '1.0.0',
+                framework: 'vanilla-js',
+                visualization: 'deck.gl'
             });
 
-            // Configure scope for better error context
-            Sentry.configureScope((scope) => {
-                scope.setTag('component', 'cads-visualization');
-                scope.setTag('framework', 'vanilla-js');
-                scope.setLevel('error');
-            });
+            // Step 4: Verify Sentry
+            console.log('✅ Sentry initialized successfully with standard SDK');
+        } else {
+            console.warn('⚠️ Sentry not loaded - error tracking disabled');
         }
 
         // Enhanced global error handling with Sentry integration

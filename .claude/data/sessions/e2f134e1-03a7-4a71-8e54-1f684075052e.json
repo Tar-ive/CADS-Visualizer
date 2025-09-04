@@ -1,0 +1,8 @@
+{
+  "session_id": "e2f134e1-03a7-4a71-8e54-1f684075052e",
+  "prompts": [
+    "tell me more about what i can do by investigating the directory structure.",
+    "Ok so I have another repository called /Users/tarive/Desktop/CADS/CADS-Visualizer, and i want to work on that, but I want to use the claude code features in the claude-code-hooks-mastery repository and want the advanced claude concepts to work there, how can i achieve this? "
+  ],
+  "agent_name": "Zenith"
+}

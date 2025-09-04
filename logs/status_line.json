@@ -1,0 +1,3975 @@
+[
+  {
+    "timestamp": "2025-08-23T05:37:50.920619",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 4.028653799999998,
+        "total_duration_ms": 8663267,
+        "total_api_duration_ms": 3178318,
+        "total_lines_added": 85,
+        "total_lines_removed": 52
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b14\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T05:41:06.122629",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 4.030432199999998,
+        "total_duration_ms": 8858432,
+        "total_api_duration_ms": 3373068,
+        "total_lines_added": 85,
+        "total_lines_removed": 52
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b14\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T05:41:06.419452",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 4.030432199999998,
+        "total_duration_ms": 8858734,
+        "total_api_duration_ms": 3373068,
+        "total_lines_added": 85,
+        "total_lines_removed": 52
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b14\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T05:41:06.684205",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 4.030432199999998,
+        "total_duration_ms": 8858958,
+        "total_api_duration_ms": 3373068,
+        "total_lines_added": 85,
+        "total_lines_removed": 52
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b14\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T05:41:17.944434",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 4.030432199999998,
+        "total_duration_ms": 8870304,
+        "total_api_duration_ms": 3373068,
+        "total_lines_added": 85,
+        "total_lines_removed": 52
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T05:41:18.732194",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 4.0671605999999985,
+        "total_duration_ms": 8871087,
+        "total_api_duration_ms": 3380837,
+        "total_lines_added": 85,
+        "total_lines_removed": 52
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T05:41:18.916619",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 4.0671605999999985,
+        "total_duration_ms": 8871289,
+        "total_api_duration_ms": 3380837,
+        "total_lines_added": 85,
+        "total_lines_removed": 52
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T05:41:19.088003",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 4.0671605999999985,
+        "total_duration_ms": 8871426,
+        "total_api_duration_ms": 3380837,
+        "total_lines_added": 85,
+        "total_lines_removed": 52
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T05:41:29.096562",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 4.104692999999998,
+        "total_duration_ms": 8881371,
+        "total_api_duration_ms": 3398247,
+        "total_lines_added": 85,
+        "total_lines_removed": 52
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T05:41:29.230348",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 4.104692999999998,
+        "total_duration_ms": 8881605,
+        "total_api_duration_ms": 3398247,
+        "total_lines_added": 85,
+        "total_lines_removed": 52
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T05:41:56.937731",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 4.105285799999998,
+        "total_duration_ms": 8909253,
+        "total_api_duration_ms": 3399096,
+        "total_lines_added": 85,
+        "total_lines_removed": 52
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T05:41:57.209314",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 4.105285799999998,
+        "total_duration_ms": 8909554,
+        "total_api_duration_ms": 3399096,
+        "total_lines_added": 85,
+        "total_lines_removed": 52
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T05:41:57.481835",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 4.105285799999998,
+        "total_duration_ms": 8909767,
+        "total_api_duration_ms": 3399096,
+        "total_lines_added": 85,
+        "total_lines_removed": 52
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T05:46:06.765230",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 4.154558999999998,
+        "total_duration_ms": 9159061,
+        "total_api_duration_ms": 3408400,
+        "total_lines_added": 85,
+        "total_lines_removed": 52
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T05:46:06.997725",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 4.154558999999998,
+        "total_duration_ms": 9159307,
+        "total_api_duration_ms": 3408400,
+        "total_lines_added": 85,
+        "total_lines_removed": 52
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T05:46:10.712561",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 4.155149399999998,
+        "total_duration_ms": 9162993,
+        "total_api_duration_ms": 3409268,
+        "total_lines_added": 85,
+        "total_lines_removed": 52
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T05:46:10.948956",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 4.155149399999998,
+        "total_duration_ms": 9163294,
+        "total_api_duration_ms": 3409268,
+        "total_lines_added": 85,
+        "total_lines_removed": 52
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T05:46:11.301640",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 4.155149399999998,
+        "total_duration_ms": 9163652,
+        "total_api_duration_ms": 3409268,
+        "total_lines_added": 85,
+        "total_lines_removed": 52
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T05:46:53.078648",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 4.155779799999999,
+        "total_duration_ms": 9205156,
+        "total_api_duration_ms": 3448944,
+        "total_lines_added": 85,
+        "total_lines_removed": 52
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T05:46:53.513758",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 4.155779799999999,
+        "total_duration_ms": 9205661,
+        "total_api_duration_ms": 3448944,
+        "total_lines_added": 85,
+        "total_lines_removed": 52
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T05:46:56.616195",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 4.1563789999999985,
+        "total_duration_ms": 9208898,
+        "total_api_duration_ms": 3449853,
+        "total_lines_added": 85,
+        "total_lines_removed": 52
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T05:46:56.918446",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 4.1563789999999985,
+        "total_duration_ms": 9209200,
+        "total_api_duration_ms": 3449853,
+        "total_lines_added": 85,
+        "total_lines_removed": 52
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T05:46:57.144463",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 4.1563789999999985,
+        "total_duration_ms": 9209454,
+        "total_api_duration_ms": 3449853,
+        "total_lines_added": 85,
+        "total_lines_removed": 52
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T05:47:16.867069",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 4.1563789999999985,
+        "total_duration_ms": 9229161,
+        "total_api_duration_ms": 3467182,
+        "total_lines_added": 85,
+        "total_lines_removed": 52
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T05:47:17.088561",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 4.1563789999999985,
+        "total_duration_ms": 9229419,
+        "total_api_duration_ms": 3467182,
+        "total_lines_added": 85,
+        "total_lines_removed": 52
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T05:47:42.788715",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 4.158457399999999,
+        "total_duration_ms": 9255063,
+        "total_api_duration_ms": 3493810,
+        "total_lines_added": 85,
+        "total_lines_removed": 52
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T05:47:43.230733",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 4.158457399999999,
+        "total_duration_ms": 9255382,
+        "total_api_duration_ms": 3493810,
+        "total_lines_added": 85,
+        "total_lines_removed": 52
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T05:47:44.212839",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 4.158457399999999,
+        "total_duration_ms": 9256356,
+        "total_api_duration_ms": 3493810,
+        "total_lines_added": 85,
+        "total_lines_removed": 52
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T05:48:29.302712",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 4.158919799999999,
+        "total_duration_ms": 9301440,
+        "total_api_duration_ms": 3539791,
+        "total_lines_added": 85,
+        "total_lines_removed": 52
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T05:51:16.945524",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 4.158919799999999,
+        "total_duration_ms": 9469254,
+        "total_api_duration_ms": 3539791,
+        "total_lines_added": 85,
+        "total_lines_removed": 52
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T05:51:17.322886",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 4.158919799999999,
+        "total_duration_ms": 9469562,
+        "total_api_duration_ms": 3539791,
+        "total_lines_added": 85,
+        "total_lines_removed": 52
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T05:51:17.413898",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 4.158919799999999,
+        "total_duration_ms": 9469759,
+        "total_api_duration_ms": 3539791,
+        "total_lines_added": 85,
+        "total_lines_removed": 52
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T05:51:49.341807",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 4.158919799999999,
+        "total_duration_ms": 9501659,
+        "total_api_duration_ms": 3558866,
+        "total_lines_added": 85,
+        "total_lines_removed": 52
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T05:51:49.605311",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 4.158919799999999,
+        "total_duration_ms": 9501975,
+        "total_api_duration_ms": 3558866,
+        "total_lines_added": 85,
+        "total_lines_removed": 52
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T05:51:54.166639",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 4.199087549999998,
+        "total_duration_ms": 9506466,
+        "total_api_duration_ms": 3586482,
+        "total_lines_added": 85,
+        "total_lines_removed": 52
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T05:51:54.670380",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 4.199087549999998,
+        "total_duration_ms": 9506930,
+        "total_api_duration_ms": 3586482,
+        "total_lines_added": 85,
+        "total_lines_removed": 52
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T05:51:58.301663",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 4.199087549999998,
+        "total_duration_ms": 9510661,
+        "total_api_duration_ms": 3586482,
+        "total_lines_added": 85,
+        "total_lines_removed": 52
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T05:51:59.513122",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 4.238503799999998,
+        "total_duration_ms": 9511768,
+        "total_api_duration_ms": 3590997,
+        "total_lines_added": 85,
+        "total_lines_removed": 52
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T05:51:59.804571",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 4.238503799999998,
+        "total_duration_ms": 9512104,
+        "total_api_duration_ms": 3590997,
+        "total_lines_added": 85,
+        "total_lines_removed": 52
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T05:52:06.186807",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 4.238906999999998,
+        "total_duration_ms": 9518105,
+        "total_api_duration_ms": 3592109,
+        "total_lines_added": 85,
+        "total_lines_removed": 52
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T05:52:07.147623",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 4.278655799999998,
+        "total_duration_ms": 9519439,
+        "total_api_duration_ms": 3598202,
+        "total_lines_added": 85,
+        "total_lines_removed": 52
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T05:52:07.546087",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 4.278655799999998,
+        "total_duration_ms": 9519840,
+        "total_api_duration_ms": 3598202,
+        "total_lines_added": 85,
+        "total_lines_removed": 52
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T05:52:27.164257",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 4.278655799999998,
+        "total_duration_ms": 9539476,
+        "total_api_duration_ms": 3616856,
+        "total_lines_added": 102,
+        "total_lines_removed": 59
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b14\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T05:52:27.438983",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 4.278655799999998,
+        "total_duration_ms": 9539777,
+        "total_api_duration_ms": 3616856,
+        "total_lines_added": 102,
+        "total_lines_removed": 59
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b14\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T05:52:32.753204",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 4.321241699999998,
+        "total_duration_ms": 9545062,
+        "total_api_duration_ms": 3621917,
+        "total_lines_added": 102,
+        "total_lines_removed": 59
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b14\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T05:52:33.190321",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 4.321241699999998,
+        "total_duration_ms": 9545542,
+        "total_api_duration_ms": 3621917,
+        "total_lines_added": 102,
+        "total_lines_removed": 59
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b14\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T05:52:37.163223",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 4.321241699999998,
+        "total_duration_ms": 9549410,
+        "total_api_duration_ms": 3621917,
+        "total_lines_added": 102,
+        "total_lines_removed": 59
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b14\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T05:52:38.149523",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 4.361386349999998,
+        "total_duration_ms": 9550475,
+        "total_api_duration_ms": 3626225,
+        "total_lines_added": 102,
+        "total_lines_removed": 59
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b14\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T05:52:38.787729",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 4.361386349999998,
+        "total_duration_ms": 9551010,
+        "total_api_duration_ms": 3626225,
+        "total_lines_added": 102,
+        "total_lines_removed": 59
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b14\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T05:52:43.762329",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 4.361386349999998,
+        "total_duration_ms": 9556087,
+        "total_api_duration_ms": 3626225,
+        "total_lines_added": 102,
+        "total_lines_removed": 59
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b14\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T05:52:47.815769",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 4.406648549999998,
+        "total_duration_ms": 9560145,
+        "total_api_duration_ms": 3634394,
+        "total_lines_added": 114,
+        "total_lines_removed": 60
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b14\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T05:52:48.042482",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 4.406648549999998,
+        "total_duration_ms": 9560388,
+        "total_api_duration_ms": 3634394,
+        "total_lines_added": 114,
+        "total_lines_removed": 60
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b14\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T05:52:52.214140",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 4.449352049999998,
+        "total_duration_ms": 9564548,
+        "total_api_duration_ms": 3638367,
+        "total_lines_added": 114,
+        "total_lines_removed": 60
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b14\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T05:52:52.730356",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 4.449352049999998,
+        "total_duration_ms": 9565020,
+        "total_api_duration_ms": 3638367,
+        "total_lines_added": 114,
+        "total_lines_removed": 60
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b14\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T05:52:56.665246",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 4.449352049999998,
+        "total_duration_ms": 9568945,
+        "total_api_duration_ms": 3638367,
+        "total_lines_added": 114,
+        "total_lines_removed": 60
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b14\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T05:53:00.278297",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 4.491481199999998,
+        "total_duration_ms": 9572565,
+        "total_api_duration_ms": 3645171,
+        "total_lines_added": 114,
+        "total_lines_removed": 60
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b14\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T05:53:00.582069",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 4.491481199999998,
+        "total_duration_ms": 9572885,
+        "total_api_duration_ms": 3645171,
+        "total_lines_added": 114,
+        "total_lines_removed": 60
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b14\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T05:53:16.291514",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 4.492877999999998,
+        "total_duration_ms": 9588565,
+        "total_api_duration_ms": 3646856,
+        "total_lines_added": 114,
+        "total_lines_removed": 60
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b14\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T05:53:16.671921",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 4.492877999999998,
+        "total_duration_ms": 9588956,
+        "total_api_duration_ms": 3646856,
+        "total_lines_added": 114,
+        "total_lines_removed": 60
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T05:53:16.961753",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 4.492877999999998,
+        "total_duration_ms": 9589255,
+        "total_api_duration_ms": 3646856,
+        "total_lines_added": 114,
+        "total_lines_removed": 60
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T05:53:21.994391",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 4.492877999999998,
+        "total_duration_ms": 9594300,
+        "total_api_duration_ms": 3646856,
+        "total_lines_added": 114,
+        "total_lines_removed": 60
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T05:53:23.791697",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 4.533288449999999,
+        "total_duration_ms": 9596058,
+        "total_api_duration_ms": 3651959,
+        "total_lines_added": 114,
+        "total_lines_removed": 60
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T05:53:24.399257",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 4.533288449999999,
+        "total_duration_ms": 9596397,
+        "total_api_duration_ms": 3651959,
+        "total_lines_added": 114,
+        "total_lines_removed": 60
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T05:54:10.234840",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 4.534280449999999,
+        "total_duration_ms": 9642547,
+        "total_api_duration_ms": 3727566,
+        "total_lines_added": 114,
+        "total_lines_removed": 60
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T05:54:10.568367",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 4.534280449999999,
+        "total_duration_ms": 9642909,
+        "total_api_duration_ms": 3727566,
+        "total_lines_added": 114,
+        "total_lines_removed": 60
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T05:54:16.925647",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 4.534873249999999,
+        "total_duration_ms": 9649219,
+        "total_api_duration_ms": 3728441,
+        "total_lines_added": 114,
+        "total_lines_removed": 60
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T05:54:17.191942",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 4.534873249999999,
+        "total_duration_ms": 9649520,
+        "total_api_duration_ms": 3728441,
+        "total_lines_added": 114,
+        "total_lines_removed": 60
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T05:54:17.447467",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 4.534873249999999,
+        "total_duration_ms": 9649791,
+        "total_api_duration_ms": 3728441,
+        "total_lines_added": 114,
+        "total_lines_removed": 60
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T05:57:57.636670",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 4.538337249999999,
+        "total_duration_ms": 9869897,
+        "total_api_duration_ms": 3758655,
+        "total_lines_added": 114,
+        "total_lines_removed": 60
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T05:57:57.921530",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 4.538337249999999,
+        "total_duration_ms": 9870203,
+        "total_api_duration_ms": 3758655,
+        "total_lines_added": 114,
+        "total_lines_removed": 60
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T06:01:42.321997",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 4.5389316499999985,
+        "total_duration_ms": 10094585,
+        "total_api_duration_ms": 3759516,
+        "total_lines_added": 114,
+        "total_lines_removed": 60
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T06:01:42.840653",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 4.5389316499999985,
+        "total_duration_ms": 10095010,
+        "total_api_duration_ms": 3759516,
+        "total_lines_added": 114,
+        "total_lines_removed": 60
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T06:01:43.557457",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 4.5389316499999985,
+        "total_duration_ms": 10095690,
+        "total_api_duration_ms": 3759516,
+        "total_lines_added": 114,
+        "total_lines_removed": 60
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T06:02:10.516708",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 4.5389316499999985,
+        "total_duration_ms": 10122778,
+        "total_api_duration_ms": 3783637,
+        "total_lines_added": 114,
+        "total_lines_removed": 60
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T06:02:11.581437",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 4.5389316499999985,
+        "total_duration_ms": 10123649,
+        "total_api_duration_ms": 3783637,
+        "total_lines_added": 119,
+        "total_lines_removed": 77
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b14\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T06:02:18.006609",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 4.5843522499999985,
+        "total_duration_ms": 10130327,
+        "total_api_duration_ms": 3789380,
+        "total_lines_added": 119,
+        "total_lines_removed": 77
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b14\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T06:02:18.854333",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 4.5843522499999985,
+        "total_duration_ms": 10131051,
+        "total_api_duration_ms": 3789380,
+        "total_lines_added": 119,
+        "total_lines_removed": 77
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b14\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T06:02:23.340461",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 4.5843522499999985,
+        "total_duration_ms": 10135579,
+        "total_api_duration_ms": 3789380,
+        "total_lines_added": 119,
+        "total_lines_removed": 77
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b14\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T06:02:28.431113",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 4.628439199999998,
+        "total_duration_ms": 10140377,
+        "total_api_duration_ms": 3796960,
+        "total_lines_added": 119,
+        "total_lines_removed": 77
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b14\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T06:03:01.852208",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 4.632563199999998,
+        "total_duration_ms": 10173997,
+        "total_api_duration_ms": 3865765,
+        "total_lines_added": 119,
+        "total_lines_removed": 77
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b14\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T06:03:02.182762",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 4.632563199999998,
+        "total_duration_ms": 10174299,
+        "total_api_duration_ms": 3865765,
+        "total_lines_added": 119,
+        "total_lines_removed": 77
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T06:03:18.644453",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 4.633111999999998,
+        "total_duration_ms": 10190990,
+        "total_api_duration_ms": 3881501,
+        "total_lines_added": 119,
+        "total_lines_removed": 77
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T06:03:19.127655",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 4.633111999999998,
+        "total_duration_ms": 10191354,
+        "total_api_duration_ms": 3881501,
+        "total_lines_added": 119,
+        "total_lines_removed": 77
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T06:03:30.612446",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 4.675485199999998,
+        "total_duration_ms": 10202901,
+        "total_api_duration_ms": 3885553,
+        "total_lines_added": 119,
+        "total_lines_removed": 77
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T06:03:31.209868",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 4.675485199999998,
+        "total_duration_ms": 10203262,
+        "total_api_duration_ms": 3885553,
+        "total_lines_added": 119,
+        "total_lines_removed": 77
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T06:09:28.373595",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 4.676489999999998,
+        "total_duration_ms": 10560384,
+        "total_api_duration_ms": 3899949,
+        "total_lines_added": 119,
+        "total_lines_removed": 77
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T06:09:49.602288",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 4.676489999999998,
+        "total_duration_ms": 10581843,
+        "total_api_duration_ms": 3916372,
+        "total_lines_added": 119,
+        "total_lines_removed": 77
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T06:09:49.943056",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 4.676489999999998,
+        "total_duration_ms": 10582277,
+        "total_api_duration_ms": 3916372,
+        "total_lines_added": 119,
+        "total_lines_removed": 77
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T06:14:08.072334",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 4.677469199999997,
+        "total_duration_ms": 10840344,
+        "total_api_duration_ms": 3943883,
+        "total_lines_added": 119,
+        "total_lines_removed": 77
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T06:14:08.593999",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 4.677469199999997,
+        "total_duration_ms": 10840897,
+        "total_api_duration_ms": 3943883,
+        "total_lines_added": 119,
+        "total_lines_removed": 77
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T06:14:08.823033",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 4.677469199999997,
+        "total_duration_ms": 10841178,
+        "total_api_duration_ms": 3943883,
+        "total_lines_added": 119,
+        "total_lines_removed": 77
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T06:14:27.984263",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 4.677469199999997,
+        "total_duration_ms": 10856464,
+        "total_api_duration_ms": 3943883,
+        "total_lines_added": 119,
+        "total_lines_removed": 77
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T06:15:08.459877",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 4.729098899999998,
+        "total_duration_ms": 10896751,
+        "total_api_duration_ms": 3991984,
+        "total_lines_added": 119,
+        "total_lines_removed": 77
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T06:15:46.580002",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 4.776988699999998,
+        "total_duration_ms": 10937382,
+        "total_api_duration_ms": 4085709,
+        "total_lines_added": 128,
+        "total_lines_removed": 84
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b14\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T06:16:32.488668",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 4.776988699999998,
+        "total_duration_ms": 10982305,
+        "total_api_duration_ms": 4101356,
+        "total_lines_added": 128,
+        "total_lines_removed": 84
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T06:17:16.691247",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 4.821091149999997,
+        "total_duration_ms": 11027392,
+        "total_api_duration_ms": 4169579,
+        "total_lines_added": 128,
+        "total_lines_removed": 84
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T06:17:24.959910",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 4.821683949999997,
+        "total_duration_ms": 11034865,
+        "total_api_duration_ms": 4170928,
+        "total_lines_added": 128,
+        "total_lines_removed": 84
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T06:20:43.900317",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 4.821683949999997,
+        "total_duration_ms": 11233228,
+        "total_api_duration_ms": 4192332,
+        "total_lines_added": 128,
+        "total_lines_removed": 84
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T06:21:57.969411",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 4.822278349999997,
+        "total_duration_ms": 11306899,
+        "total_api_duration_ms": 4252313,
+        "total_lines_added": 128,
+        "total_lines_removed": 84
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T06:22:16.029343",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 4.822278349999997,
+        "total_duration_ms": 11327779,
+        "total_api_duration_ms": 4252313,
+        "total_lines_added": 128,
+        "total_lines_removed": 84
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T06:22:22.564668",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 4.868235649999997,
+        "total_duration_ms": 11333060,
+        "total_api_duration_ms": 4263755,
+        "total_lines_added": 128,
+        "total_lines_removed": 84
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T06:22:25.379577",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 4.868235649999997,
+        "total_duration_ms": 11336516,
+        "total_api_duration_ms": 4263755,
+        "total_lines_added": 128,
+        "total_lines_removed": 84
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T06:23:06.314188",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 4.917036499999997,
+        "total_duration_ms": 11377144,
+        "total_api_duration_ms": 4298801,
+        "total_lines_added": 128,
+        "total_lines_removed": 84
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T06:23:15.976173",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 4.919078899999997,
+        "total_duration_ms": 11387895,
+        "total_api_duration_ms": 4475829,
+        "total_lines_added": 130,
+        "total_lines_removed": 96
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b14\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T06:23:42.495409",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 4.966075249999997,
+        "total_duration_ms": 11414223,
+        "total_api_duration_ms": 4498461,
+        "total_lines_added": 130,
+        "total_lines_removed": 96
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b14\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T06:23:45.007003",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 4.966075249999997,
+        "total_duration_ms": 11416867,
+        "total_api_duration_ms": 4498461,
+        "total_lines_added": 130,
+        "total_lines_removed": 96
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b14\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T06:24:09.801608",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 5.301232749999996,
+        "total_duration_ms": 11441651,
+        "total_api_duration_ms": 4612879,
+        "total_lines_added": 130,
+        "total_lines_removed": 96
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b14\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T06:24:11.338617",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 5.301232749999996,
+        "total_duration_ms": 11443434,
+        "total_api_duration_ms": 4612879,
+        "total_lines_added": 130,
+        "total_lines_removed": 96
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b14\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T06:24:43.020386",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 5.301722349999996,
+        "total_duration_ms": 11475129,
+        "total_api_duration_ms": 4646957,
+        "total_lines_added": 130,
+        "total_lines_removed": 96
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T06:24:43.775314",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 5.301722349999996,
+        "total_duration_ms": 11475945,
+        "total_api_duration_ms": 4646957,
+        "total_lines_added": 130,
+        "total_lines_removed": 96
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T06:25:06.139144",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 5.334874599999996,
+        "total_duration_ms": 11498258,
+        "total_api_duration_ms": 4654041,
+        "total_lines_added": 130,
+        "total_lines_removed": 96
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T06:25:06.755239",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 5.334874599999996,
+        "total_duration_ms": 11498909,
+        "total_api_duration_ms": 4654041,
+        "total_lines_added": 130,
+        "total_lines_removed": 96
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T06:25:18.959921",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 5.335880199999996,
+        "total_duration_ms": 11511303,
+        "total_api_duration_ms": 4673516,
+        "total_lines_added": 130,
+        "total_lines_removed": 96
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T06:25:19.243340",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 5.335880199999996,
+        "total_duration_ms": 11511604,
+        "total_api_duration_ms": 4673516,
+        "total_lines_added": 130,
+        "total_lines_removed": 96
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T06:25:19.466405",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 5.335880199999996,
+        "total_duration_ms": 11511842,
+        "total_api_duration_ms": 4673516,
+        "total_lines_added": 130,
+        "total_lines_removed": 96
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T06:27:50.825651",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 5.335880199999996,
+        "total_duration_ms": 11663134,
+        "total_api_duration_ms": 4673516,
+        "total_lines_added": 130,
+        "total_lines_removed": 96
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T06:27:51.015638",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 5.335880199999996,
+        "total_duration_ms": 11663386,
+        "total_api_duration_ms": 4673516,
+        "total_lines_added": 130,
+        "total_lines_removed": 96
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T06:27:51.061037",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 5.335880199999996,
+        "total_duration_ms": 11663435,
+        "total_api_duration_ms": 4673516,
+        "total_lines_added": 130,
+        "total_lines_removed": 96
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T06:27:51.287288",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 5.335880199999996,
+        "total_duration_ms": 11663661,
+        "total_api_duration_ms": 4673516,
+        "total_lines_added": 130,
+        "total_lines_removed": 96
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T06:28:20.406534",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 5.335880199999996,
+        "total_duration_ms": 11692758,
+        "total_api_duration_ms": 4690308,
+        "total_lines_added": 130,
+        "total_lines_removed": 96
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T06:28:20.623971",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 5.335880199999996,
+        "total_duration_ms": 11692995,
+        "total_api_duration_ms": 4690308,
+        "total_lines_added": 130,
+        "total_lines_removed": 96
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T06:28:48.860840",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 5.336564999999996,
+        "total_duration_ms": 11721207,
+        "total_api_duration_ms": 4740287,
+        "total_lines_added": 130,
+        "total_lines_removed": 96
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T06:28:49.022738",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 5.336564999999996,
+        "total_duration_ms": 11721394,
+        "total_api_duration_ms": 4740287,
+        "total_lines_added": 130,
+        "total_lines_removed": 96
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T06:28:49.186567",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 5.336564999999996,
+        "total_duration_ms": 11721562,
+        "total_api_duration_ms": 4740287,
+        "total_lines_added": 130,
+        "total_lines_removed": 96
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T06:28:52.787388",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 5.336564999999996,
+        "total_duration_ms": 11725163,
+        "total_api_duration_ms": 4740287,
+        "total_lines_added": 130,
+        "total_lines_removed": 96
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T06:28:53.951420",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 5.370996899999996,
+        "total_duration_ms": 11726320,
+        "total_api_duration_ms": 4744167,
+        "total_lines_added": 130,
+        "total_lines_removed": 96
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T06:28:54.230153",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 5.370996899999996,
+        "total_duration_ms": 11726592,
+        "total_api_duration_ms": 4744167,
+        "total_lines_added": 130,
+        "total_lines_removed": 96
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T06:28:59.274785",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 5.371400099999996,
+        "total_duration_ms": 11731649,
+        "total_api_duration_ms": 4745259,
+        "total_lines_added": 130,
+        "total_lines_removed": 96
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T06:29:00.010850",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 5.405704649999996,
+        "total_duration_ms": 11732381,
+        "total_api_duration_ms": 4749834,
+        "total_lines_added": 130,
+        "total_lines_removed": 96
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T06:29:00.280701",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 5.405704649999996,
+        "total_duration_ms": 11732656,
+        "total_api_duration_ms": 4749834,
+        "total_lines_added": 130,
+        "total_lines_removed": 96
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T06:31:03.123503",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 5.406339049999996,
+        "total_duration_ms": 11855459,
+        "total_api_duration_ms": 4839428,
+        "total_lines_added": 130,
+        "total_lines_removed": 96
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T06:31:03.462664",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 5.406339049999996,
+        "total_duration_ms": 11855824,
+        "total_api_duration_ms": 4839428,
+        "total_lines_added": 130,
+        "total_lines_removed": 96
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T06:31:35.684053",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 5.409213449999997,
+        "total_duration_ms": 11888039,
+        "total_api_duration_ms": 4872151,
+        "total_lines_added": 130,
+        "total_lines_removed": 96
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T06:31:35.869380",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 5.409213449999997,
+        "total_duration_ms": 11888245,
+        "total_api_duration_ms": 4872151,
+        "total_lines_added": 130,
+        "total_lines_removed": 96
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T06:31:36.026975",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 5.409213449999997,
+        "total_duration_ms": 11888402,
+        "total_api_duration_ms": 4872151,
+        "total_lines_added": 130,
+        "total_lines_removed": 96
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T06:31:52.444951",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 5.4942027999999965,
+        "total_duration_ms": 11904765,
+        "total_api_duration_ms": 4887404,
+        "total_lines_added": 130,
+        "total_lines_removed": 96
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  },
+  {
+    "timestamp": "2025-08-23T06:31:52.825985",
+    "input_data": {
+      "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+      "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/fe3c1b91-57b8-475f-9fd8-e4691dad7daf.jsonl",
+      "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+      "model": {
+        "id": "claude-sonnet-4-20250514",
+        "display_name": "Sonnet 4"
+      },
+      "workspace": {
+        "current_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+        "project_dir": "/Users/tarive/Desktop/CADS/CADS-Visualizer"
+      },
+      "version": "1.0.89",
+      "output_style": {
+        "name": "default"
+      },
+      "cost": {
+        "total_cost_usd": 5.4942027999999965,
+        "total_duration_ms": 11905154,
+        "total_api_duration_ms": 4887404,
+        "total_lines_added": 130,
+        "total_lines_removed": 96
+      },
+      "exceeds_200k_tokens": false
+    },
+    "status_line_output": "\u001b[36m[Sonnet 4]\u001b[0m | \u001b[34m\ud83d\udcc1 CADS-Visualizer\u001b[0m | \u001b[32m\ud83c\udf3f main \u00b13\u001b[0m | \u001b[90mv1.0.89\u001b[0m"
+  }
+]

@@ -1,0 +1,20 @@
+{
+  "session_id": "fe3c1b91-57b8-475f-9fd8-e4691dad7daf",
+  "prompts": [
+    "I have added tests to this code, whenever they are deployed, but these tests run on my local ide, but whenever i push them to github, they are failing on github actions, how can i solve this? the latest error that I was getting was that, \"\nnpm warn deprecated node-pre-gyp@0.13.0: Please upgrade to @mapbox/node-pre-gyp: the non-scoped node-pre-gyp package is deprecated and only the @mapbox scoped package will recieve updates in the future\nVercel CLI 25.1.0\n\nVercel CLI 25.1.0\nRetrieving project\u2026\n\nRetrieving project\u2026\nError! Project not found ({\"VERCEL_PROJECT_ID\":\"***\",\"VERCEL_ORG_ID\":\"***\"})\n\n\nError! Project not found ({\"VERCEL_PROJECT_ID\":\"***\",\"VERCEL_ORG_ID\":\"***\"})\n\nError: The process '/usr/local/bin/npx' failed with exit code 1\" but I have these things set inside the environment variables of the github repo as secrets, and they are right, so idk what the issue is, how can i test it and check and monitor if the github actions are being triggered from here my terminal without having to go to their website, and how can i also fix it? ",
+    "wait what just happened, my github login is open, the website,and you made changes but i dont follow, what is happening? the github website asks for a code, what do i need to do now? do i need the app? i dont see any code. what am i supposed to do? ",
+    "can you monitor the workflow under the Production \u2013 cads-research and then see what issues it has? did you fix the vercel Key not correct issue and is the code ready for deployment now? ",
+    "sorry for exiting that go on with what you were doing. ",
+    "What is wrong? Can you explicitly say that and maybe I can give you the correct credentails and you can do that. ",
+    "VERCEL_TOKEN=rOvythWEdN5OTrX77GEhnGre\nVERCEL_ORG_ID=sakshams-projects-1f763efb\nVERCEL_PROJECT_ID=prj_URZwqwFdPh5pwQ3NwEj7npRswMFn\nVERCEL_DEPLOYMENT_URL=https://cads-research.vercel.app",
+    "the project id is prj_URZwqwFdPh5pwQ3NwEj7npRswMFn, i am on a hobby plan and the name of that is https://vercel.com/sakshams-projects-1f763efb/cads-research/settings, so this is my url. ",
+    "try again",
+    "is it deployed already or what? ",
+    "great, got an error, Loading Failed\nCould not load visualization data: Invalid data format: missing publications array. ",
+    "no the deployment works, the data is not being fetched correctly, go back and see how the data is being fetched for the frontend, it should be using /Users/tarive/Desktop/CADS/CADS-Visualizer/visuals/public-prod/data, or atleast this is the folder where all the data lives which needs to be visualized, so implement that, that is what is lacking, the deployment works great and thanks for that. ",
+    "commit a small change and see what is up. ",
+    "ok no due to health checks failing the deployment is not working. https://cads-research.vercel.app/ this is the url where i want my primary deployment. ",
+    "what is happening, why isnt my deployment working all of a sudden? "
+  ],
+  "agent_name": "Phoenix"
+}
