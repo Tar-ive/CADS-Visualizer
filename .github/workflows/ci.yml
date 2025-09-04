@@ -139,6 +139,10 @@ jobs:
           
           # Deploy to existing project with proper configuration
           echo "🚀 Deploying to existing cads-research project..."
+          echo "📁 Deploying from directory: visuals/public-prod/"
+          
+          # Change to the correct directory for deployment
+          cd visuals/public-prod/
           
           # Capture the deployment URL from Vercel output
           DEPLOYMENT_OUTPUT=$(vercel --prod --token "$VERCEL_TOKEN" --yes 2>&1)
