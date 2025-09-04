@@ -144,16 +144,34 @@ jobs:
           # Change to the correct directory for deployment
           cd visuals/public-prod/
           
-          # Capture the deployment URL from Vercel output
+          # List directory contents to verify we're in the right place
+          echo "📋 Directory contents:"
+          ls -la
+          
+          # Run Vercel deployment with better error handling
+          echo "🚀 Executing Vercel deployment..."
+          set +e  # Don't exit on error immediately
           DEPLOYMENT_OUTPUT=$(vercel --prod --token "$VERCEL_TOKEN" --yes 2>&1)
+          VERCEL_EXIT_CODE=$?
+          set -e  # Re-enable exit on error
+          
+          echo "📋 Full Vercel output:"
           echo "$DEPLOYMENT_OUTPUT"
+          echo "🔍 Vercel exit code: $VERCEL_EXIT_CODE"
+          
+          if [ $VERCEL_EXIT_CODE -ne 0 ]; then
+            echo "❌ Vercel command failed with exit code $VERCEL_EXIT_CODE"
+            echo "💥 This is the complete error output from Vercel:"
+            echo "$DEPLOYMENT_OUTPUT"
+            exit 1
+          fi
           
           # Extract the production URL from the output
           DEPLOYMENT_URL=$(echo "$DEPLOYMENT_OUTPUT" | grep -E "https://.*\.vercel\.app" | tail -1 | awk '{print $1}')
           
           if [ -z "$DEPLOYMENT_URL" ]; then
             echo "❌ Failed to extract deployment URL from Vercel output"
-            echo "Vercel output was:"
+            echo "🔍 Full Vercel output for debugging:"
             echo "$DEPLOYMENT_OUTPUT"
             exit 1
           fi
