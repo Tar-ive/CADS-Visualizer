@@ -460,5 +460,12 @@
     "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
     "hook_event_name": "Notification",
     "message": "Claude needs your permission to use "
+  },
+  {
+    "session_id": "22be0ec5-370e-4129-a1d0-4d7cee3c7fb4",
+    "transcript_path": "/Users/tarive/.claude/projects/-Users-tarive-Desktop-CADS-CADS-Visualizer/22be0ec5-370e-4129-a1d0-4d7cee3c7fb4.jsonl",
+    "cwd": "/Users/tarive/Desktop/CADS/CADS-Visualizer",
+    "hook_event_name": "Notification",
+    "message": "Claude is waiting for your input"
   }
 ]

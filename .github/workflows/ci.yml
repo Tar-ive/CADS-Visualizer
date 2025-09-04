@@ -190,10 +190,35 @@ jobs:
           VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
 
       - name: Wait for Vercel deployment to be ready
-        uses: UnlyEd/github-action-await-vercel@v1.2.46
-        with:
-          deployment-url: ${{ env.DEPLOYMENT_URL }}
-          timeout: 600
+        run: |
+          echo "⏳ Waiting for Vercel deployment to be fully ready..."
+          echo "🔗 Deployment URL: $DEPLOYMENT_URL"
+          
+          # Extract deployment ID from URL for status checking
+          DEPLOYMENT_ID=$(echo "$DEPLOYMENT_URL" | grep -oE '[a-z0-9-]+(?=\.)' | head -1 || echo "")
+          
+          # Simple polling approach - test the URL directly
+          MAX_ATTEMPTS=20
+          WAIT_TIME=30
+          
+          for attempt in $(seq 1 $MAX_ATTEMPTS); do
+            echo "🔍 Checking deployment readiness (attempt $attempt/$MAX_ATTEMPTS)..."
+            
+            # Test basic connectivity with a reasonable timeout
+            if curl -f -s --max-time 15 "$DEPLOYMENT_URL" > /dev/null 2>&1; then
+              echo "✅ Deployment is ready and responding!"
+              break
+            else
+              if [ $attempt -eq $MAX_ATTEMPTS ]; then
+                echo "❌ Deployment failed to become ready after $MAX_ATTEMPTS attempts"
+                echo "🔍 Final connectivity test with verbose output:"
+                curl -v --max-time 20 "$DEPLOYMENT_URL" || true
+                exit 1
+              fi
+              echo "⏳ Deployment not ready yet, waiting ${WAIT_TIME}s..."
+              sleep $WAIT_TIME
+            fi
+          done
         env:
           VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
 

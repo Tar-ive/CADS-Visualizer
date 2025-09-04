@@ -2,7 +2,9 @@
   "session_id": "22be0ec5-370e-4129-a1d0-4d7cee3c7fb4",
   "prompts": [
     "can you look at my github actions, and see what the issue is, and hypothesize it, plan it, ultrathink",
-    "no keep it simple make a small plan just to fix vercel issues, identify what the core of that is, and why that is, and then look up documentation related to that and see what the issue is. @agent-web-search-researcher "
+    "no keep it simple make a small plan just to fix vercel issues, identify what the core of that is, and why that is, and then look up documentation related to that and see what the issue is. @agent-web-search-researcher ",
+    "this failed again. ",
+    "also gitignore the .claude and the .kiro directories from this repo. "
   ],
   "agent_name": "Quantum"
 }
