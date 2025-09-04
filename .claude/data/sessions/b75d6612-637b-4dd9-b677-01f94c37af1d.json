@@ -6,7 +6,9 @@
     "yes do step 4 as well, also plan how to integrate sentry as well into this project, add the code required on the gh side and then give me processes on how i can set it on sentry portal? i have done sentry before in this github repo so: ",
     "yes do step 4 as well, also plan how to integrate sentry as well into this project, add the code required on the gh side and then give me processes on how i can set it on sentry portal? i have done sentry before in this github repo so: https://github.com/Tar-ive/Dashboard ",
     "can i just use these 4 steps? 1\nInstall Sentry\nInstall our JavaScript browser SDK using either yarn or npm:\nnpm\nyarn\npnpm\n\nnpm install --save @sentry/browser\n\nNext\n2\nConfigure Sentry\n3\nAdd Distributed Tracing (Optional)\n4\nVerify Sentry, instad of putting all these secrets inside API which is its on integration. ",
-    "this is the dsn, update this and push to github.   dsn: \"https://859c6ba713b1af67c44c0b217300cd9a@o4509845138178048.ingest.us.sentry.io/4509845178351616\",\nthen moniter gh actions and lets see. "
+    "this is the dsn, update this and push to github.   dsn: \"https://859c6ba713b1af67c44c0b217300cd9a@o4509845138178048.ingest.us.sentry.io/4509845178351616\",\nthen moniter gh actions and lets see. ",
+    "no the gh actions still failed, try again ",
+    "check the run status again, the run has been going on for a while but vercel hasnt been deploying. what is the issue? "
   ],
   "agent_name": "Oracle"
 }
