@@ -166,8 +166,13 @@ jobs:
             exit 1
           fi
           
-          # Extract the production URL from the output
-          DEPLOYMENT_URL=$(echo "$DEPLOYMENT_OUTPUT" | grep -E "https://.*\.vercel\.app" | tail -1 | awk '{print $1}')
+          # Extract the production URL from the output (more precise)
+          DEPLOYMENT_URL=$(echo "$DEPLOYMENT_OUTPUT" | grep -E "Production: https://.*\.vercel\.app" | sed 's/.*Production: \(https:\/\/[^ ]*\).*/\1/' | head -1)
+          
+          # Fallback: try alternative extraction if first method fails
+          if [ -z "$DEPLOYMENT_URL" ]; then
+            DEPLOYMENT_URL=$(echo "$DEPLOYMENT_OUTPUT" | grep -oE "https://[a-zA-Z0-9-]+\.vercel\.app" | head -1)
+          fi
           
           if [ -z "$DEPLOYMENT_URL" ]; then
             echo "❌ Failed to extract deployment URL from Vercel output"
