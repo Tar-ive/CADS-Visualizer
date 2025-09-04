@@ -135,10 +135,10 @@ jobs:
           fi
           
           echo "✅ Vercel token is set"
-          echo "🔧 Using existing Vercel project for consistent URLs..."
+          echo "🔧 Deploying with project auto-discovery..."
           
-          # Deploy to existing project with proper configuration
-          echo "🚀 Deploying to existing cads-research project..."
+          # Deploy and let Vercel handle project creation/linking
+          echo "🚀 Deploying CADS Visualizer..."
           echo "📁 Deploying from directory: visuals/public-prod/"
           
           # Change to the correct directory for deployment
@@ -183,8 +183,6 @@ jobs:
           echo "DEPLOYMENT_URL=$DEPLOYMENT_URL" >> $GITHUB_ENV
         env:
           VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
-          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
-          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
 
       - name: Health check
         run: |
